@@ -1,6 +1,6 @@
-import img1 from "/award/1.png"
-import img2 from "/award/2.png"
-import img3 from "/award/3.png"
+import img1 from "/award/img01.jpeg"
+import img2 from "/award/img02.jpeg"
+import img3 from "/award/img03.jpeg"
 
 
 

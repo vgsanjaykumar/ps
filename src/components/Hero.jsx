@@ -20,7 +20,7 @@ export default function Hero() {
 
     return (
         <>
-            <div className='relative '>
+            <div className='relative h-[50%] object-cover '>
                 <Swiper
                     style={{
                         '--swiper-navigation-color': '#fff',
