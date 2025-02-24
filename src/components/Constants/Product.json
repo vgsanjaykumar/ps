@@ -1,0 +1,109 @@
+{
+    "Products": [
+        {
+            "img": "/Bg/ultra.png",
+            "title": "Ultratech"
+        },
+        {
+            "img": "/Bg/WHIRE BG.png",
+            "title": "Birla"
+        },
+        {
+            "img": "/Bg/WALLCARE BG.png",
+            "title": "Birla wall care"
+        },
+          {
+            "img": "/Bg/ULTRATECH BG.png",
+            "title": "Birla"
+        },
+        {
+            "img": "/assets/araldite.jpg",
+            "title": "Araldite"
+        },
+        {
+            "img": "/Bg/FIXIT BG.png",
+            "title": "dr fixit"
+        },
+        {
+            "img": "/Bg/myk.jpg",
+            "title": "myk"
+        },
+         {
+            "img": "/assets/ultratech buliding product.jpg"
+           
+        },
+         {
+            "img": "/Bg/FOSROC BG.png"
+           
+        },
+         {
+            "img": "/assets/tenax.png"
+          
+        },
+         {
+            "img": "/assets/sintex.jpeg"
+          
+        },
+         {
+            "img": "/assets/pad logo.jpg"
+          
+        },
+        {
+            "img": "/Bg/ROFF BG.png"            
+        }
+    ],
+    "Services": [
+        {
+            "icon": "/Bg/ultra.png",
+            "name": "ultratech Building solution",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+        },
+        {
+            "icon": "/assets/birla-white-wallcare-putty.png",
+            "name": "Birla white cement",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+        },
+        {
+            "icon": "/assets/MYK BG 42.png",
+            "name": "myk laticrete",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+        }
+        
+       
+       
+    ],
+    "Header": {
+        "title": "We are a Landing Page",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    },
+
+    "phone":[
+        {
+            "ph": "04565-401379",
+            "ph1": "04565-401379"
+        },
+        {
+            "ph": "04565-232145",
+            "ph1": "04565-232145"
+        },
+
+        {
+            "ph": "98426 11032",
+            "ph1": "91+ 9842611032"
+        },
+        {
+            "ph": "86674 08717",
+            "ph1": "91+ 8667408717"
+        },
+        {
+             "ph": "96297 89197",
+             "ph1": "91+ 9629789197"
+        },
+        {
+             "ph": "97887 66490",
+              "ph1": "91+ 9788766490"
+        }
+           
+        
+    ]
+}
