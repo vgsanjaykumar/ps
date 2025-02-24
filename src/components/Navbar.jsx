@@ -20,11 +20,11 @@ const Navbar = () => {
         <section className="">
             <nav
                 
-                className={`${isScrolled ? "md:bg-[rgb(255,242,0)]" : "bg-[rgba(255,242,0,0.0)]"
+                className={`${isScrolled ? "md:bg-[rgb(86,206,59)]" : "bg-[rgba(255,242,0,0.0)]"
                     } p-2 fixed w-full z-50 transition-all duration-300`}
             >
             
-            <div className={`h-16 xl:h-20 px-4 ${isScrolled ? "text-[#1f1d1dec]" : "text-white"} flex items-center justify-between md:justify-between `}>
+            <div className={`h-16 xl:h-20 px-4 ${isScrolled ? "text-white" : "text-white"} flex items-center justify-between md:justify-between `}>
                 <div className="md:block hidden">
     <img className="xl:w-32 lg:w-24 w-20 h-30 " src={`${isScrolled ? "/assets/7.png":"/assets/logomain.png"}`} alt="Logo" /></div>
     <div className="xl:mr-96 lg:mr-36 mr-16">

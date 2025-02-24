@@ -7,12 +7,13 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
+import 'swiper/css/effect-fade';
 
 
 
 
 // import required modules
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import { FreeMode, Navigation, Thumbs, EffectFade } from 'swiper/modules';
 import { data } from './data';
 
 export default function Hero() {
@@ -29,8 +30,9 @@ export default function Hero() {
                     loop={true}
                     spaceBetween={10}
                     navigation={true}
+                    effect={'fade'}
                     thumbs={{ swiper: thumbsSwiper }}
-                    modules={[FreeMode, Navigation, Thumbs]}
+                    modules={[FreeMode, Navigation, Thumbs, EffectFade]}
                     className="mySwiper2"
                 >
                     {data.map(item => (
@@ -47,7 +49,7 @@ export default function Hero() {
                     spaceBetween={10}
                     slidesPerView={4}
                     freeMode={true}
-                    watchSlidesProgress={true}
+                    watchSlidesProgress={true}   
                     modules={[FreeMode, Navigation, Thumbs]}
                     className="mySwiper"
                 >
