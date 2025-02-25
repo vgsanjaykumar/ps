@@ -10,15 +10,15 @@ import 'swiper/css/navigation';
 
 import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules';
 
-import { Canimg } from './data';
-import {  FaArrowCircleLeft, FaArrowCircleRight} from 'react-icons/fa';
+import { Data } from './data';
+import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 
 
 
-function Events() {
+function Wedding() {
     return (
-        <div className="container">
-            <h1 className="text-center font-semi-bold text-3xl p-5">Photography</h1>
+        <div className="">
+            <h1 className="text-center font-semi-bold text-3xl ">Wedding Photography:</h1>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
@@ -44,12 +44,12 @@ function Events() {
                 modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
                 className="swiper_container1"
             >
-                {Canimg.map(items => (
+                {Data.map(items => (
                     <SwiperSlide className='swiperimg'>
                         <div className='swiperimg'>
                             <img src={items} alt="slide_image" />
                         </div>
-                        
+
                     </SwiperSlide>
 
                 ))}
@@ -68,4 +68,4 @@ function Events() {
     );
 }
 
-export default Events;
+export default Wedding;
