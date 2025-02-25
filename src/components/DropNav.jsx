@@ -11,7 +11,7 @@ export const DropDown = () => {
   const [expandedMobileTab, setExpandedMobileTab] = useState(null);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 100);
+    const handleScroll = () => setIsScrolled(window.scrollY > 600);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -19,7 +19,7 @@ export const DropDown = () => {
   return (
     <nav
       className={`fixed w-full z-50 p-4 flex justify-between items-center transition-all duration-300 
-        ${isScrolled ? "md:bg-green-500" : "bg-[#363735]"} px-6 md:pr-28 pl-10 z-50`}
+        ${isScrolled ? "md:bg-green-500" : "bg-[#363735] "} px-6 md:pr-28 pl-10 z-50`}
     >
       {/* Logo */}
       <Link to="/" className="text-white text-xl font-bold">
