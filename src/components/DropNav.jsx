@@ -1,131 +1,161 @@
 import React, { useEffect, useState } from "react";
-import { Menu } from "@headlessui/react";
-import { FiChevronDown, FiMenu } from "react-icons/fi";
-import { MdClose } from "react-icons/md";
+import { FiChevronDown, FiMenu, FiX } from "react-icons/fi";
+import { AnimatePresence, motion } from "framer-motion";
 
 export const DropDown = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [showMenu, setShowMenu] = useState(false);
-
+  const [selectedTab, setSelectedTab] = useState(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [expandedMobileTab, setExpandedMobileTab] = useState(null);
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 550);
-    };
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 550);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
   return (
-    <nav
-      className={`${
-        isScrolled ? "md:bg-[rgb(86,206,59)]" : "bg-[rgba(255,242,0,0.0)]"
-      } p-2 fixed flex justify-between w-full z-50 transition-all duration-300`}
-    >
-      {/* Logo
-      <div className="md:block hidden">
-        <img className="xl:w-32 lg:w-24 w-20 h-30" src="/assets/logomain.png" alt="Logo" />
-      </div> */}
+    <nav className={`fixed w-full z-50 p-3 flex justify-between items-center transition-all duration-300 
+        ${isScrolled ? "md:bg-green-500" : "bg-transparent"} px-6 md:px-10`}>
 
-      {/* Main navigation for large screens */}
-      <div className="hidden md:flex  mjustify-center">
-        <Tabs />
+      {/* Logo */}
+      <div className="text-white text-xl font-bold">Photography</div>
+
+      {/* Desktop Navigation */}
+      <div className="hidden md:flex items-center gap-6 text-white">
+        <Tabs selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
+        <NonDropdownLinks />
       </div>
+      <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="md:hidden text-white text-2xl">
+        {isMobileMenuOpen ? <FiX /> : <FiMenu />}
+      </button>
 
-      {/* Mobile menu button */}
-      <span
-        className="text-xl md:hidden bg-[#00000048] w-10 h-10 flex items-center justify-center text-white rounded-xl cursor-pointer"
-        onClick={() => setShowMenu(!showMenu)}
-      >
-        <FiMenu />
-      </span>
-
-      {/* Mobile menu */}
-      {showMenu && (
-        <div className="z-50 w-[60%] h-screen absolute top-0 left-0 p-4 bg-[#FFF200]">
-          <div className="flex flex-col gap-8 py-4 relative">
-            <ul className="flex flex-col text-lg gap-4 py-10">
-              {TABS.map((tab) => (
-                <li key={tab.id}>
-                  <a href={tab.href} className="text-gray-800 hover:text-white" onClick={() => setShowMenu(false)}>
-                    {tab.title}
-                  </a>
-                </li>
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ x: "100%" }} animate={{ x: 0 }} exit={{ x: "100%" }}
+            className="fixed top-0 right-0 w-3/4 h-full bg-gray-900 p-6 flex flex-col gap-4 z-50"
+          >
+            {TABS.map(({ id, title }) => (
+              <div key={id} className="border-b border-gray-700">
+                <button
+                  onClick={() => setExpandedMobileTab(expandedMobileTab === id ? null : id)}
+                  className="flex justify-between w-full text-white py-3"
+                >
+                  {title} <FiChevronDown className={`transition-transform ${expandedMobileTab === id ? "rotate-180" : ""}`} />
+                </button>
+                <AnimatePresence>
+                  {expandedMobileTab === id && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      className="p-2 bg-gray-800 rounded-md"
+                    >
+                      <DropdownContent selectedTab={expandedMobileTab} isMobile />
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            ))}
+            <div className="mt-4 flex flex-col gap-2">
+              {NON_DROPDOWN_LINKS.map(({ title, link }) => (
+                <a key={title} href={link} className="text-white py-2 hover:text-green-400">
+                  {title}
+                </a>
               ))}
-            </ul>
-            <span
-              onClick={() => setShowMenu(false)}
-              className="absolute top-2 right-4 text-black hover:text-designColor duration-300 text-xl cursor-pointer"
-            >
-              <MdClose />
-            </span>
-          </div>
-        </div>
-      )}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };
-
-// Tabs Component
-const Tabs = () => {
+const Tabs = ({ selectedTab, setSelectedTab }) => {
   return (
-    <div className="relative flex h-fit gap-2">
-      {TABS.map((tab) => (
-        <Menu as="div" key={tab.id} className="relative">
-          <Menu.Button className="flex items-center gap-1 rounded-full px-3 py-1.5 text-sm text-neutral-400 transition-colors hover:bg-neutral-800 hover:text-neutral-100">
-            {tab.title}
-            <FiChevronDown className="transition-transform" />
-          </Menu.Button>
-
-          <Menu.Items className="absolute left-0 mt-2 w-56 rounded-md border border-neutral-600 bg-neutral-900 p-3">
-            <tab.Component />
-          </Menu.Items>
-        </Menu>
+    <div className="relative flex gap-6 text-white" onMouseLeave={() => setSelectedTab(null)}>
+      {TABS.map(({ id, title }) => (
+        <div key={id} className="relative" onMouseEnter={() => setSelectedTab(id)}>
+          <button className="flex items-center gap-2 px-4 py-2 rounded-lg transition hover:bg-gray-800">
+            {title} <FiChevronDown className={`transition-transform ${selectedTab === id ? "rotate-180" : ""}`} />
+          </button>
+          <AnimatePresence>
+            {selectedTab === id && <DropdownContent selectedTab={selectedTab} />}
+          </AnimatePresence>
+        </div>
       ))}
     </div>
   );
 };
-
-// Individual dropdown content components
-const Products = () => (
-  <div className="space-y-2 text-sm text-neutral-400">
-    <h3 className="text-white font-medium">Startup</h3>
-    <a href="#" className="block hover:text-white">Bookkeeping</a>
-    <a href="#" className="block hover:text-white">Invoicing</a>
-
-    <h3 className="text-white font-medium mt-2">Enterprise</h3>
-    <a href="#" className="block hover:text-white">White Glove</a>
-    <a href="#" className="block hover:text-white">Compliance</a>
-
-    <button className="mt-4 w-full rounded-md bg-neutral-700 px-4 py-2 text-white transition hover:bg-neutral-600">
-      View all products
-    </button>
+const NonDropdownLinks = () => (
+  <div className="flex items-center gap-6">
+    {NON_DROPDOWN_LINKS.map(({ title, link }) => (
+      <a key={title} href={link} className="text-white hover:text-green-400 transition">
+        {title}
+      </a>
+    ))}
   </div>
 );
-
-const Pricing = () => (
-  <div className="text-sm text-neutral-400">
-    <p>Choose the best pricing plan for your needs.</p>
-    <button className="mt-4 w-full rounded-md bg-neutral-700 px-4 py-2 text-white transition hover:bg-neutral-600">
-      See Pricing Plans
-    </button>
+const DropdownContent = ({ selectedTab, isMobile = false }) => {
+  const TabComponent = TABS.find(({ id }) => id === selectedTab)?.Component;
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 10 }}
+      className={`bg-gray-900 p-4 rounded-lg border border-gray-700 shadow-lg ${isMobile ? "" : "absolute left-0 top-[calc(100%_+_5px)] w-80"}`}
+    >
+      <TabComponent />
+    </motion.div>
+  );
+};
+const Weddings = () => (
+  <div>
+    <ul className="text-gray-400 text-sm space-y-2 mt-2">
+      <li><a href="#">Outdoor Shoots</a></li>
+      <li><a href="#">Pre-Wedding</a></li>
+      <li><a href="#">Post-Wedding</a></li>
+      <li><a href="#">Wedding-Film</a></li>
+      <li><a href="#">Event Coverage</a></li>
+    </ul>
   </div>
 );
-
-const Blog = () => (
-  <div className="text-sm text-neutral-400">
-    <p>Stay updated with the latest industry news.</p>
-    <button className="mt-4 w-full rounded-md bg-neutral-700 px-4 py-2 text-white transition hover:bg-neutral-600">
-      Read Our Blog
-    </button>
+const BabyPhotography = () => (
+  <div>
+    <ul className="text-gray-400 text-sm space-y-2 mt-2">
+      <li><a href="#">Newborn Shoots</a></li>
+      <li><a href="#">First Birthday</a></li>
+      <li><a href="#">Themed Photoshoots</a></li>
+    </ul>
   </div>
 );
-
-// Define the tab structure
+const Gallery = () => (
+  <div>
+    <ul className="text-gray-400 text-sm space-y-2 mt-2">
+      <li><a href="#">Weddings</a></li>
+      <li><a href="#">Portraits</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Couple Portraits</a></li>
+      <li><a href="#">Candid Moments</a></li>
+      <li><a href="#">Corporate Shoots</a></li>
+    </ul>
+  </div>
+);
+const Other = () => (
+  <div>
+    <ul className="text-gray-400 text-sm space-y-2 mt-2">
+      <li><a href="#">Drone Photography</a></li>
+      <li><a href="#">Video Shoots</a></li>
+      <li><a href="#">Photo Editing</a></li>
+    </ul>
+  </div>
+);
 const TABS = [
-  { id: "products", title: "Products", Component: Products, href: "#products" },
-  { id: "pricing", title: "Pricing", Component: Pricing, href: "#pricing" },
-  { id: "blog", title: "Blog", Component: Blog, href: "#blog" },
+  { id: 1, title: "Weddings", Component: Weddings },
+  { id: 2, title: "Baby Photography", Component: BabyPhotography },
+  { id: 3, title: "Gallery", Component: Gallery },
+  { id: 4, title: "Other", Component: Other },
+];
+const NON_DROPDOWN_LINKS = [
+  { title: "About", link: "#About" },
+  { title: "Book Now", link: "#Contact" },
+  { title: "Contact", link: "/contact" },
 ];
 
-export default DropDown;

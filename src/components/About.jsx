@@ -1,51 +1,38 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React from 'react';
 
-
-export const About = () => {
+const About = () => {
     return (
-
-
-
-        <section className="top-container-1">
-        
-
-
-            <div id="about" className="py-2 bg-gray-50">
-                <div className=" Title-div ">
-                    <h2 className="title-text">About us</h2>
+        <section className=" py-10 md:px-6 px-6 bg-white" id='About'>
+            <div className="max-w-7xl mx-auto  ">
+               
+                <div className="text-center mb-6">
+                    <h1 className="text-3xl font-bold text-gray-800">About Us</h1>
+                    <h3 className="text-lg text-gray-600 mt-2">“FREEZE YOUR MEMORABLE MOMENTS”</h3>
+                    <h3 className="text-lg text-gray-600 mt-1">Our goal is to make your lifetime events unforgettable.</h3>
                 </div>
-                <div className="flex justify-center md:justify-between items-center py-2 ">
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                {/* Description */}
+                <div className="text-gray-400 leading-relaxed text-[12px] space-y-5">
+                    <p>
+                        <strong className="text-gray-500">Melody Photography</strong> is one of the best wedding photography services in Karaikudi.
+                        We are a team of passionate and expert wedding photographers & cinematographers dedicated to capturing and preserving the
+                        most precious moments of your life. With over twenty years of experience and cutting-edge technology, we bring your wedding
+                        and special occasions to life in the most creative and enthusiastic way.
+                    </p>
 
-                        <div className="flex justify-center">
-                            <motion.div
-                                className="flex justify-center"
-                                initial={{ scale: 1, opacity: 0 }}
-                                whileInView={{ scale: 1.1, opacity: 1 }}
-                                transition={{ duration: 1.2, ease: "easeOut" }}
-                                viewport={{ once: false, amount: 0.3 }}
-                            >
-                                <img
-                                    src="/assets/natarajan.webp"
+                    <p>
+                        At <strong className="text-gray-500">Melody Photography</strong>, we combine technology and artistic creativity to provide
+                        industry-leading photography services. Our commitment to excellence ensures that every cherished moment is perfectly preserved,
+                        earning us the trust and satisfaction of our valued clients.
+                    </p>
 
-                                    className="w-full max-w-md rounded-lg shadow-lg"
-                                    alt="Natarajan and co ultratech buliding solution" title="natarajanandco ultratech buliding solution "
-                                />
-                            </motion.div>
-                        </div>
-                        <div>
-                            <h2 className="md:text-3xl text-xl font-bold text-gray-800 mb-4">Natarajan and co</h2>
-                            <p className="text-gray-600 leading-relaxed max-md:text-sm">
-                                With 21 years of expertise as a Proud <strong> UltraTech</strong> partner, we specialize in providing high-quality construction products. Committed to excellence, we offer a complete range of materials to support your construction needs.
-                            </p>
-                        </div>
-                    </div>
+                    <p>
+                        We take pride in our <strong className="text-gray-500">professionalism, high-standard service, aesthetic sense,
+                            and flexibility</strong>. Our ultimate goal is to deliver compelling, honest, and timeless coverage of your wedding day.
+                    </p>
                 </div>
             </div>
         </section>
-
     );
 };
 

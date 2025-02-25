@@ -17,7 +17,7 @@ import {  FaArrowCircleLeft, FaArrowCircleRight} from 'react-icons/fa';
 
 function Events() {
     return (
-        <div className="container">
+        <div className="container bg-white">
             <h1 className="text-center font-semi-bold text-3xl p-5">Photography</h1>
             <Swiper
                 effect={'coverflow'}
