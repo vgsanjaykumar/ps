@@ -12,10 +12,10 @@ export default function Hero() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <div className="h-screen  bg-black overflow-hidden ">
+    <div className="h-screen bg-black overflow-hidden ">
 
       {/* Main Swiper (Full-Screen Images) */}
-      <div className="h-full w-full flex items-center justify-center">
+      <div className="h-full flex items-center justify-center">
       
         <Swiper
           loop={true}
@@ -35,7 +35,7 @@ export default function Hero() {
           {Data.map((item, index) => (
             <SwiperSlide key={index} className="h-full w-full flex items-center justify-center">
               <div className="absolute w-screen h-screen -z-10">
-              <div className="bg-black opacity-50 absolute w-screen h-screen z-10"></div>
+              <div className="bg-black opacity-80 absolute w-screen h-screen z-10"></div>
               <img
                 src={item}
                 className=" w-screen "
