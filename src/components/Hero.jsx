@@ -12,7 +12,7 @@ export default function Hero() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <div className="h-screen w-screen bg-black relative ">
+    <div className="h-screen w-screen bg-black overflow-hidden ">
 
       {/* Main Swiper (Full-Screen Images) */}
       <div className="h-full w-full flex items-center justify-center">
