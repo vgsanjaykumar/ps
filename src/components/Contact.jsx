@@ -35,7 +35,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="bg-white  rounded-lg shadow-md md:px-36 px-6 " id="Contact">
+        <section className="bg-white  py-36 rounded-lg shadow-md md:px-36 px-6 " id="Contact">
             <h2 className="text-center text-2xl font-bold text-gray-700 mb-5">Book Our Services</h2>
             <p className="text-[12px] text-gray-500 mb-6">"Every love story is unique, and so is the way we capture it. Let us turn your most precious moments into timeless memories with our expert wedding photography services. Whether it’s your pre-wedding shoot, wedding day, or post-wedding celebrations, we ensure every emotion, smile, and heartfelt moment is beautifully preserved. Book us today and let’s create magic together!"</p>
 
