@@ -5,7 +5,7 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "swiper/css/effect-fade";
-import { FreeMode, Navigation, Thumbs, EffectFade } from "swiper/modules";
+import { FreeMode, Navigation, Thumbs, EffectFade, Autoplay } from "swiper/modules";
 import { Data } from "./data";
 
 export default function Hero() {
@@ -25,9 +25,13 @@ export default function Hero() {
             nextEl: ".next-btn",
             prevEl: ".prev-btn",
           }}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
           effect={"fade"}
           thumbs={{ swiper: thumbsSwiper }}
-          modules={[FreeMode, Navigation, Thumbs, EffectFade]}
+          modules={[FreeMode, Navigation, Thumbs, EffectFade, Autoplay]}
           style={{height:"100%"}}
         >
           {Data.map((item, index) => (

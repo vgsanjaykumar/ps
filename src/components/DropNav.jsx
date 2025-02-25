@@ -57,9 +57,8 @@ export const DropDown = () => {
                 >
                   {title}{" "}
                   <FiChevronDown
-                    className={`transition-transform ${
-                      expandedMobileTab === id ? "rotate-180" : ""
-                    }`}
+                    className={`transition-transform ${expandedMobileTab === id ? "rotate-180" : ""
+                      }`}
                   />
                 </button>
                 <AnimatePresence>
@@ -106,9 +105,9 @@ const Tabs = ({ selectedTab, setSelectedTab }) => {
 const NonDropdownLinks = () => (
   <div className="flex items-center gap-6">
     {NON_DROPDOWN_LINKS.map(({ title, link }) => (
-      <a key={title} href={link} className="text-white hover:text-green-400 transition">
+      <Link key={title} to={link} className="text-white hover:text-green-400 transition">
         {title}
-      </a>
+      </Link>
     ))}
   </div>
 );
@@ -120,9 +119,8 @@ const DropdownContent = ({ selectedTab, isMobile = false }) => {
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 10 }}
-      className={`bg-gray-900 p-4 rounded-lg border border-gray-700 shadow-lg ${
-        isMobile ? "" : "absolute left-0 top-[calc(100%_+_5px)] w-80"
-      }`}
+      className={`bg-gray-900 p-4 rounded-lg border border-gray-700 shadow-lg ${isMobile ? "" : "absolute left-0 top-[calc(100%_+_5px)] w-80"
+        }`}
     >
       <TabComponent />
     </motion.div>
@@ -133,21 +131,61 @@ const DropdownContent = ({ selectedTab, isMobile = false }) => {
 const Submenu = ({ items }) => (
   <div className="flex flex-col gap-2 p-2">
     {items.map((item, index) => (
-      <a
+      <Link
         key={index}
-        href="#"
+        to={item.link}
         className="block text-sm text-gray-400 transition hover:bg-gray-700 hover:text-white p-2 rounded"
       >
-        {item}
-      </a>
+        {item.title}
+      </Link>
     ))}
   </div>
 );
 
-const Weddings = () => <Submenu items={["Outdoor Shoots", "Pre-Wedding", "Post-Wedding", "Wedding-Film", "Event Coverage"]} />;
-const BabyPhotography = () => <Submenu items={["Newborn Shoots", "First Birthday", "Themed Photoshoots"]} />;
-const Gallery = () => <Submenu items={["Weddings", "Portraits", "Events", "Couple Portraits", "Candid Moments", "Corporate Shoots"]} />;
-const Other = () => <Submenu items={["Drone Photography", "Video Shoots", "Photo Editing"]} />;
+const Weddings = () => (
+  <Submenu
+    items={[
+      { title: "Outdoor Shoots", link: "/weddings/outdoor" },
+      { title: "Pre-Wedding", link: "/weddings/pre-wedding" },
+      { title: "Post-Wedding", link: "/weddings/post-wedding" },
+      { title: "Wedding-Film", link: "/weddings/film" },
+      { title: "Event Coverage", link: "/weddings/event-coverage" },
+    ]}
+  />
+);
+
+const BabyPhotography = () => (
+  <Submenu
+    items={[
+      { title: "Newborn Shoots", link: "/baby/newborn" },
+      { title: "First Birthday", link: "/baby/birthday" },
+      { title: "Themed Photoshoots", link: "/baby/themed" },
+    ]}
+  />
+);
+
+const Gallery = () => (
+  <Submenu
+    items={[
+      { title: "Weddings", link: "/gallery/weddings" },
+      { title: "Portraits", link: "/gallery/portraits" },
+      { title: "Events", link: "/gallery/events" },
+      { title: "Couple Portraits", link: "/gallery/couples" },
+      { title: "Candid Moments", link: "/gallery/candid" },
+      { title: "Corporate Shoots", link: "/gallery/corporate" },
+    ]}
+  />
+);
+
+const Other = () => (
+  <Submenu
+    items={[
+      { title: "Drone Photography", link: "/other/drone" },
+      { title: "Video Shoots", link: "/other/video" },
+      { title: "Photo Editing", link: "/other/editing" },
+    ]}
+  />
+);
 
 const TABS = [
   { id: 1, title: "Weddings", Component: Weddings },
@@ -157,7 +195,8 @@ const TABS = [
 ];
 
 const NON_DROPDOWN_LINKS = [
-  { title: "About", link: "/About" },
-  { title: "Book Now", link: "/Contact" },
+  { title: "About", link: "/about" },
+  { title: "Book Now", link: "/contact" },
   { title: "Contact", link: "/contact" },
 ];
+
