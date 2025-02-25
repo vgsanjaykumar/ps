@@ -62,8 +62,8 @@ export default function Hero() {
           <Swiper
             onSwiper={setThumbsSwiper}
             loop={true}
-            spaceBetween={80}
-            slidesPerView={6}
+            spaceBetween={10}
+            slidesPerView={4}
             direction="vertical"
             freeMode={true}
             watchSlidesProgress={true}
