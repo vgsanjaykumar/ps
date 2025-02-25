@@ -17,7 +17,8 @@ function App() {
   return (
     <>
 
-      <Navbar />
+      
+      <DropDown />
       <Hero />
       <Events />
       <Numbercount />
