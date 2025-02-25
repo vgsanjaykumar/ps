@@ -12,9 +12,7 @@ export default function Hero() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <div className="h-screen w-screen bg-black relative overflow-hidden">
-      {/* Overlay */}
-      
+    <div className="h-screen w-screen bg-black relative ">
 
       {/* Main Swiper (Full-Screen Images) */}
       <div className="h-full w-full flex items-center justify-center">
@@ -40,7 +38,7 @@ export default function Hero() {
               <div className="bg-black opacity-50 absolute w-screen h-screen z-10"></div>
               <img
                 src={item}
-                className=" w-screen mx-auto"
+                className=" w-screen "
                 alt={`slide-${index}`}
               />
               </div>
