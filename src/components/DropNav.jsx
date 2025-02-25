@@ -10,7 +10,7 @@ export const DropDown = () => {
   const [expandedMobileTab, setExpandedMobileTab] = useState(null);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 550);
+    const handleScroll = () => setIsScrolled(window.scrollY > 600);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
