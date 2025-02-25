@@ -62,7 +62,7 @@ export const DropDown = () => {
               </div>
             ))}
 
-            {/* Non-Dropdown Links in Mobile */}
+           
             <div className="mt-4 flex flex-col gap-2">
               {NON_DROPDOWN_LINKS.map(({ title, link }) => (
                 <a key={title} href={link} className="text-white py-2 hover:text-green-400">
@@ -174,7 +174,7 @@ const TABS = [
 // Non-Dropdown Links
 const NON_DROPDOWN_LINKS = [
   { title: "About", link: "#About" },
-  { title: "Book Now", link: "/book" },
+  { title: "Book Now", link: "#Contact" },
   { title: "Contact", link: "/contact" },
 ];
 

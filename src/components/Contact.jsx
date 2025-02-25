@@ -35,7 +35,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="bg-white  rounded-lg shadow-md px-36">
+        <section className="bg-white  rounded-lg shadow-md md:px-36 px-6 " id="Contact">
             <h2 className="text-center text-2xl font-bold text-gray-700 mb-5">Book Our Services</h2>
             <p className="text-[12px] text-gray-500 mb-6">"Every love story is unique, and so is the way we capture it. Let us turn your most precious moments into timeless memories with our expert wedding photography services. Whether it’s your pre-wedding shoot, wedding day, or post-wedding celebrations, we ensure every emotion, smile, and heartfelt moment is beautifully preserved. Book us today and let’s create magic together!"</p>
 
@@ -52,7 +52,7 @@ const Contact = () => {
                         />
                     </div>
                 ))}
-                {/* State Dropdown */}
+                
                 <div className="mb-4 text-lg">
                     <label className="block text-gray-700 font-semibold mb-2">Select Event:</label>
                     <select
@@ -88,7 +88,7 @@ const Contact = () => {
             {/* Send Inquiry Button */}
             <div className="text-center text-lg">
                 <button
-                    className="bg-green-500 text-white font-bold px-6 py-3 rounded-full hover:scale-105 transition-transform"
+                    className="bg-green-500 text-white font-bold px-6 py-3 mb-5 rounded-full hover:scale-105 transition-transform"
                     onClick={sendWhatsAppMessage}
                 >
                     Send Inquiry

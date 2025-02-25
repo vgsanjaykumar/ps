@@ -8,6 +8,10 @@ import { DropDown } from "./components/DropNav"
 import Wedding from "./components/wedding"
 import About from "./components/About"
 import Contact from "./components/Contact"
+import Hero1 from "./components/Hero-1"
+
+import WeddingNavbar from "./components/Wedd/Wednavbar"
+import WhatsAppButton from "./components/Whatappbtn"
 
 
 
@@ -18,12 +22,15 @@ function App() {
 
 
       <DropDown />
-      <Hero />
+      <Hero1/>
+      {/* <Hero /> */}
       <Events />
+      <WhatsAppButton/>
       <Wedding/>
       <Numbercount />
       <About/>
       <Contact/>
+      
 
 
       <Footer />
