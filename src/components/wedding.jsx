@@ -17,7 +17,7 @@ import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 
 function Wedding() {
     return (
-        <div className="">
+        <div className="bg-white">
             <h1 className="text-center font-semi-bold text-3xl ">Wedding Photography:</h1>
             <Swiper
                 effect={'coverflow'}
