@@ -11,7 +11,7 @@ export const DropDown = () => {
   const [expandedMobileTab, setExpandedMobileTab] = useState(null);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 600);
+    const handleScroll = () => setIsScrolled(window.scrollY > 0);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -19,7 +19,7 @@ export const DropDown = () => {
   return (
     <nav
       className={`fixed w-full z-50 p-4 flex justify-between items-center transition-all duration-300 
-        ${isScrolled ? "md:bg-green-500" : "bg-[#363735] "} px-6 md:pr-28 pl-10 z-50`}
+        ${isScrolled ? "bg-teal-400" : "bg-[#363735] "} px-6 md:pr-28 pl-10 z-50`}
     >
       {/* Logo */}
       <Link to="/" className="text-white text-xl font-bold">
@@ -105,7 +105,7 @@ const Tabs = ({ selectedTab, setSelectedTab }) => {
 const NonDropdownLinks = () => (
   <div className="flex items-center gap-6">
     {NON_DROPDOWN_LINKS.map(({ title, link }) => (
-      <Link key={title} to={link} className="text-white hover:text-green-400 transition">
+      <Link key={title} to={link} className="text-white hover:text-gray-900 transition">
         {title}
       </Link>
     ))}
@@ -119,7 +119,7 @@ const DropdownContent = ({ selectedTab, isMobile = false }) => {
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 10 }}
-      className={`bg-gray-900 p-4 rounded-lg border border-gray-700 shadow-lg ${isMobile ? "" : "absolute left-0 top-[calc(100%_+_5px)] w-80"
+      className={`bg-gray-900 p-4 rounded-lg border border-gray-400 shadow-lg ${isMobile ? "" : "absolute left-0 top-[calc(100%_+_5px)] w-80"
         }`}
     >
       <TabComponent />
@@ -134,7 +134,7 @@ const Submenu = ({ items }) => (
       <Link
         key={index}
         to={item.link}
-        className="block text-sm text-gray-400 transition hover:bg-gray-700 hover:text-white p-2 rounded"
+        className="block text-sm text-white transition hover:bg-gray-600 hover:text-white p-2 rounded"
       >
         {item.title}
       </Link>
