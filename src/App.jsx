@@ -7,6 +7,9 @@ import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Dealership from "./components/Dealarship"
 import Awards from "./components/Awards"
+import Events from "./components/Event"
+import Numbercount from "./components/Numbercount"
+
 
 
 function App() {
@@ -16,9 +19,11 @@ function App() {
 
       <Navbar />
       <Hero />
+      <Events />
+      <Numbercount />
 
 
-      {/* <Footer/> */}
+      <Footer />
 
 
     </>

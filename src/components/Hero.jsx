@@ -14,7 +14,7 @@ import 'swiper/css/effect-fade';
 
 // import required modules
 import { FreeMode, Navigation, Thumbs, EffectFade } from 'swiper/modules';
-import { data } from './data';
+import { Data } from './data';
 
 export default function Hero() {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -35,8 +35,8 @@ export default function Hero() {
                     modules={[FreeMode, Navigation, Thumbs, EffectFade]}
                     className="mySwiper2"
                 >
-                    {data.map(item => (
-                        <SwiperSlide>
+                    {Data.map(item => (
+                        <SwiperSlide className='hero-swiper'>
                             <img src={item} className='object-cover h-screen w-screen' />
                         </SwiperSlide>
                     ))}
@@ -49,11 +49,11 @@ export default function Hero() {
                     spaceBetween={10}
                     slidesPerView={4}
                     freeMode={true}
-                    watchSlidesProgress={true}   
+                    watchSlidesProgress={true}
                     modules={[FreeMode, Navigation, Thumbs]}
                     className="mySwiper"
                 >
-                    {data.map(item => (
+                    {Data.map(item => (
                         <SwiperSlide>
                             <img src={item} className='object-cover' />
                         </SwiperSlide>
