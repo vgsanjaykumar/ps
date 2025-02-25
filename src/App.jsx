@@ -22,7 +22,7 @@ function App() {
 
 
       <DropDown />
-      <Hero1/>
+      <Hero/>
       {/* <Hero /> */}
       <Events />
       <WhatsAppButton/>
