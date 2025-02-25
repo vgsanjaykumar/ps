@@ -1,67 +1,92 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/navigation';
-import 'swiper/css/thumbs';
-import 'swiper/css/effect-fade';
-
-
-
-
-// import required modules
-import { FreeMode, Navigation, Thumbs, EffectFade } from 'swiper/modules';
-import { Data } from './data';
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
+import "swiper/css/effect-fade";
+import { FreeMode, Navigation, Thumbs, EffectFade } from "swiper/modules";
+import { Data } from "./data";
 
 export default function Hero() {
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
-    return (
-        <>
-            <div className='relative h-[50%] object-cover '>
-                <Swiper
-                    style={{
-                        '--swiper-navigation-color': '#fff',
-                        '--swiper-pagination-color': '#fff',
-                    }}
-                    loop={true}
-                    spaceBetween={10}
-                    navigation={true}
-                    effect={'fade'}
-                    thumbs={{ swiper: thumbsSwiper }}
-                    modules={[FreeMode, Navigation, Thumbs, EffectFade]}
-                    className="mySwiper2"
-                >
-                    {Data.map(item => (
-                        <SwiperSlide className='hero-swiper'>
-                            <img src={item} className='object-cover h-screen w-screen' />
-                        </SwiperSlide>
-                    ))}
+  return (
+    <div className="h-screen w-screen bg-black relative">
+      {/* Overlay */}
+      
 
-                </Swiper>
+      {/* Main Swiper (Full-Screen Images) */}
+      <div className="h-full w-full flex items-center justify-center">
+      
+        <Swiper
+          loop={true}
+          navigation={{
+            nextEl: ".next-btn",
+            prevEl: ".prev-btn",
+          }}
+          effect={"fade"}
+          thumbs={{ swiper: thumbsSwiper }}
+          modules={[FreeMode, Navigation, Thumbs, EffectFade]}
+          style={{height:"100%"}}
+        >
+          {Data.map((item, index) => (
+            <SwiperSlide key={index} className="h-full w-full flex items-center justify-center">
+              <div className="absolute w-screen h-screen -z-10">
+              <div className="bg-black opacity-50 absolute w-screen h-screen z-10"></div>
+              <img
+                src={item}
+                className=" w-screen mx-auto"
+                alt={`slide-${index}`}
+              />
+              </div>
+              <img
+                src={item}
+                className="h-full w-auto mx-auto"
+                alt={`slide-${index}`}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
 
-                <Swiper
-                    onSwiper={setThumbsSwiper}
-                    loop={true}
-                    spaceBetween={10}
-                    slidesPerView={4}
-                    freeMode={true}
-                    watchSlidesProgress={true}
-                    modules={[FreeMode, Navigation, Thumbs]}
-                    className="mySwiper"
-                >
-                    {Data.map(item => (
-                        <SwiperSlide>
-                            <img src={item} className='object-cover' />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
+      {/* Thumbnail Swiper (Right-Side Column) */}
+      <div className="absolute right-28 top-1/2 transform -translate-y-1/2 flex flex-col gap-2 z-40">
+        <div className="flex flex-col gap-4 items-center">
+          {/* Previous Button */}
+          <button className="prev-btn bg-gray-800 text-white p-2 rounded-full">
+            ▲
+          </button>
 
+          {/* Thumbnail Swiper */}
+          <Swiper
+            onSwiper={setThumbsSwiper}
+            loop={true}
+            spaceBetween={80}
+            slidesPerView={6}
+            direction="vertical"
+            freeMode={true}
+            watchSlidesProgress={true}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="h-[400px] w-[100px]"
+          >
+            {Data.map((item, index) => (
+              <SwiperSlide key={index} className="cursor-pointer">
+                <img
+                  src={item}
+                  className="h-[60px] w-[100px] object-cover rounded-lg"
+                  alt={`thumb-${index}`}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
 
-        </>
-    );
+          {/* Next Button */}
+          <button className="next-btn bg-gray-800 text-white p-2 rounded-full mt-2">
+            ▼
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 }

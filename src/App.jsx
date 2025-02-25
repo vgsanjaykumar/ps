@@ -24,11 +24,14 @@ function App() {
 
 
       <DropDown />
-
-
-
-      <WhatsAppButton />
-
+      <Hero/>
+      {/* <Hero /> */}
+      <Events />
+      <WhatsAppButton/>
+      <Wedding/>
+      <Numbercount />
+      <About/>
+      <Contact/>
       
       
       <Routes>
