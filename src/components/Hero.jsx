@@ -15,7 +15,7 @@ export default function Hero() {
     <div className="h-screen  bg-black overflow-hidden ">
 
       {/* Main Swiper (Full-Screen Images) */}
-      <div className="h-screen w-full flex items-center justify-center">
+      <div className="h-full w-full flex items-center justify-center">
       
         <Swiper
           loop={true}
