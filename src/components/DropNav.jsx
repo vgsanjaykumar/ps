@@ -157,7 +157,7 @@ const TABS = [
 ];
 
 const NON_DROPDOWN_LINKS = [
-  { title: "About", link: "#About" },
-  { title: "Book Now", link: "#Contact" },
+  { title: "About", link: "/About" },
+  { title: "Book Now", link: "/Contact" },
   { title: "Contact", link: "/contact" },
 ];

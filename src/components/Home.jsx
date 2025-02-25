@@ -1,19 +1,23 @@
 import React from 'react'
-import Hero1 from './Hero-1'
+
 import Events from './Event'
 import Wedding from './wedding'
 import Numbercount from './Numbercount'
-import Contact from './Contact'
+
+import Hero from './Hero'
 
 
 const Home = () => {
     return (
         <div>
-            <Hero1 />
+            
+            <Hero />
             <Events />
-            <Wedding />
+           
             <Numbercount />
-            <Contact />
+
+            <Wedding />
+           
             
         </div>
     )
