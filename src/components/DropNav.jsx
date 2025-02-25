@@ -1,304 +1,131 @@
 import React, { useEffect, useState } from "react";
-import {
-  FiArrowRight,
-  FiBarChart2,
-  FiChevronDown,
-  FiHome,
-  FiMenu,
-  FiPieChart,
-} from "react-icons/fi";
-import { AnimatePresence, motion } from "framer-motion";
+import { Menu } from "@headlessui/react";
+import { FiChevronDown, FiMenu } from "react-icons/fi";
+import { MdClose } from "react-icons/md";
 
 export const DropDown = () => {
-      const [isScrolled, setIsScrolled] = useState(false);
-    const [showMenu, setShowMenu] = useState(false);
-    
-        useEffect(() => {
-            const handleScroll = () => {
-                setIsScrolled(window.scrollY > 550);
-            };
-    
-            window.addEventListener("scroll", handleScroll);
-            return () => window.removeEventListener("scroll", handleScroll);
-        }, []);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 550);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className={`${isScrolled ? "md:bg-[rgb(86,206,59)]" : "bg-[rgba(255,242,0,0.0)]"
-    } p-2 fixed flex justify-center w-full z-50  transition-all duration-300`}>
-      <Tabs />
+    <nav
+      className={`${
+        isScrolled ? "md:bg-[rgb(86,206,59)]" : "bg-[rgba(255,242,0,0.0)]"
+      } p-2 fixed flex justify-between w-full z-50 transition-all duration-300`}
+    >
+      {/* Logo
+      <div className="md:block hidden">
+        <img className="xl:w-32 lg:w-24 w-20 h-30" src="/assets/logomain.png" alt="Logo" />
+      </div> */}
+
+      {/* Main navigation for large screens */}
+      <div className="hidden md:flex  mjustify-center">
+        <Tabs />
+      </div>
+
+      {/* Mobile menu button */}
+      <span
+        className="text-xl md:hidden bg-[#00000048] w-10 h-10 flex items-center justify-center text-white rounded-xl cursor-pointer"
+        onClick={() => setShowMenu(!showMenu)}
+      >
+        <FiMenu />
+      </span>
+
+      {/* Mobile menu */}
+      {showMenu && (
+        <div className="z-50 w-[60%] h-screen absolute top-0 left-0 p-4 bg-[#FFF200]">
+          <div className="flex flex-col gap-8 py-4 relative">
+            <ul className="flex flex-col text-lg gap-4 py-10">
+              {TABS.map((tab) => (
+                <li key={tab.id}>
+                  <a href={tab.href} className="text-gray-800 hover:text-white" onClick={() => setShowMenu(false)}>
+                    {tab.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <span
+              onClick={() => setShowMenu(false)}
+              className="absolute top-2 right-4 text-black hover:text-designColor duration-300 text-xl cursor-pointer"
+            >
+              <MdClose />
+            </span>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
 
+// Tabs Component
 const Tabs = () => {
-  const [selected, setSelected] = useState(null);
-  const [dir, setDir] = useState(null);
-
-  const handleSetSelected = (val) => {
-    if (typeof selected === "number" && typeof val === "number") {
-      setDir(selected > val ? "r" : "l");
-    } else if (val === null) {
-      setDir(null);
-    }
-
-    setSelected(val);
-  };
-
   return (
-    <div
-      onMouseLeave={() => handleSetSelected(null)}
-      className="relative flex h-fit gap-2 max-md:hidden "
-    >
-      {TABS.map((t) => {
-        return (
-          <Tab
-            key={t.id}
-            selected={selected}
-            handleSetSelected={handleSetSelected}
-            tab={t.id}
-          >
-            {t.title}
-          </Tab>
-        );
-      })}
+    <div className="relative flex h-fit gap-2">
+      {TABS.map((tab) => (
+        <Menu as="div" key={tab.id} className="relative">
+          <Menu.Button className="flex items-center gap-1 rounded-full px-3 py-1.5 text-sm text-neutral-400 transition-colors hover:bg-neutral-800 hover:text-neutral-100">
+            {tab.title}
+            <FiChevronDown className="transition-transform" />
+          </Menu.Button>
 
-      <AnimatePresence>
-        {selected && <Content dir={dir} selected={selected} />}
-      </AnimatePresence>
+          <Menu.Items className="absolute left-0 mt-2 w-56 rounded-md border border-neutral-600 bg-neutral-900 p-3">
+            <tab.Component />
+          </Menu.Items>
+        </Menu>
+      ))}
     </div>
   );
 };
 
-const Tab = ({ children, tab, handleSetSelected, selected }) => {
-  return (
-    <button
-      id={`shift-tab-${tab}`}
-      onMouseEnter={() => handleSetSelected(tab)}
-      onClick={() => handleSetSelected(tab)}
-      className={`flex items-center gap-1 rounded-full px-3 py-1.5 text-sm transition-colors ${
-        selected === tab
-          ? " bg-neutral-800 text-neutral-100"
-          : "text-neutral-400"
-      }`}
-    >
-      <span>{children}</span>
-      <FiChevronDown
-        className={`transition-transform ${
-          selected === tab ? "rotate-180" : ""
-        }`}
-      />
+// Individual dropdown content components
+const Products = () => (
+  <div className="space-y-2 text-sm text-neutral-400">
+    <h3 className="text-white font-medium">Startup</h3>
+    <a href="#" className="block hover:text-white">Bookkeeping</a>
+    <a href="#" className="block hover:text-white">Invoicing</a>
+
+    <h3 className="text-white font-medium mt-2">Enterprise</h3>
+    <a href="#" className="block hover:text-white">White Glove</a>
+    <a href="#" className="block hover:text-white">Compliance</a>
+
+    <button className="mt-4 w-full rounded-md bg-neutral-700 px-4 py-2 text-white transition hover:bg-neutral-600">
+      View all products
     </button>
-  );
-};
-
-
-const Content = ({ selected, dir }) => {
-  return (
-    <motion.div
-      id="overlay-content"
-      initial={{
-        opacity: 0,
-        y: 8,
-      }}
-      animate={{
-        opacity: 1,
-        y: 0,
-      }}
-      exit={{
-        opacity: 0,
-        y: 8,
-      }}
-      className="absolute left-0 top-[calc(100%_+_24px)] w-96 rounded-lg border border-neutral-600 bg-gradient-to-b from-neutral-900 via-neutral-900 to-neutral-800 p-4"
-    >
-      <Bridge />
-      <Nub selected={selected} />
-
-      {TABS.map((t) => {
-        return (
-          <div className="overflow-hidden" key={t.id}>
-            {selected === t.id && (
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  x: dir === "l" ? 100 : dir === "r" ? -100 : 0,
-                }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.25, ease: "easeInOut" }}
-              >
-                <t.Component />
-              </motion.div>
-            )}
-          </div>
-        );
-      })}
-    </motion.div>
-  );
-};
-
-const Bridge = () => (
-  <div className="absolute -top-[24px] left-0 right-0 h-[24px]" />
+  </div>
 );
 
-const Nub = ({ selected }) => {
-  const [left, setLeft] = useState(0);
+const Pricing = () => (
+  <div className="text-sm text-neutral-400">
+    <p>Choose the best pricing plan for your needs.</p>
+    <button className="mt-4 w-full rounded-md bg-neutral-700 px-4 py-2 text-white transition hover:bg-neutral-600">
+      See Pricing Plans
+    </button>
+  </div>
+);
 
-  useEffect(() => {
-    moveNub();
-  }, [selected]);
+const Blog = () => (
+  <div className="text-sm text-neutral-400">
+    <p>Stay updated with the latest industry news.</p>
+    <button className="mt-4 w-full rounded-md bg-neutral-700 px-4 py-2 text-white transition hover:bg-neutral-600">
+      Read Our Blog
+    </button>
+  </div>
+);
 
-  const moveNub = () => {
-    if (selected) {
-      const hoveredTab = document.getElementById(`shift-tab-${selected}`);
-      const overlayContent = document.getElementById("overlay-content");
-
-      if (!hoveredTab || !overlayContent) return;
-
-      const tabRect = hoveredTab.getBoundingClientRect();
-      const { left: contentLeft } = overlayContent.getBoundingClientRect();
-
-      const tabCenter = tabRect.left + tabRect.width / 2 - contentLeft;
-
-      setLeft(tabCenter);
-    }
-  };
-
-  return (
-    <motion.span
-      style={{
-        clipPath: "polygon(0 0, 100% 0, 50% 50%, 0% 100%)",
-      }}
-      animate={{ left }}
-      transition={{ duration: 0.25, ease: "easeInOut" }}
-      className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-tl border border-neutral-600 bg-neutral-900"
-    />
-  );
-};
-
-const Products = () => {
-  return (
-    <div>
-      <div className="flex gap-4">
-        <div>
-          <h3 className="mb-2 text-sm font-medium">Startup</h3>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            Bookkeeping
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            Invoicing
-          </a>
-        </div>
-        <div>
-          <h3 className="mb-2 text-sm font-medium">Scaleup</h3>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            Live Coaching
-          </a>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            Reviews
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            Tax/VAT
-          </a>
-        </div>
-        <div>
-          <h3 className="mb-2 text-sm font-medium">Enterprise</h3>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            White glove
-          </a>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            SOX Compliance
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            Staffing
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            More
-          </a>
-        </div>
-      </div>
-
-      <button className="ml-auto mt-4 flex items-center gap-1 text-sm text-indigo-300">
-        <span>View more</span>
-        <FiArrowRight />
-      </button>
-    </div>
-  );
-};
-
-const Pricing = () => {
-  return (
-    <div className="grid grid-cols-3 gap-4 divide-x divide-neutral-700">
-      <a
-        href="#"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiHome className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">Startup</span>
-      </a>
-      <a
-        href="#"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiBarChart2 className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">Scaleup</span>
-      </a>
-      <a
-        href="#"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiPieChart className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">Enterprise</span>
-      </a>
-    </div>
-  );
-};
-
-const Blog = () => {
-  return (
-    <div>
-      <div className="grid grid-cols-2 gap-2">
-        <a href="#">
-          <img
-            className="mb-2 h-14 w-full rounded object-cover"
-            src="/imgs/blog/4.png"
-            alt="Placeholder image"
-          />
-          <h4 className="mb-0.5 text-sm font-medium">Lorem ipsum dolor</h4>
-          <p className="text-xs text-neutral-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illo
-            quidem eos.
-          </p>
-        </a>
-        <a href="#">
-          <img
-            className="mb-2 h-14 w-full rounded object-cover"
-            src="/imgs/blog/5.png"
-            alt="Placeholder image"
-          />
-          <h4 className="mb-0.5 text-sm font-medium">Lorem ipsum dolor</h4>
-          <p className="text-xs text-neutral-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illo
-            quidem eos.
-          </p>
-        </a>
-      </div>
-      <button className="ml-auto mt-4 flex items-center gap-1 text-sm text-indigo-300">
-        <span>View more</span>
-        <FiArrowRight />
-      </button>
-    </div>
-  );
-};
-
+// Define the tab structure
 const TABS = [
-  {
-    title: "Products",
-    Component: Products,
-  },
-  {
-    title: "Pricing",
-    Component: Pricing,
-  },
-  {
-    title: "Blog",
-    Component: Blog,
-  },
-].map((n, idx) => ({ ...n, id: idx + 1 }));
+  { id: "products", title: "Products", Component: Products, href: "#products" },
+  { id: "pricing", title: "Pricing", Component: Pricing, href: "#pricing" },
+  { id: "blog", title: "Blog", Component: Blog, href: "#blog" },
+];
+
+export default DropDown;
