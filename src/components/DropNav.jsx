@@ -17,8 +17,8 @@ export const DropDown = () => {
 
   return (
     <nav
-      className={`fixed w-full z-50 p-3 flex justify-between items-center transition-all duration-300 
-        ${isScrolled ? "md:bg-green-500" : "bg-transparent"} px-6 md:px-10`}
+      className={`fixed w-full z-50 p-4 flex justify-between items-center transition-all duration-300 
+        ${isScrolled ? "md:bg-green-500" : "bg-[#363735]"} px-6 md:pr-28 pl-10 z-50`}
     >
       {/* Logo */}
       <div className="text-white text-xl font-bold">Photography</div>
