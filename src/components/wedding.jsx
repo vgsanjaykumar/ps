@@ -11,6 +11,8 @@ import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 import { Data } from './data';
+import { Canimg } from './data';
+
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 
 
@@ -44,15 +46,7 @@ function Wedding() {
                 modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
                 className="swiper_container1"
             >
-                {Data.map(items => (
-                    <SwiperSlide className='swiperimg'>
-                        <div className='swiperimg'>
-                            <img src={items} alt="slide_image" />
-                        </div>
-
-                    </SwiperSlide>
-
-                ))}
+                
 
                 <div className="slider-controler ">
                     <div className="swiper-button-prev slider-arrow">
