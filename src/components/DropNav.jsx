@@ -117,32 +117,16 @@ const DropdownContent = ({ selectedTab, isMobile = false }) => {
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 10 }}
-      className={`relative bg-gray-900 p-4 rounded-lg border border-gray-700 shadow-lg ${
+      className={`bg-gray-900 p-4 rounded-lg border border-gray-700 shadow-lg ${
         isMobile ? "" : "absolute left-0 top-[calc(100%_+_5px)] w-80"
       }`}
     >
-      {/* Triangle Indicator (Nub) */}
-      {!isMobile && <Nub selectedTab={selectedTab} />}
-
       <TabComponent />
     </motion.div>
   );
 };
 
-/* Triangle/Nub Styling */
-const Nub = ({ selectedTab }) => {
-  return (
-    <div className="absolute -top-2 left-1/2 transform -translate-x-1/2">
-      <div
-        className="w-3 h-3 bg-gray-900 border border-gray-700"
-        style={{
-          clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)",
-        }}
-      ></div>
-    </div>
-  );
-};
-
+/* Submenu Style Update */
 const Submenu = ({ items }) => (
   <div className="flex flex-col gap-2 p-2">
     {items.map((item, index) => (
