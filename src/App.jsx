@@ -7,6 +7,7 @@ import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Dealership from "./components/Dealarship"
 import Awards from "./components/Awards"
+import { DropDown } from "./components/DropNav"
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
   return (
     <>
 
-      <Navbar />
+      
+      <DropDown />
       <Hero />
 
 
