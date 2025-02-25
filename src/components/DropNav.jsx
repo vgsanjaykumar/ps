@@ -7,13 +7,11 @@ export const DropDown = () => {
   const [selectedTab, setSelectedTab] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [expandedMobileTab, setExpandedMobileTab] = useState(null);
-
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 550);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
   return (
     <nav className={`fixed w-full z-50 p-3 flex justify-between items-center transition-all duration-300 
         ${isScrolled ? "md:bg-green-500" : "bg-transparent"} px-6 md:px-10`}>
@@ -26,8 +24,6 @@ export const DropDown = () => {
         <Tabs selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
         <NonDropdownLinks />
       </div>
-
-      {/* Mobile Menu Toggle */}
       <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="md:hidden text-white text-2xl">
         {isMobileMenuOpen ? <FiX /> : <FiMenu />}
       </button>
@@ -61,8 +57,6 @@ export const DropDown = () => {
                 </AnimatePresence>
               </div>
             ))}
-
-           
             <div className="mt-4 flex flex-col gap-2">
               {NON_DROPDOWN_LINKS.map(({ title, link }) => (
                 <a key={title} href={link} className="text-white py-2 hover:text-green-400">
@@ -76,7 +70,6 @@ export const DropDown = () => {
     </nav>
   );
 };
-
 const Tabs = ({ selectedTab, setSelectedTab }) => {
   return (
     <div className="relative flex gap-6 text-white" onMouseLeave={() => setSelectedTab(null)}>
@@ -93,7 +86,6 @@ const Tabs = ({ selectedTab, setSelectedTab }) => {
     </div>
   );
 };
-
 const NonDropdownLinks = () => (
   <div className="flex items-center gap-6">
     {NON_DROPDOWN_LINKS.map(({ title, link }) => (
@@ -103,10 +95,8 @@ const NonDropdownLinks = () => (
     ))}
   </div>
 );
-
 const DropdownContent = ({ selectedTab, isMobile = false }) => {
   const TabComponent = TABS.find(({ id }) => id === selectedTab)?.Component;
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 10 }}
@@ -116,8 +106,6 @@ const DropdownContent = ({ selectedTab, isMobile = false }) => {
     </motion.div>
   );
 };
-
-// Dropdown Components
 const Weddings = () => (
   <div>
     <ul className="text-gray-400 text-sm space-y-2 mt-2">
@@ -129,7 +117,6 @@ const Weddings = () => (
     </ul>
   </div>
 );
-
 const BabyPhotography = () => (
   <div>
     <ul className="text-gray-400 text-sm space-y-2 mt-2">
@@ -139,7 +126,6 @@ const BabyPhotography = () => (
     </ul>
   </div>
 );
-
 const Gallery = () => (
   <div>
     <ul className="text-gray-400 text-sm space-y-2 mt-2">
@@ -152,7 +138,6 @@ const Gallery = () => (
     </ul>
   </div>
 );
-
 const Other = () => (
   <div>
     <ul className="text-gray-400 text-sm space-y-2 mt-2">
@@ -162,16 +147,12 @@ const Other = () => (
     </ul>
   </div>
 );
-
-// Tabs with Dropdown
 const TABS = [
   { id: 1, title: "Weddings", Component: Weddings },
   { id: 2, title: "Baby Photography", Component: BabyPhotography },
   { id: 3, title: "Gallery", Component: Gallery },
   { id: 4, title: "Other", Component: Other },
 ];
-
-// Non-Dropdown Links
 const NON_DROPDOWN_LINKS = [
   { title: "About", link: "#About" },
   { title: "Book Now", link: "#Contact" },
