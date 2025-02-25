@@ -12,10 +12,10 @@ export default function Hero() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <div className="h-[50%]  bg-black overflow-hidden ">
+    <div className="h-screen  bg-black overflow-hidden ">
 
       {/* Main Swiper (Full-Screen Images) */}
-      <div className="h-[50%] w-full flex items-center justify-center">
+      <div className="h-screen w-full flex items-center justify-center">
       
         <Swiper
           loop={true}
@@ -30,7 +30,7 @@ export default function Hero() {
           effect={"fade"}
           thumbs={{ swiper: thumbsSwiper }}
           modules={[FreeMode, Navigation, Thumbs, EffectFade, Autoplay]}
-          style={{height:"50%"}}
+          style={{height:"100%"}}
         >
           {Data.map((item, index) => (
             <SwiperSlide key={index} className="h-full w-full flex items-center justify-center">
