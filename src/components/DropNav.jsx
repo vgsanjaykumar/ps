@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FiChevronDown, FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const DropDown = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,7 +22,9 @@ export const DropDown = () => {
         ${isScrolled ? "md:bg-green-500" : "bg-[#363735]"} px-6 md:pr-28 pl-10 z-50`}
     >
       {/* Logo */}
-      <div className="text-white text-xl font-bold">Photography</div>
+      <Link to="/" className="text-white text-xl font-bold">
+        Photography
+      </Link>
 
       {/* Desktop Navigation */}
       <div className="hidden md:flex items-center gap-6 text-white">
@@ -154,7 +157,7 @@ const TABS = [
 ];
 
 const NON_DROPDOWN_LINKS = [
-  { title: "About", link: "#About" },
-  { title: "Book Now", link: "#Contact" },
+  { title: "About", link: "/About" },
+  { title: "Book Now", link: "/Contact" },
   { title: "Contact", link: "/contact" },
 ];

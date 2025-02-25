@@ -1,17 +1,19 @@
 
-import Footer from "./components/Footer"
-import Hero from "./components/Hero"
 
-import Events from "./components/Event"
-import Numbercount from "./components/Numbercount"
+
+
 import { DropDown } from "./components/DropNav"
-import Wedding from "./components/wedding"
+
 import About from "./components/About"
 import Contact from "./components/Contact"
-import Hero1 from "./components/Hero-1"
 
-import WeddingNavbar from "./components/Wedd/Wednavbar"
+
+
 import WhatsAppButton from "./components/Whatappbtn"
+import {  Route, Routes } from "react-router-dom"
+
+import Home from "./components/Home"
+import Footer1 from "./components/Footer"
 
 
 
@@ -22,18 +24,20 @@ function App() {
 
 
       <DropDown />
-      <Hero/>
-      {/* <Hero /> */}
-      <Events />
-      <WhatsAppButton/>
-      <Wedding/>
-      <Numbercount />
-      <About/>
-      <Contact/>
+     
+    
       
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
 
 
-      <Footer />
+      </Routes>
+
+
+      <Footer1 />
 
 
     </>

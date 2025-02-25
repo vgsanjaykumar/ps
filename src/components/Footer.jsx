@@ -2,7 +2,7 @@ import { BiPhoneCall } from "react-icons/bi";
 import {  FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 
-const Footer = () => {
+const Footer1 = () => {
 
     const Year = new Date().getFullYear();
 
@@ -57,4 +57,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default Footer1;
