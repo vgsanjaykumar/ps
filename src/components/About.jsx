@@ -2,9 +2,9 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section className=" py-36 bg-white " id='About'>
+        <section className=" py-36 bg-white min-h-screen " id='About' >
             <div className="max-w-7xl mx-auto  ">
-               
+            
                 <div className="text-center mb-6">
                     <h1 className="text-3xl font-bold text-gray-800">About Us</h1>
                     <h3 className="text-lg text-gray-600 mt-2">“FREEZE YOUR MEMORABLE MOMENTS”</h3>

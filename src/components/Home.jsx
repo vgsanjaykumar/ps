@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Events from './Event'
-import Wedding from './wedding'
+
 import Numbercount from './Numbercount'
 
 import Hero from './Hero'
@@ -15,8 +15,6 @@ const Home = () => {
             <Events />
            
             <Numbercount />
-
-            <Wedding />
            
             
         </div>
