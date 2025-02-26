@@ -17,12 +17,17 @@ function Events() {
     const [ph, setPh] = useState(true);
 
     return (
-        <div className="container bg-white">
-            <h1 className="text-center font-semi-bold text-3xl p-5">Photography</h1>
+        <div className="container bg-white ">
+            <h1 className="text-left font-semi-bold text-2xl mb-4 px-8">📸 Capturing Timeless Moments</h1>
+            <p className="text-left font-semi-bold text-lg mb-4 px-8 text-gray-500">"Photography is more than just capturing images; its about preserving emotions,
+                love, and memories that last a lifetime. Every smile, every glance, and every heartfelt moment tells a unique story,
+                and we ensure that no detail is missed. Whether its the warmth of a wedding, the joy of a celebration, or the intimacy of a candid moment,
+                we bring creativity and precision to every shot. Our expertise in lighting, composition, and storytelling allows us to frame your most precious memories in a way that feels natural,
+                beautiful, and timeless. Let us turn your special moments into stunning visual treasures."</p>
 
-            <div className='flex gap-5'>
-                <button onClick={() => setPh(true)}>Photography</button>
-                <button onClick={() => setPh(false)}>Wedding</button>
+            <div className='flex gap-5 items-center justify-center'>
+                <button onClick={() => setPh(true)} className='bg-teal-500 px-3 rounded-lg text-white hover:scale-110 duration-300 delay-100 text-lg '>Photography</button>
+                <button onClick={() => setPh(false)} className='bg-teal-500 px-3 rounded-lg text-white hover:scale-110 duration-300 delay-100 text-lg '>Wedding</button>
             </div>
 
             <Swiper
@@ -56,14 +61,14 @@ function Events() {
                             <img src={item} alt={`slide-${index}`} />
                         </div>
                     </SwiperSlide>
-                )) : 
-                Canimg.map((item, index) => (
-                    <SwiperSlide key={index} className='swiperimg'>
-                        <div className='swiperimg'>
-                            <img src={item} alt={`slide-${index}`} />
-                        </div>
-                    </SwiperSlide>
-                ))}
+                )) :
+                    Canimg.map((item, index) => (
+                        <SwiperSlide key={index} className='swiperimg'>
+                            <div className='swiperimg'>
+                                <img src={item} alt={`slide-${index}`} />
+                            </div>
+                        </SwiperSlide>
+                    ))}
 
                 <div className="slider-controler">
                     <div className="swiper-button-prev slider-arrow">
