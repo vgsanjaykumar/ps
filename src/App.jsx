@@ -20,7 +20,6 @@ import Postwedhome from "./components/Wedd/Postweddding/Postwedhome"
 
 
 
-
 function App() {
 
   return (
@@ -29,7 +28,7 @@ function App() {
 
       <DropDown />
 
-
+      
 
 
 
@@ -46,7 +45,7 @@ function App() {
       </Routes>
 
 
-
+      
       <Footer1 />
 
 

@@ -6,6 +6,8 @@ import Numbercount from './Numbercount'
 
 import Hero from './Hero'
 import About from './About'
+import Testimonials from './Testimonals'
+import BookNow from './Booknowbanner'
 
 
 const Home = () => {
@@ -17,8 +19,11 @@ const Home = () => {
 
             <Numbercount />
 
-
+            
             <About />
+            <BookNow />
+            <Testimonials />
+            
 
 
         </div>

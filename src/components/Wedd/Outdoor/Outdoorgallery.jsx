@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const weddingPhotos = [
     { id: 1, name: "Varuna Thapar + Nikhil Sayli", image: "/award/img01.jpeg" },
     { id: 2, name: "Janani + Arvind", image: "/award/img07.jpeg" },
@@ -20,7 +21,6 @@ export default function OutdoorGallery() {
             <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">
                 Wedding Outdoor Gallery
             </h2>
-
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {weddingPhotos.map((photo) => (
