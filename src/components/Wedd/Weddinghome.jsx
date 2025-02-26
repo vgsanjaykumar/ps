@@ -4,6 +4,7 @@ import About from '../About'
 import WeddingNavbar from './Wednavbar'
 import Weddingoutdoor from './Weddingoutdoor'
 import OutdoorGallery from './Outdoorgallery'
+import Booking from '../Constants/Booking'
 
 const Weddinghome = () => {
   return (
@@ -12,7 +13,8 @@ const Weddinghome = () => {
         <WeddingNavbar/>
         <Weddingoutdoor/>
         <OutdoorGallery/>
-        <About/>
+        <Booking/>
+        
     </div>
   )
 }

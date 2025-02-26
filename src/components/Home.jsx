@@ -1,24 +1,26 @@
 import React from 'react'
 
 import Events from './Event'
-import Wedding from './wedding'
+
 import Numbercount from './Numbercount'
 
 import Hero from './Hero'
+import About from './About'
 
 
 const Home = () => {
     return (
         <div>
-            
+
             <Hero />
             <Events />
-           
+
             <Numbercount />
 
-            <Wedding />
-           
-            
+
+            <About />
+
+
         </div>
     )
 }
