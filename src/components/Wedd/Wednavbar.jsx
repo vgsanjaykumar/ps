@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const WeddingNavbar = () => {
-    const [selectedCategory, setSelectedCategory] = useState("Outdoor");
+    const [selectedCategory, setSelectedCategory] = useState("");
     const navigate = useNavigate();
     const categories = [
-        "Outdoor", "Pre-Wedding", "Post-Wedding", "Wedding-Film",
-        "Event Coverage"
+        "Outdoor", "Pre-Wedding", "Post-Wedding",
+        
     ];
 
     const handleCategoryClick = (category) => {

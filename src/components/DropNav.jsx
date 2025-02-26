@@ -148,8 +148,6 @@ const Weddings = () => (
       { title: "Outdoor Shoots", link: "/weddings/outdoor" },
       { title: "Pre-Wedding", link: "/weddings/pre-wedding" },
       { title: "Post-Wedding", link: "/weddings/post-wedding" },
-      { title: "Wedding-Film", link: "/weddings/film" },
-      { title: "Event Coverage", link: "/weddings/event-coverage" },
     ]}
   />
 );

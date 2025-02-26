@@ -11,8 +11,11 @@ import { Route, Routes } from "react-router-dom"
 
 import Home from "./components/Home"
 import Footer1 from "./components/Footer"
+import Weddinghome from "./components/Wedd/Outdoor/Weddinghome"
+import Prewedhome from "./components/Wedd/Prewedding/Prewedhome"
+import Postwedhome from "./components/Wedd/Postweddding/Postwedhome"
 
-import Weddinghome from "./components/Wedd/Weddinghome"
+
 
 
 
@@ -29,11 +32,15 @@ function App() {
 
 
 
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/weddings/outdoor" element={<Weddinghome />} />
+        <Route path="/weddings/pre-wedding" element={<Prewedhome />} />
+        <Route path="/weddings/post-wedding" element={<Postwedhome />} />
+
 
 
       </Routes>
