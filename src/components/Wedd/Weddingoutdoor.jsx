@@ -45,7 +45,7 @@ export default function Weddingoutdoor() {
                     </p>
                 </div>
 
-               
+
                 <div className="md:w-1/2">
                     <img
                         src={weddingImage}
@@ -55,6 +55,6 @@ export default function Weddingoutdoor() {
                 </div>
             </div>
         </section>
-        
+
     );
 }

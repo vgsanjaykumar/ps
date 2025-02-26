@@ -10,7 +10,7 @@ const weddingPhotos = [
     { id: 7, name: "Janani + Arvind", image: "/award/img07.jpeg" },
     { id: 8, name: "Karthika + Sachin Kumar", image: "/award/img06.jpeg" },
     { id: 9, name: "Alekhya + Sai Teja", image: "/award/img03.jpeg" },
-    
+
 
 ];
 
@@ -21,7 +21,7 @@ export default function OutdoorGallery() {
                 Wedding Outdoor Gallery
             </h2>
 
-         
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {weddingPhotos.map((photo) => (
                     <div key={photo.id} className="relative group overflow-hidden rounded-xl shadow-md">
@@ -30,7 +30,7 @@ export default function OutdoorGallery() {
                             alt={photo.name}
                             className="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105"
                         />
-                      
+
                         <div className="absolute inset-0 bg-black bg-opacity-60 flex items-end p-4">
                             <h3 className="text-white text-lg font-semibold">{photo.name}</h3>
                         </div>
@@ -38,8 +38,8 @@ export default function OutdoorGallery() {
                 ))}
             </div>
 
-           
-            
+
+
         </div>
     );
 }

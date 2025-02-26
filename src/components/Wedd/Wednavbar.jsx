@@ -13,7 +13,7 @@ const WeddingNavbar = () => {
         setSelectedCategory(category);
         navigate(`/weddings/${category.toLowerCase()}`);
     };
-
+     
     return (
         <div className="w-full bg-white shadow-md ">
             <div className="flex flex-wrap justify-center gap-2 sm:gap-4 py-4 text-gray-700">

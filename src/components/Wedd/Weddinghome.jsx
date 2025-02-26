@@ -14,7 +14,7 @@ const Weddinghome = () => {
         <Weddingoutdoor/>
         <OutdoorGallery/>
         <Booking/>
-        
+           
     </div>
   )
 }
