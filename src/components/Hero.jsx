@@ -53,7 +53,7 @@ export default function Hero() {
       </div>
 
       {/* Thumbnail Swiper (Right-Side Column) */}
-      <div className="absolute right-28 top-[50%] transform -translate-y-1/2 flex flex-col gap-2 z-40 hidden md:block">
+      <div className="absolute right-28 top-[50%] transform -translate-y-1/2 flex flex-col gap-2 z-40  md:block">
         <div className="flex flex-col gap-4 items-center">
           {/* Previous Button */}
           <button className="prev-btn bg-gray-800 text-white p-2 rounded-full">
