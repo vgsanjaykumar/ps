@@ -7,10 +7,10 @@ const BookNowNew = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <>
-            <section className="w-screen relative">
+            <section className="w-screen  relative">
                 
-                    <img className="w-full" src="/booknow2.gif" />
-                    <div className="left-[31%] top-1/3 absolute h-[30%] w-[22%] ">
+                    <img className="w-full md:max-h-[250px]" src="/booknow2.gif" />
+                    <div className="left-[31%] top-1/3 absolute h-[30%] w-[22%]  ">
                     <button
                         onClick={() => setIsOpen(true)}
                         className="h-full w-full">
