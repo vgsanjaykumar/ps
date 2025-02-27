@@ -11,52 +11,11 @@ const weddingPhotos = [
     { id: 8, name: "Karthika + Sachin Kumar", image: "/award/cad09.jpeg" },
     { id: 9, name: "Alekhya + Sai Teja", image: "/award/cad04.jpeg" },
     { id: 10, name: "Lavanya Yaddanapudi + Sreevathaan", image: "/award/cad06.jpeg" },
-    { id: 11, name: "Varuna Thapar + Nikhil Sayli", image: "/award/cad07.jpeg" },
-    { id: 12, name: "Janani + Arvind", image: "/award/cad08.jpeg" },
-    { id: 13, name: "Karthika + Sachin Kumar", image: "/award/cad09.jpeg" },
-    { id: 14, name: "Alekhya + Sai Teja", image: "/award/cad04.jpeg" },
-    { id: 1, name: "Varuna Thapar + Nikhil Sayli", image: "/award/cad00.jpeg" },
-    { id: 2, name: "Janani + Arvind", image: "/award/cad03.jpeg" },
-    { id: 3, name: "Karthika + Sachin Kumar", image: "/award/cad04.jpeg" },
-    { id: 4, name: "Alekhya + Sai Teja", image: "/award/cad05.jpeg" },
-    { id: 5, name: "Lavanya Yaddanapudi + Sreevathaan", image: "/award/cad06.jpeg" },
-    { id: 6, name: "Varuna Thapar + Nikhil Sayli", image: "/award/cad07.jpeg" },
-    { id: 7, name: "Janani + Arvind", image: "/award/cad08.jpeg" },
-    { id: 8, name: "Karthika + Sachin Kumar", image: "/award/cad09.jpeg" },
     { id: 9, name: "Alekhya + Sai Teja", image: "/award/cad04.jpeg" },
     { id: 10, name: "Lavanya Yaddanapudi + Sreevathaan", image: "/award/cad06.jpeg" },
-    { id: 11, name: "Varuna Thapar + Nikhil Sayli", image: "/award/cad07.jpeg" },
-    { id: 12, name: "Janani + Arvind", image: "/award/cad08.jpeg" },
-    { id: 13, name: "Karthika + Sachin Kumar", image: "/award/cad09.jpeg" },
-    { id: 14, name: "Alekhya + Sai Teja", image: "/award/cad04.jpeg" },
-    { id: 1, name: "Varuna Thapar + Nikhil Sayli", image: "/award/cad00.jpeg" },
-    { id: 2, name: "Janani + Arvind", image: "/award/cad03.jpeg" },
-    { id: 3, name: "Karthika + Sachin Kumar", image: "/award/cad04.jpeg" },
-    { id: 4, name: "Alekhya + Sai Teja", image: "/award/cad05.jpeg" },
-    { id: 5, name: "Lavanya Yaddanapudi + Sreevathaan", image: "/award/cad06.jpeg" },
-    { id: 6, name: "Varuna Thapar + Nikhil Sayli", image: "/award/cad07.jpeg" },
-    { id: 7, name: "Janani + Arvind", image: "/award/cad08.jpeg" },
-    { id: 8, name: "Karthika + Sachin Kumar", image: "/award/cad09.jpeg" },
     { id: 9, name: "Alekhya + Sai Teja", image: "/award/cad04.jpeg" },
     { id: 10, name: "Lavanya Yaddanapudi + Sreevathaan", image: "/award/cad06.jpeg" },
-    { id: 11, name: "Varuna Thapar + Nikhil Sayli", image: "/award/cad07.jpeg" },
-    { id: 12, name: "Janani + Arvind", image: "/award/cad08.jpeg" },
-    { id: 13, name: "Karthika + Sachin Kumar", image: "/award/cad09.jpeg" },
-    { id: 14, name: "Alekhya + Sai Teja", image: "/award/cad04.jpeg" },
-    { id: 1, name: "Varuna Thapar + Nikhil Sayli", image: "/award/cad00.jpeg" },
-    { id: 2, name: "Janani + Arvind", image: "/award/cad03.jpeg" },
-    { id: 3, name: "Karthika + Sachin Kumar", image: "/award/cad04.jpeg" },
-    { id: 4, name: "Alekhya + Sai Teja", image: "/award/cad05.jpeg" },
-    { id: 5, name: "Lavanya Yaddanapudi + Sreevathaan", image: "/award/cad06.jpeg" },
-    { id: 6, name: "Varuna Thapar + Nikhil Sayli", image: "/award/cad07.jpeg" },
-    { id: 7, name: "Janani + Arvind", image: "/award/cad08.jpeg" },
-    { id: 8, name: "Karthika + Sachin Kumar", image: "/award/cad09.jpeg" },
-    { id: 9, name: "Alekhya + Sai Teja", image: "/award/cad04.jpeg" },
-    { id: 10, name: "Lavanya Yaddanapudi + Sreevathaan", image: "/award/cad06.jpeg" },
-    { id: 11, name: "Varuna Thapar + Nikhil Sayli", image: "/award/cad07.jpeg" },
-    { id: 12, name: "Janani + Arvind", image: "/award/cad08.jpeg" },
-    { id: 13, name: "Karthika + Sachin Kumar", image: "/award/cad09.jpeg" },
-    { id: 14, name: "Alekhya + Sai Teja", image: "/award/cad04.jpeg" },
+    
 ];
 
 export default function CandidGallery() {
@@ -107,12 +66,15 @@ export default function CandidGallery() {
                 )}
 
                 {visibleCount > initialRows * columns && (
-                    <button
-                        onClick={handleViewLess}
-                        className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-500 transition"
-                    >
-                        View Less
-                    </button>
+                    <div>
+                        <button
+                            onClick={handleViewLess}
+                            className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-500 transition"
+                        >
+                            View Less
+                        </button>
+                    </div>
+
                 )}
             </div>
         </div>

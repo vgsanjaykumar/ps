@@ -5,6 +5,8 @@ import OutdoorGallery from '../Wedd/Outdoor/Outdoorgallery'
 import PreweddingGallery from '../Wedd/Prewedding/Prewedgallery'
 import PostweddingGallery from '../Wedd/Postweddding/Postwedgallery'
 import Booking from '../Constants/Booking'
+import PortraitsGallery from './Portraits/Portgallery'
+import EventGallery from './Events/EventGallery'
 
 
 const Galleryhome = () => {
@@ -16,6 +18,9 @@ const Galleryhome = () => {
       <OutdoorGallery />
       <PreweddingGallery />
       <PostweddingGallery />
+      <PortraitsGallery/>
+      <EventGallery/>
+      
 
 
       <Booking />
