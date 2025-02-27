@@ -19,7 +19,7 @@ export const DropDown = () => {
   return (
     <nav
       className={`fixed w-full z-50 p-4 flex justify-between items-center transition-all duration-300 
-        ${isScrolled ? "bg-teal-400" : "bg-[#36373500] "} px-6 md:pr-28 pl-10 z-50`}
+        ${isScrolled ? "bg-teal-400" : "bg-[#000000] "} px-6 md:pr-28 pl-10 z-50`}
     >
       {/* Logo */}
       <Link to="/" className="text-white text-xl font-bold">
@@ -132,6 +132,7 @@ const Submenu = ({ items }) => (
   <div className="flex flex-col gap-2 p-2">
     {items.map((item, index) => (
       <Link
+      
         key={index}
         to={item.link}
         className="block text-sm text-white transition hover:bg-gray-600 hover:text-white p-2 rounded"
@@ -170,7 +171,7 @@ const Gallery = () => (
       { title: "Events", link: "/gallery/events" },
       { title: "Couple Portraits", link: "/gallery/couples" },
       { title: "Candid Moments", link: "/gallery/candid" },
-      { title: "Corporate Shoots", link: "/gallery/corporate" },
+
     ]}
   />
 );

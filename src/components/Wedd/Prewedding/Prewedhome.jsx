@@ -4,6 +4,8 @@ import WeddingNavbar from '../Wednavbar'
 import PreWeddingAbout from './Prewedabout'
 import PreweddingGallery from './Prewedgallery'
 
+import Booking from '../../Constants/Booking'
+
 const Prewedhome = () => {
     return (
         <div>
@@ -11,6 +13,7 @@ const Prewedhome = () => {
             <WeddingNavbar />
             <PreWeddingAbout />
             <PreweddingGallery />
+            <Booking/>
         </div>
     )
 }
