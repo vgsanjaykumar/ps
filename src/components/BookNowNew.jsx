@@ -1,5 +1,4 @@
 import React from "react";
-import BgPng from "/booknow2.gif";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
@@ -21,7 +20,6 @@ const BookNowNew = () => {
         </>
     )
 }
-
 
 const SpringModal = ({ isOpen, setIsOpen }) => {
     const [formData, setFormData] = useState({
