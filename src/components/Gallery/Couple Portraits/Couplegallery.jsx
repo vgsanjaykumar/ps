@@ -14,7 +14,7 @@ const weddingPhotos = [
 
 ];
 
-export default function PostweddingGallery() {
+export default function CoupleGallery() {
     return (
         <div className="relative bg-white py-24 px-6 md:px-6 lg:px-32">
             <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">

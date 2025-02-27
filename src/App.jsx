@@ -16,6 +16,12 @@ import Prewedhome from "./components/Wedd/Prewedding/Prewedhome"
 import Postwedhome from "./components/Wedd/Postweddding/Postwedhome"
 import WhatsAppButton from "./components/Whatappbtn"
 import Notfound from "./components/Notfound"
+import Galleryhome from "./components/Gallery/Galleryhome"
+import GalleryWeddinghome from "./components/Gallery/Wedding/Weddinghome"
+import Portraitshome from "./components/Gallery/Portraits/Portraitshome"
+import Eventhome from "./components/Gallery/Events/Eventhome"
+import Couplehome from "./components/Gallery/Couple Portraits/Couplehome"
+import Candidhome from "./components/Gallery/candid Momenet/Candidhome"
 
 
 
@@ -30,7 +36,7 @@ function App() {
 
       <DropDown />
 
-      
+
 
 
 
@@ -41,15 +47,24 @@ function App() {
         <Route path="/weddings/outdoor" element={<Weddinghome />} />
         <Route path="/weddings/pre-wedding" element={<Prewedhome />} />
         <Route path="/weddings/post-wedding" element={<Postwedhome />} />
+        <Route path="/gallery/wedding/" element={<Galleryhome />} />
+        <Route path="/gallery/Weddings" element={<GalleryWeddinghome />} />
+        <Route path="/gallery/Candid Moment" element={<Candidhome />} />
+        <Route path="/gallery/Couple portraits" element={<Couplehome />} />
+        <Route path="/gallery/events" element={<Eventhome />} />
+        <Route path="/gallery/portraits" element={<Portraitshome />} />
+        <Route path="/gallery/all" element={<Galleryhome />} />
+
 
 
         <Route path="*" element={<Notfound />} />
       </Routes>
-      <WhatsAppButton/>
-
-
-      
       <Footer1 />
+      <WhatsAppButton />
+
+
+
+
 
 
     </>

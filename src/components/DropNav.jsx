@@ -158,11 +158,11 @@ const Weddings = () => (
 const Gallery = () => (
   <Submenu
     items={[
-      { title: "Weddings", link: "/gallery/weddings" },
+      { title: "Wedding", link: "/gallery/Weddings" },
       { title: "Portraits", link: "/gallery/portraits" },
       { title: "Events", link: "/gallery/events" },
-      { title: "Couple Portraits", link: "/gallery/couples" },
-      { title: "Candid Moments", link: "/gallery/candid" },
+      { title: "Couple Portraits", link: "/gallery/Couple portraits" },
+      { title: "Candid Moments", link: "/gallery/Candid Moment" },
 
     ]}
   />
