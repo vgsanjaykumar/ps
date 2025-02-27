@@ -153,15 +153,7 @@ const Weddings = () => (
   />
 );
 
-const BabyPhotography = () => (
-  <Submenu
-    items={[
-      { title: "Newborn Shoots", link: "/baby/newborn" },
-      { title: "First Birthday", link: "/baby/birthday" },
-      { title: "Themed Photoshoots", link: "/baby/themed" },
-    ]}
-  />
-);
+
 
 const Gallery = () => (
   <Submenu
@@ -179,18 +171,20 @@ const Gallery = () => (
 const Other = () => (
   <Submenu
     items={[
+      { title: "Baby Photography", link: "/other/BabyPhotography" }, 
+      { title: "Birthday celebration", link: "/other/Birthday" }, 
       { title: "Drone Photography", link: "/other/drone" },
       { title: "Video Shoots", link: "/other/video" },
       { title: "Photo Editing", link: "/other/editing" },
+     
     ]}
   />
 );
 
 const TABS = [
   { id: 1, title: "Weddings", Component: Weddings },
-  { id: 2, title: "Baby Photography", Component: BabyPhotography },
-  { id: 3, title: "Gallery", Component: Gallery },
-  { id: 4, title: "Other", Component: Other },
+  { id: 2, title: "Gallery", Component: Gallery },
+  { id: 3, title: "Other", Component: Other },
 ];
 
 const NON_DROPDOWN_LINKS = [
