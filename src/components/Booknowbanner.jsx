@@ -15,6 +15,9 @@ const BookNow = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <>
+        <section>
+            
+        </section>
         
             <div className="py-64 relative min-w-screen " style={backgroundStyle}>
                 <div className="left-1/4 top-1/3 max-w-screen absolute ">
@@ -32,8 +35,7 @@ const BookNow = () => {
 };
 const SpringModal = ({ isOpen, setIsOpen }) => {
     const [formData, setFormData] = useState({
-        name: "", number: "", email: "", city: "", date: "", location: "",
-        venue: "", time: "", crowdStrength: "", state: "", message: ""
+        name: "", number: "", email: "", date: "", location: "", message: ""
     });
 
     const formFields = [
