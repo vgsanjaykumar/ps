@@ -3,36 +3,26 @@ import BgPng from "/booknow2.gif";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
-const backgroundStyle = {
-    backgroundImage: `url(${BgPng})`,
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    height: "100%",
-    width: "100%",
-};
-const BookNow = () => {
+const BookNowNew = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <>
-        <section>
-            
-        </section>
-        
-            <div className="py-64 relative min-w-screen " style={backgroundStyle}>
-                <div className="left-1/4 top-1/3 max-w-screen absolute ">
+            <section className="w-screen relative">
+                
+                    <img className="w-full" src="/booknow2.gif" />
+                    <div className="left-[31%] top-1/3 absolute h-[30%] w-[22%] ">
                     <button
                         onClick={() => setIsOpen(true)}
-                        className="h-40  w-[400px]">
-
+                        className="h-full w-full">
                     </button>
                     <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
                 </div>
-
-            </div>
+            </section>
         </>
-    );
-};
+    )
+}
+
+
 const SpringModal = ({ isOpen, setIsOpen }) => {
     const [formData, setFormData] = useState({
         name: "", number: "", email: "", date: "", location: "", message: ""
@@ -61,7 +51,6 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
         )}`;
         window.open(url, "_blank");
     };
-
     return (
         <AnimatePresence>
             {isOpen && (
@@ -71,7 +60,7 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
                     exit={{ opacity: 0 }}
                     onClick={() => setIsOpen(false)}
                     style={{width:"100%"}}
-                    className="bg-slate-900/20  backdrop-blur p-8 fixed inset-0 z-50 grid place-items-center overflow-y-scroll cursor-pointer"
+                    className="bg-slate-900/20  backdrop-blur  fixed inset-0 z-50 grid place-items-center overflow-y-scroll cursor-pointer"
                 >
                     <motion.div
                         initial={{ scale: 0, rotate: "45deg" }}
@@ -79,18 +68,18 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
                         exit={{ scale: 0, rotate: "0deg" }}
                         onClick={(e) => e.stopPropagation()}
                         style={{}}
-                        className="bg-gradient-to-br rounded-[27px] from-teal-600 to-teal-400 text-white p-6   w-[800px] shadow-xl cursor-default relative overflow-hidden"
+                        className="bg-gradient-to-br rounded-[27px] from-teal-600 to-teal-400 text-white p-2 md:p-6 w-[90%] shadow-xl cursor-default relative"
                     >
                         
                         <div className="relative z-10">
                             
-                        <section className="bg-white text-black rounded-[27px] py-10 shadow-md md:px-20 px-6 " id="Contact">
-            <h2 className="text-center text-2xl font-bold text-gray-700 mb-5">Book Our Services</h2>
-            <p className="text-[12px] text-gray-500 mb-6">"Every love story is unique, and so is the way we capture it. Let us turn your most precious moments into timeless memories with our expert wedding photography services. Whether it’s your pre-wedding shoot, wedding day, or post-wedding celebrations, we ensure every emotion, smile, and heartfelt moment is beautifully preserved. Book us today and let’s create magic together!"</p>
+                        <section className="bg-white text-black rounded-[27px] py-5 md:py-10 shadow-md md:px-20 px-6 " id="Contact">
+            <h2 className="text-center text-xl md:text-2xl font-bold text-gray-700 mb-5">Book Our Services</h2>
+            <p className="text-[8px] md:text-[12px] text-gray-400 mb-6">"Every love story is unique, and so is the way we capture it. Let us turn your most precious moments into timeless memories with our expert wedding photography services. Whether it’s your pre-wedding shoot, wedding day, or post-wedding celebrations, we ensure every emotion, smile, and heartfelt moment is beautifully preserved. Book us today and let’s create magic together!"</p>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
                 {formFields.map(({ label, name, type }) => (
-                    <div key={name} className="mb-4 text-lg">
+                    <div key={name} className="mb-2 md:mb-4 text-base md:text-lg">
                         <label className="block text-gray-700 font-semibold mb-2">{label}:</label>
                         <input
                             type={type}
@@ -102,13 +91,13 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
                     </div>
                 ))}
                 
-                <div className="mb-4 text-lg">
+                <div className="mb-2 md:mb-4 text-base md:text-lg">
                     <label className="block text-gray-700 font-semibold mb-2">Select Event:</label>
                     <select
                         name="state"
                         value={formData.state}
                         onChange={handleChange}
-                        className="w-full  p-3 border bg-gray-100 rounded focus:outline-none focus:border-gray-500"
+                        className="w-full  p-1 border bg-gray-100 rounded focus:outline-none focus:border-gray-500"
                     >
                         <option value="" disabled>Select Event</option>
                         <option value="New Mexico">Wedding</option>
@@ -123,7 +112,7 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
             </div>
 
             {/* Message Box */}
-            <div className="mb-4 text-lg">
+            <div className="mb-4 mt-4 text-base md:text-lg">
                 <label className="block text-gray-700 font-semibold mb-2">Tell us more...</label>
                 <textarea
                     name="message"
@@ -147,7 +136,7 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
                             <div className="flex justify-center gap-2">
                                 <button
                                     onClick={() => setIsOpen(false)}
-                                    className="bg-transparent w-full  hover:bg-[rgb(206,142,59)] transition-colors text-white font-semibold  py-2 rounded"
+                                    className="bg-transparent w-full  hover:bg-[rgb(206,142,59)] transition-colors text-white font-semibold text-lg md:text-3xl py-2 rounded"
                                 >
                                     Go back 
                                 </button>
@@ -159,7 +148,5 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
             )}
         </AnimatePresence>
     );
-};
-
-
-export default BookNow;
+}
+export default BookNowNew;

@@ -7,7 +7,7 @@ import Numbercount from './Numbercount'
 import Hero from './Hero'
 import About from './About'
 import Testimonials from './Testimonals'
-import BookNow from './Booknowbanner'
+import BookNowNew from './BookNowNew'
 
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
 
             
             <About />
-            <BookNow />
+            <BookNowNew />
             <Testimonials />
             
 
