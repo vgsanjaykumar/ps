@@ -1,6 +1,6 @@
 import React from 'react'
 import CandidGallery from './CandidGallery'
-import Candidbanner from './candidbanner'
+import Candidbanner from './Candidbanner'
 import GalleryNavbar from '../Gallerynavbar'
 import Booking from '../../Constants/Booking'
 
