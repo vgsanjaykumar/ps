@@ -14,6 +14,8 @@ import Footer1 from "./components/Footer"
 import Weddinghome from "./components/Wedd/Outdoor/Weddinghome"
 import Prewedhome from "./components/Wedd/Prewedding/Prewedhome"
 import Postwedhome from "./components/Wedd/Postweddding/Postwedhome"
+import WhatsAppButton from "./components/Whatappbtn"
+import Notfound from "./components/Notfound"
 
 
 
@@ -41,8 +43,9 @@ function App() {
         <Route path="/weddings/post-wedding" element={<Postwedhome />} />
 
 
-
+        <Route path="*" element={<Notfound />} />
       </Routes>
+      <WhatsAppButton/>
 
 
       
