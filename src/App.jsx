@@ -7,7 +7,7 @@ import { DropDown } from "./components/DropNav"
 import About from "./components/About"
 import Contact from "./components/Contact"
 
-import { BrowserRouter as  Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom"
 
 import Home from "./components/Home"
 import Footer1 from "./components/Footer"
@@ -85,7 +85,7 @@ function App() {
       <ScrollToTop />
       <Footer1 />
 
-     
+
 
 
 
