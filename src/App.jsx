@@ -31,6 +31,7 @@ import Photohome from "./components/others/Photoedit/Photohome"
 import Otherhome from "./components/others/Otherhome"
 import Notfoundhome from "./components/Notfound/Notfoundhome"
 import Sephome from "./components/Seperate/Sephome"
+import ScrollToTop from "./components/ScroltoTop"
 
 
 
@@ -80,10 +81,11 @@ function App() {
       </Routes>
 
 
-
+      <WhatsAppButton />
+      <ScrollToTop />
       <Footer1 />
 
-      <WhatsAppButton />
+     
 
 
 
