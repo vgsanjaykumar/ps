@@ -9,6 +9,24 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
+/* Hide the scrollbar for all browsers */
+html,
+body {
+    overflow-x: hidden;
+    scrollbar-width: none;
+    /* For Firefox */
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Prevent extra spacing or scrolling issues */
+.hello {
+    max-width: 100vw;
+    overflow: hidden;
+}
 
 .top-container-1 {
     @apply mt-16 px-8 md:px-16 xl:px-24 mb-20 xl:mb-36 max-md:mt-8 max-md:text-base bg-white 

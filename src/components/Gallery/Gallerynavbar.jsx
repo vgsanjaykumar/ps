@@ -1,21 +1,25 @@
 import React, { useState } from "react";
-import { replace, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const GalleryNavbar = () => {
     const [selectedCategory, setSelectedCategory] = useState("all");
     const navigate = useNavigate();
+
     const categories = [
-        "All", "Wedding", "portraits", "Events", "Couple portraits", "Candid Moment"
+        "All", "Wedding", "Portraits", "Events", "Couple Portraits", "Candid Moment"
     ];
 
+    const formatCategoryForURL = (category) => {
+        return category.toLowerCase().replace(/\s+/g, "-");
+    };
 
     const handleCategoryClick = (category) => {
         setSelectedCategory(category);
-        navigate(`/Gallery/${category.toLowerCase()}`);
+        navigate(`/Gallery/${formatCategoryForURL(category)}`);
     };
 
     return (
-        <div className="w-full bg-white shadow-md ">
+        <div className="w-full bg-white shadow-md">
             <div className="flex flex-wrap justify-center gap-2 sm:gap-4 py-4 text-gray-700">
                 {categories.map((category) => (
                     <button
