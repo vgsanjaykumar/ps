@@ -17,13 +17,14 @@ const Testimonials = () => {
     arrows: false,
     infinite: true,
     speed: 500,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
     responsive: [
       {
         breakpoint: 1024, 
-        settings: { slidesToShow: 1, slidesToScroll: 1 },
+        settings: { slidesToShow: 3, slidesToScroll: 1 },
       },
       {
         breakpoint: 768,
@@ -39,7 +40,7 @@ const Testimonials = () => {
         <h1 className="text-center text-4xl font-bold text-white mb-6">Testimonials</h1>
 
        
-        <div className="bg-white/80 p-6 rounded-lg shadow-lg">
+        <div className=" h-auto p-6 rounded-lg shadow-lg">
           <Slider {...settings}>
             {TestimonialData.map((data) => (
               <div key={data.id} className="p-6 shadow-md rounded-lg bg-white text-center">

@@ -56,8 +56,7 @@ function App() {
         <Route path="/weddings/outdoor" element={<Weddinghome />} />
         <Route path="/weddings/pre-wedding" element={<Prewedhome />} />
         <Route path="/weddings/post-wedding" element={<Postwedhome />} />
-        <Route path="/gallery/wedding/" element={<GalleryWeddinghome />} />
-       
+        <Route path="/gallery/wedding/" element={<GalleryWeddinghome />} />    
         <Route path="/gallery/candid-moment" element={<Candidhome />} />
         <Route path="/gallery/couple-portraits" element={<Couplehome />} />
         <Route path="/gallery/events" element={<Eventhome />} />
@@ -69,7 +68,6 @@ function App() {
         <Route path="/other/video-shoot" element={<Videohome />} />
         <Route path="/other/photo-edit" element={<Photohome />} />
         <Route path="/other/all" element={<Otherhome />} />
-
         <Route path="*" element={<Notfoundhome />} />
 
 
