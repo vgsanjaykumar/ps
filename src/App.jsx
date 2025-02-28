@@ -15,13 +15,21 @@ import Weddinghome from "./components/Wedd/Outdoor/Weddinghome"
 import Prewedhome from "./components/Wedd/Prewedding/Prewedhome"
 import Postwedhome from "./components/Wedd/Postweddding/Postwedhome"
 import WhatsAppButton from "./components/Whatappbtn"
-import Notfound from "./components/Notfound"
+import Notfound from "./components/Notfound/Notfound"
 import Galleryhome from "./components/Gallery/Galleryhome"
 import GalleryWeddinghome from "./components/Gallery/Wedding/Weddinghome"
 import Portraitshome from "./components/Gallery/Portraits/Portraitshome"
 import Eventhome from "./components/Gallery/Events/Eventhome"
 import Couplehome from "./components/Gallery/Couple Portraits/Couplehome"
 import Candidhome from "./components/Gallery/candid Momenet/Candidhome"
+import Galleryimg from "./components/Gallery/Galleryimg"
+import Babyhome from "./components/others/Baby/Babyhome"
+import Birthhome from "./components/others/birthday/Birthhome"
+import Dronehome from "./components/others/drone/Dronehome"
+import Videohome from "./components/others/video/Videohome"
+import Photohome from "./components/others/Photoedit/Photohome"
+import Otherhome from "./components/others/Otherhome"
+import Notfoundhome from "./components/Notfound/Notfoundhome"
 
 
 
@@ -35,6 +43,7 @@ function App() {
 
 
       <DropDown />
+     
 
 
 
@@ -47,18 +56,29 @@ function App() {
         <Route path="/weddings/outdoor" element={<Weddinghome />} />
         <Route path="/weddings/pre-wedding" element={<Prewedhome />} />
         <Route path="/weddings/post-wedding" element={<Postwedhome />} />
-        <Route path="/gallery/wedding/" element={<Galleryhome />} />
-        <Route path="/gallery/Weddings" element={<GalleryWeddinghome />} />
-        <Route path="/gallery/Candid Moment" element={<Candidhome />} />
-        <Route path="/gallery/Couple portraits" element={<Couplehome />} />
+        <Route path="/gallery/wedding/" element={<GalleryWeddinghome />} />
+       
+        <Route path="/gallery/candid-moment" element={<Candidhome />} />
+        <Route path="/gallery/couple-portraits" element={<Couplehome />} />
         <Route path="/gallery/events" element={<Eventhome />} />
         <Route path="/gallery/portraits" element={<Portraitshome />} />
         <Route path="/gallery/all" element={<Galleryhome />} />
+        <Route path="/other/baby-photography" element={<Babyhome />} />
+        <Route path="/other/birthday-celebration" element={<Birthhome />} />
+        <Route path="/other/drone-photography" element={<Dronehome />} />
+        <Route path="/other/video-shoot" element={<Videohome />} />
+        <Route path="/other/photo-edit" element={<Photohome />} />
+        <Route path="/other/all" element={<Otherhome />} />
+
+        <Route path="*" element={<Notfoundhome />} />
 
 
 
-        <Route path="*" element={<Notfound />} />
+       
       </Routes>
+      
+      
+      
       <Footer1 />
       <WhatsAppButton />
 

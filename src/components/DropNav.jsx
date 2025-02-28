@@ -3,6 +3,7 @@ import { FiChevronDown, FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { BiHome } from "react-icons/bi";
 
 export const DropDown = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,9 +18,8 @@ export const DropDown = () => {
   }, []);
 
   return (
-    <nav
-      className={`fixed w-full z-50 p-4 flex justify-between items-center transition-all duration-300 
-        ${isScrolled ? "bg-teal-400" : "bg-[#000000] "} px-6 md:pr-28 pl-10 z-50`}
+    <nav className={`fixed w-full z-50 p-4 flex justify-between items-center transition-all duration-300 
+        ${isScrolled ? "bg-teal-400" : "bg-[#00000000] "} px-6 md:pr-28 pl-10 z-50`}
     >
       {/* Logo */}
       <Link to="/" className="text-white text-xl font-bold">
@@ -57,8 +57,7 @@ export const DropDown = () => {
                 >
                   {title}{" "}
                   <FiChevronDown
-                    className={`transition-transform ${expandedMobileTab === id ? "rotate-180" : ""
-                      }`}
+                    className={`transition-transform ${expandedMobileTab === id ? "rotate-180" : ""}`}
                   />
                 </button>
                 <AnimatePresence>
@@ -85,8 +84,13 @@ export const DropDown = () => {
 const Tabs = ({ selectedTab, setSelectedTab }) => {
   return (
     <div className="relative flex gap-6 text-white" onMouseLeave={() => setSelectedTab(null)}>
+      <div className="text-center items-center py-4">
+        <Link to="/"> <BiHome className="text-center items-center" /></Link>
+      </div>
+     
       {TABS.map(({ id, title }) => (
         <div key={id} className="relative" onMouseEnter={() => setSelectedTab(id)}>
+          
           <button className="flex items-center gap-2 px-4 py-2 rounded-lg transition hover:bg-gray-800">
             {title}{" "}
             <FiChevronDown
@@ -119,8 +123,8 @@ const DropdownContent = ({ selectedTab, isMobile = false }) => {
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 10 }}
-      className={`bg-gray-900 p-4 rounded-lg border border-gray-400 shadow-lg ${isMobile ? "" : "absolute left-0 top-[calc(100%_+_5px)] w-80"
-        }`}
+      className={`bg-gray-900 p-4 rounded-lg border border-gray-400 shadow-lg 
+        ${isMobile ? "" : "absolute left-0 top-[calc(100%_+_5px)] w-80"}`}
     >
       <TabComponent />
     </motion.div>
@@ -132,7 +136,6 @@ const Submenu = ({ items }) => (
   <div className="flex flex-col gap-2 p-2">
     {items.map((item, index) => (
       <Link
-      
         key={index}
         to={item.link}
         className="block text-sm text-white transition hover:bg-gray-600 hover:text-white p-2 rounded"
@@ -153,17 +156,14 @@ const Weddings = () => (
   />
 );
 
-
-
 const Gallery = () => (
   <Submenu
     items={[
-      { title: "Wedding", link: "/gallery/Weddings" },
+      { title: "Wedding", link: "/gallery/wedding" },
       { title: "Portraits", link: "/gallery/portraits" },
       { title: "Events", link: "/gallery/events" },
-      { title: "Couple Portraits", link: "/gallery/Couple portraits" },
-      { title: "Candid Moments", link: "/gallery/Candid Moment" },
-
+      { title: "Couple Portraits", link: "/gallery/couple-portraits" },
+      { title: "Candid Moments", link: "/gallery/candid-moment" },
     ]}
   />
 );
@@ -171,25 +171,33 @@ const Gallery = () => (
 const Other = () => (
   <Submenu
     items={[
-      { title: "Baby Photography", link: "/other/BabyPhotography" }, 
-      { title: "Birthday celebration", link: "/other/Birthday" }, 
-      { title: "Drone Photography", link: "/other/drone" },
-      { title: "Video Shoots", link: "/other/video" },
-      { title: "Photo Editing", link: "/other/editing" },
-     
+      { title: "Baby Photography", link: "/other/baby-photography" },
+      { title: "Birthday Celebration", link: "/other/birthday-celebration" },
+      { title: "Drone Photography", link: "/other/drone-photography" },
+      { title: "Video Shoots", link: "/other/video-shoot" },
+      { title: "Photo Editing", link: "/other/photo-edit" },
+    ]}
+  />
+);
+
+const About = () => (
+  <Submenu
+    items={[
+      { title: "Our Story", link: "/about/our-story" },
+      { title: "Our Team", link: "/about/our-team" },
     ]}
   />
 );
 
 const TABS = [
-  { id: 1, title: "Weddings", Component: Weddings },
-  { id: 2, title: "Gallery", Component: Gallery },
-  { id: 3, title: "Other", Component: Other },
+  { id: 1, title: "About", Component: About }, // About is now first in dropdown
+  { id: 2, title: "Weddings", Component: Weddings },
+  { id: 3, title: "Gallery", Component: Gallery },
+  { id: 4, title: "Other", Component: Other },
 ];
 
 const NON_DROPDOWN_LINKS = [
-  { title: "About", link: "/about" },
+  { title: "Home", link: "/" }, // Home is a non-dropdown button
   { title: "Book Now", link: "/contact" },
   { title: "Contact", link: "/contact" },
 ];
-
