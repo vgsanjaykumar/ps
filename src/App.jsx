@@ -30,7 +30,7 @@ import Videohome from "./components/others/video/Videohome"
 import Photohome from "./components/others/Photoedit/Photohome"
 import Otherhome from "./components/others/Otherhome"
 import Notfoundhome from "./components/Notfound/Notfoundhome"
-import Sephome from "./components/Seperate/Sephome"
+
 import ScrollToTop from "./components/ScroltoTop"
 import ContactForm from "./components/Enquriy"
 
