@@ -11,7 +11,7 @@ const weddingPhotos = [
     {
         id: 1,
         name: "Varuna Thapar + Nikhil Sayli",
-        image: "/award/img01.jpeg",
+        image: "/award/img02.jpeg",
         images: [
             { src: "/award/img02.jpeg", height: "h-[250px]" },
             { src: "/award/img03.jpeg", height: "h-[350px]" },
