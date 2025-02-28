@@ -4,7 +4,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css"; // Import styles
 
-import img1 from "/award/img01.jpeg";
+
 import img2 from "/award/img02.jpeg";
 import img3 from "/award/img03.jpeg";
 import img4 from "/award/img04.jpeg";

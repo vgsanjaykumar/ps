@@ -65,7 +65,7 @@ const allImages = [
     { src: img5, height: "h-[295px]" },
 ];
 
-const DroneGallery = () => {
+const Sepgallery = () => {
     const initialLoad = 12;
     const loadMoreCount = 6;
 
@@ -116,4 +116,4 @@ const DroneGallery = () => {
     );
 };
 
-export default DroneGallery;
+export default Sepgallery;

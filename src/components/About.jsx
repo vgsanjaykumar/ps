@@ -7,12 +7,12 @@ const About = () => {
             
                 <div className="text-center mb-6">
                     <h1 className="text-3xl font-bold text-gray-800">About Us</h1>
-                    <h3 className="text-lg text-gray-600 mt-2">“FREEZE YOUR MEMORABLE MOMENTS”</h3>
-                    <h3 className="text-lg text-gray-600 mt-1">Our goal is to make your lifetime events unforgettable.</h3>
+                    <h3 className="text-2xl text-gray-600 mt-2">“📸 FREEZE YOUR MEMORABLE MOMENTS 🎥”</h3>
+                    <h3 className="text-2xl text-gray-600 mt-1">Our goal is to make your lifetime events unforgettable.</h3>
                 </div>
 
-                {/* Description */}
-                <div className="text-gray-400 leading-relaxed text-[12px] space-y-5">
+              
+                <div className="text-gray-400 leading-relaxed text-[14px] space-y-5">
                     <p>
                         <strong className="text-gray-500">Melody Photography</strong> is one of the best wedding photography services in Karaikudi.
                         We are a team of passionate and expert wedding photographers & cinematographers dedicated to capturing and preserving the
@@ -24,6 +24,11 @@ const About = () => {
                         At <strong className="text-gray-500">Melody Photography</strong>, we combine technology and artistic creativity to provide
                         industry-leading photography services. Our commitment to excellence ensures that every cherished moment is perfectly preserved,
                         earning us the trust and satisfaction of our valued clients.
+                    </p>
+                    <p className='text-gray-500'>
+                        With over 5 years of experience, our skilled photographers and cinematographers use cutting-edge technology to bring your
+                         wedding and special events to life. We seamlessly blend artistic creativity and professionalism to craft stunning visuals that you ll
+                          cherish forever.
                     </p>
 
                     <p>
