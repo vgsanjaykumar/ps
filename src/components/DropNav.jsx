@@ -147,6 +147,7 @@ const Submenu = ({ items }) => (
         key={index}
         to={item.link}
         className="block text-sm text-white transition hover:bg-gray-600 hover:text-white p-2 rounded"
+        onClick={() => setIsMobileMenuOpen(false)}
       >
         {item.title}
       </Link>
