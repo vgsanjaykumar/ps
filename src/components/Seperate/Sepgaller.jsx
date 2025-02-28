@@ -4,7 +4,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css"; // Import styles
 
-import img1 from "/award/img01.jpeg";
+
 import img2 from "/award/img02.jpeg";
 import img3 from "/award/img03.jpeg";
 import img4 from "/award/img04.jpeg";
@@ -13,7 +13,7 @@ import img6 from "/award/img06.jpeg";
 import img7 from "/award/img07.jpeg";
 
 const allImages = [
-    { src: img1, height: "h-[250px]" },
+    { src: img2, height: "h-[250px]" },
     { src: img2, height: "h-[300px]" },
     { src: img3, height: "h-[350px]" },
     { src: img4, height: "h-[400px]" },
@@ -25,7 +25,7 @@ const allImages = [
     { src: img3, height: "h-[330px]" },
     { src: img5, height: "h-[290px]" },
     { src: img4, height: "h-[310px]" },
-    { src: img1, height: "h-[260px]" },
+    { src: img2, height: "h-[260px]" },
     { src: img7, height: "h-[340px]" },
     { src: img3, height: "h-[390px]" },
     { src: img6, height: "h-[350px]" },
@@ -33,12 +33,12 @@ const allImages = [
     { src: img5, height: "h-[325px]" },
     { src: img4, height: "h-[400px]" },
     { src: img7, height: "h-[360px]" },
-    { src: img1, height: "h-[300px]" },
+    { src: img2, height: "h-[300px]" },
     { src: img6, height: "h-[280px]" },
     { src: img2, height: "h-[310px]" },
     { src: img3, height: "h-[380px]" },
     { src: img5, height: "h-[295px]" },
-    { src: img1, height: "h-[250px]" },
+    { src: img2, height: "h-[250px]" },
     { src: img2, height: "h-[300px]" },
     { src: img3, height: "h-[350px]" },
     { src: img4, height: "h-[400px]" },
@@ -50,7 +50,7 @@ const allImages = [
     { src: img3, height: "h-[330px]" },
     { src: img5, height: "h-[290px]" },
     { src: img4, height: "h-[310px]" },
-    { src: img1, height: "h-[260px]" },
+    { src: img2, height: "h-[260px]" },
     { src: img7, height: "h-[340px]" },
     { src: img3, height: "h-[390px]" },
     { src: img6, height: "h-[350px]" },
@@ -58,14 +58,14 @@ const allImages = [
     { src: img5, height: "h-[325px]" },
     { src: img4, height: "h-[400px]" },
     { src: img7, height: "h-[360px]" },
-    { src: img1, height: "h-[300px]" },
+    { src: img2, height: "h-[300px]" },
     { src: img6, height: "h-[280px]" },
     { src: img2, height: "h-[310px]" },
     { src: img3, height: "h-[380px]" },
     { src: img5, height: "h-[295px]" },
 ];
 
-const BabyGallery = () => {
+const Sepgallery = () => {
     const initialLoad = 12;
     const loadMoreCount = 6;
 
@@ -116,4 +116,4 @@ const BabyGallery = () => {
     );
 };
 
-export default BabyGallery;
+export default Sepgallery;

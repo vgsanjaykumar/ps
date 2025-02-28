@@ -15,14 +15,14 @@ import Weddinghome from "./components/Wedd/Outdoor/Weddinghome"
 import Prewedhome from "./components/Wedd/Prewedding/Prewedhome"
 import Postwedhome from "./components/Wedd/Postweddding/Postwedhome"
 import WhatsAppButton from "./components/Whatappbtn"
-import Notfound from "./components/Notfound/Notfound"
+
 import Galleryhome from "./components/Gallery/Galleryhome"
 import GalleryWeddinghome from "./components/Gallery/Wedding/Weddinghome"
 import Portraitshome from "./components/Gallery/Portraits/Portraitshome"
 import Eventhome from "./components/Gallery/Events/Eventhome"
 import Couplehome from "./components/Gallery/Couple Portraits/Couplehome"
 import Candidhome from "./components/Gallery/candid Momenet/Candidhome"
-import Galleryimg from "./components/Gallery/Galleryimg"
+
 import Babyhome from "./components/others/Baby/Babyhome"
 import Birthhome from "./components/others/birthday/Birthhome"
 import Dronehome from "./components/others/drone/Dronehome"
@@ -30,7 +30,8 @@ import Videohome from "./components/others/video/Videohome"
 import Photohome from "./components/others/Photoedit/Photohome"
 import Otherhome from "./components/others/Otherhome"
 import Notfoundhome from "./components/Notfound/Notfoundhome"
-import SeperateView from "./components/SeperateView"
+import Sephome from "./components/Seperate/Sephome"
+
 
 
 
@@ -43,7 +44,7 @@ function App() {
 
 
       <DropDown />
-    
+
 
 
 
@@ -53,12 +54,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/SeperateView" element={<SeperateView />} />
+        <Route path="/SeparateView" element={<Sephome />} />
+        
         <Route path="/weddings/outdoor" element={<Weddinghome />} />
         <Route path="/weddings/pre-wedding" element={<Prewedhome />} />
         <Route path="/weddings/post-wedding" element={<Postwedhome />} />
         <Route path="/gallery/wedding/" element={<GalleryWeddinghome />} />
-        
+
         <Route path="/gallery/candid-moment" element={<Candidhome />} />
         <Route path="/gallery/couple-portraits" element={<Couplehome />} />
         <Route path="/gallery/events" element={<Eventhome />} />
@@ -74,11 +76,11 @@ function App() {
 
 
 
-       
+
       </Routes>
-      
-      
-      
+
+
+
       <Footer1 />
       <WhatsAppButton />
 
