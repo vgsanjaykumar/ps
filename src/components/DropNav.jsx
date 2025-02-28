@@ -37,7 +37,7 @@ export const DropDown = () => {
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         className="md:hidden text-white text-2xl"
       >
-        {isMobileMenuOpen ? <MdClose /> : <FiMenu />}
+        <FiMenu />
       </button>
 
       {/* Mobile Menu */}
@@ -49,6 +49,14 @@ export const DropDown = () => {
             exit={{ x: "100%" }}
             className="fixed top-0 right-0 w-3/4 h-full bg-gray-900 p-6 flex flex-col gap-4 z-50"
           >
+            <div className="w-full flex justify-end">
+          <button
+        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        className="md:hidden text-white text-3xl hover:text-teal-400"
+      >
+            <MdClose  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}/>
+            </button>
+            </div>
             {TABS.map(({ id, title }) => (
               <div key={id} className="border-b border-gray-700">
                 <button
@@ -199,5 +207,5 @@ const TABS = [
 const NON_DROPDOWN_LINKS = [
   { title: "Home", link: "/" }, // Home is a non-dropdown button
   { title: "Book Now", link: "/contact" },
-  { title: "Contact", link: "/contact" },
+  { title: "Contact", link: "/SeparateView" },
 ];
