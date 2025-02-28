@@ -25,8 +25,9 @@ const Home = () => {
             
             <About />
             <WhyChooseUs/>
-            <ContactForm/>
+            
             <Testimonials />
+            <ContactForm/>
             <BookNowNew />
             
             
