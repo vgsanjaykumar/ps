@@ -7,8 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 const TestimonialData = [
   { id: 1, name: "Dilshad", text: "Great service!", img: "https://picsum.photos/101/101" },
   { id: 2, name: "Sabir Ali", text: "Loved the experience!", img: "https://picsum.photos/102/102" },
-  { id: 3, name: "Dipankar Kumar", text: "Highly recommend!", img: "https://picsum.photos/104/104" },
-  { id: 4, name: "Satya Narayan", text: "Amazing support!", img: "https://picsum.photos/103/103" },
+  { id: 3, name: "Dipankar Kumar", text: "Highly recommend! ", img: "https://picsum.photos/104/104" },
+  { id: 4, name: "Satya Narayan", text: "Amazing support!dcrtfvgybhndctfvgybhun", img: "https://picsum.photos/103/103" },
 ];
 
 const Testimonials = () => {
@@ -43,10 +43,10 @@ const Testimonials = () => {
         <div className=" h-auto p-6 rounded-lg shadow-lg">
           <Slider {...settings}>
             {TestimonialData.map((data) => (
-              <div key={data.id} className="p-6 shadow-md rounded-lg bg-white text-center">
+              <div key={data.id} className="p-6 shadow-md rounded-lg  text-center">
                 <img src={data.img} alt={data.name} className="w-20 h-20 rounded-full mx-auto mb-3" />
-                <p className="text-gray-600">{data.text}</p>
-                <h2 className="text-lg font-semibold text-black mt-2">{data.name}</h2>
+                <p className="text-white font-bold">{data.text}</p>
+                <h2 className="text-lg font-semibold text-white mt-2">{data.name}</h2>
               </div>
             ))}
           </Slider>

@@ -7,7 +7,7 @@ import { DropDown } from "./components/DropNav"
 import About from "./components/About"
 import Contact from "./components/Contact"
 
-import { Route, Routes } from "react-router-dom"
+import { BrowserRouter as  Routes, Route } from "react-router-dom";
 
 import Home from "./components/Home"
 import Footer1 from "./components/Footer"
@@ -31,6 +31,7 @@ import Photohome from "./components/others/Photoedit/Photohome"
 import Otherhome from "./components/others/Otherhome"
 import Notfoundhome from "./components/Notfound/Notfoundhome"
 import Sephome from "./components/Seperate/Sephome"
+import ScrollToTop from "./components/ScroltoTop"
 
 
 
@@ -80,10 +81,11 @@ function App() {
       </Routes>
 
 
-
+      <WhatsAppButton />
+      <ScrollToTop />
       <Footer1 />
 
-      <WhatsAppButton />
+     
 
 
 

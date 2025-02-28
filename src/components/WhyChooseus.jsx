@@ -29,19 +29,22 @@ const WhyChooseUs = () => {
     ];
 
     return (
-        <div className="container mx-auto px-6 py-12 text-center bg-white ">
-            <h2 className="text-3xl font-bold text-gray-800 mb-10">WHY CHOOSE US?</h2>
-            <div className=" grid grid-cols-3 md:grid-cols-6 gap-8 ">
-                {features.map((feature, index) => (
-                    <div key={index} className="flex flex-col items-center">
-                        <div className="w-24 h-24 bg-teal-400 flex items-center justify-center rounded-full shadow-md px-6">
-                            {feature.icon}
+        <section className="bg-white">
+            <div className="container mx-auto px-6 py-12 text-center bg-white ">
+                <h2 className="text-3xl font-bold text-gray-800 mb-10">WHY CHOOSE US?</h2>
+                <div className=" grid grid-cols-3 md:grid-cols-6 gap-8 ">
+                    {features.map((feature, index) => (
+                        <div key={index} className="flex flex-col items-center">
+                            <div className="w-24 h-24 bg-teal-400 flex items-center justify-center rounded-full shadow-md px-6">
+                                {feature.icon}
+                            </div>
+                            <p className="mt-3 text-lg font-semibold text-gray-800">{feature.title}</p>
                         </div>
-                        <p className="mt-3 text-lg font-semibold text-gray-800">{feature.title}</p>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
-        </div>
+        </section>
+        
     );
 };
 
