@@ -32,6 +32,7 @@ import Otherhome from "./components/others/Otherhome"
 import Notfoundhome from "./components/Notfound/Notfoundhome"
 import Sephome from "./components/Seperate/Sephome"
 import ScrollToTop from "./components/ScroltoTop"
+import ContactForm from "./components/Enquriy"
 
 
 
@@ -55,7 +56,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/SeparateView" element={<Sephome />} />
+        <Route path="/SeparateView" element={<ContactForm />} />
 
         <Route path="/weddings/outdoor" element={<Weddinghome />} />
         <Route path="/weddings/pre-wedding" element={<Prewedhome />} />
