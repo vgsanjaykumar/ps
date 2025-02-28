@@ -3,9 +3,9 @@ import weddingImage from "/award/img07.jpeg";
 
 export default function PreWeddingAbout() {
     return (
-        <section className="bg-white py-10">
-            <div className="flex flex-col md:flex-row items-center gap-8 md:px-24 px-4 mx-auto p-6">
-                <div className="w-1/2">
+        <section className="bg-white md:py-10">
+            <div className="flex flex-col md:flex-row items-center gap-8 md:px-24 px-5 mx-auto p-6">
+                <div className="w-full">
                     <h2 className="text-lg md:text-2xl font-semibold text-gray-900">
                         In the arms of nature, love finds its truest expression.
                     </h2>
@@ -46,7 +46,7 @@ export default function PreWeddingAbout() {
                 </div>
 
 
-                <div className="w-1/2">
+                <div className="md:w-1/2 w-full">
                     <img
                         src={weddingImage}
                         alt="Outdoor Wedding"
