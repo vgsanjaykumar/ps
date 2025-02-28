@@ -21,8 +21,9 @@ const Home = () => {
 
             
             <About />
-            <BookNowNew />
             <Testimonials />
+            <BookNowNew />
+            
             
 
 
