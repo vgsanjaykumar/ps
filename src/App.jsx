@@ -30,7 +30,7 @@ import Videohome from "./components/others/video/Videohome"
 import Photohome from "./components/others/Photoedit/Photohome"
 import Otherhome from "./components/others/Otherhome"
 import Notfoundhome from "./components/Notfound/Notfoundhome"
-
+import SeperateView from "./components/SeperateView"
 
 
 
@@ -53,6 +53,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/SeperateView" element={<SeperateView />} />
         <Route path="/weddings/outdoor" element={<Weddinghome />} />
         <Route path="/weddings/pre-wedding" element={<Prewedhome />} />
         <Route path="/weddings/post-wedding" element={<Postwedhome />} />
