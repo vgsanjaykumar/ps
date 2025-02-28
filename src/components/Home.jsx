@@ -8,6 +8,8 @@ import Hero from './Hero'
 import About from './About'
 import Testimonials from './Testimonals'
 import BookNowNew from './BookNowNew'
+import WhyChooseUs from './WhyChooseus'
+import ContactForm from './Enquriy'
 
 
 const Home = () => {
@@ -19,8 +21,11 @@ const Home = () => {
 
             <Numbercount />
 
+
             
             <About />
+            <WhyChooseUs/>
+            <ContactForm/>
             <Testimonials />
             <BookNowNew />
             

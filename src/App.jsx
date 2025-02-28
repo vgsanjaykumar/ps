@@ -55,7 +55,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/SeparateView" element={<Sephome />} />
-        
+
         <Route path="/weddings/outdoor" element={<Weddinghome />} />
         <Route path="/weddings/pre-wedding" element={<Prewedhome />} />
         <Route path="/weddings/post-wedding" element={<Postwedhome />} />
@@ -82,6 +82,7 @@ function App() {
 
 
       <Footer1 />
+
       <WhatsAppButton />
 
 

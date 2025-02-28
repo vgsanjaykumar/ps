@@ -28,23 +28,6 @@ body {
     overflow: hidden;
 }
 
-.top-container-1 {
-    @apply mt-16 px-8 md:px-16 xl:px-24 mb-20 xl:mb-36 max-md:mt-8 max-md:text-base bg-white 
-}
-.title-text{
-    @apply text-2xl md:text-4xl font-bold mx-auto text-gray-600 hover:text-[#FFF200] duration-500 delay-200 txt-shadow text-center md:mb-16 mb-8
-}
-
-.button-all {
-    @apply bg-[#FFEA00] font-bold md:inline transform transition-transform duration-300 hover:scale-110 py-2 px-4 rounded-full
-}
-
-.txt-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.our-font{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
 .foot-cont {
     @apply list-none text-sm text-gray-500
