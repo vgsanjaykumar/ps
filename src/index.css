@@ -43,26 +43,16 @@ html {
     @apply mx-auto px-8 md:px-16 lg:px-24
 }
 
-
-.exp-card {
-    @apply w-[300px] cursor-pointer rounded-md bg-[#f5f7fa] h-44 text-center px-3 py-7 self-end relative delay-100 duration-700
+.slick-slider {
+    margin: 0 -15px;
 }
 
-.exp-div-card {
-    @apply flex items-center justify-center
+.slick-slide {
+    padding: 10px;
+   
+    text-align: center;
+    
 }
-
-.exp-card-active {
-    @apply h-80 max-md:h-44 duration-700 delay-100 bg-slate-50
-}
-
-/*Awards*/
-
-.proj-div {
-    @apply px-6 pb-6 rounded-lg hover:shadow-lg transform transition-transform duration-500 hover:scale-110 cursor-pointer
-}
-
-
 
 
 
