@@ -207,5 +207,5 @@ const TABS = [
 const NON_DROPDOWN_LINKS = [
   { title: "Home", link: "/" }, // Home is a non-dropdown button
   { title: "Book Now", link: "/contact" },
-  { title: "Contact", link: "/SeparateView" },
+  { title: "Contact", link: "/contact" },
 ];
