@@ -22,7 +22,7 @@ const Footer1 = () => {
 
 
 
-                 <div>
+                <div>
                     <h6 className=" text-gray-400 text-center mb-5 ">SK &copy;  {Year}</h6>
                     </div>
                  <div className="">
