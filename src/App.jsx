@@ -34,6 +34,8 @@ import Notfoundhome from "./components/Notfound/Notfoundhome"
 import ScrollToTop from "./components/ScroltoTop"
 import ContactForm from "./components/Enquriy"
 import Sephome from "./components/Seperate/Sephome"
+import Subscripition from "./components/Subscripition"
+import SubscribeSection from "./components/Subscripition"
 
 
 
@@ -47,7 +49,7 @@ function App() {
 
 
       <DropDown />
-      
+
 
 
 
@@ -58,6 +60,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/Contacts" element={<ContactForm />} />
         <Route path="/SeparateView" element={<Sephome />} />
 
         <Route path="/weddings/outdoor" element={<Weddinghome />} />
@@ -87,6 +90,7 @@ function App() {
       <WhatsAppButton  />
       <ScrollToTop />
       <Footer1 />
+      <SubscribeSection/>
 
 
 

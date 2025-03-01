@@ -10,6 +10,7 @@ import Testimonials from './Testimonals'
 import BookNowNew from './BookNowNew'
 import WhyChooseUs from './WhyChooseus'
 import ContactForm from './Enquriy'
+import SubscribeSection from './Subscripition'
 
 
 const Home = () => {
@@ -18,8 +19,10 @@ const Home = () => {
 
             <Hero />
             <Events />
+           
 
             <Numbercount />
+            <SubscribeSection />
 
 
             
