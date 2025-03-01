@@ -87,10 +87,10 @@ function App() {
       </Routes>
 
 
-      <WhatsAppButton  />
-      <ScrollToTop />   
+      <WhatsAppButton />
+      <ScrollToTop />
       <Footer1 />
-      
+
 
 
 

@@ -44,7 +44,7 @@ const WhyChooseUs = () => {
                 </div>
             </div>
         </section>
-        
+
     );
 };
 

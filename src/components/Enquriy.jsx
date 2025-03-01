@@ -13,7 +13,7 @@ const ContactForm = () => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    
+
     const handleWhatsAppSend = (e) => {
         e.preventDefault(); // 
 
@@ -23,7 +23,7 @@ const ContactForm = () => {
 
         const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
 
-        window.open(whatsappURL, "_blank"); 
+        window.open(whatsappURL, "_blank");
     };
 
     return (
@@ -118,7 +118,7 @@ const ContactForm = () => {
                 </div>
             </div>
         </section>
-        
+
     );
 };
 
