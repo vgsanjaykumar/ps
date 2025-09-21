@@ -2,16 +2,16 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section className=" py-5 bg-white  " id='About/Story' >
+        <section className=" py-5 bg-white  " id='About' >
             <div className=" px-4 md:px-24 mx-auto  ">
-            
+
                 <div className="text-center mb-6">
                     <h1 className="text-3xl font-bold text-gray-800">About Us</h1>
                     <h3 className="text-2xl text-gray-600 mt-2">“📸 FREEZE YOUR MEMORABLE MOMENTS 🎥”</h3>
                     <h3 className="text-2xl text-gray-600 mt-1">Our goal is to make your lifetime events unforgettable.</h3>
                 </div>
 
-              
+
                 <div className="text-gray-400 leading-relaxed text-[14px] space-y-5">
                     <p>
                         <strong className="text-gray-500">Melody Photography</strong> is one of the best wedding photography services in Karaikudi.
@@ -27,8 +27,8 @@ const About = () => {
                     </p>
                     <p className='text-gray-500'>
                         With over 5 years of experience, our skilled photographers and cinematographers use cutting-edge technology to bring your
-                         wedding and special events to life. We seamlessly blend artistic creativity and professionalism to craft stunning visuals that you ll
-                          cherish forever.
+                        wedding and special events to life. We seamlessly blend artistic creativity and professionalism to craft stunning visuals that you ll
+                        cherish forever.
                     </p>
 
                     <p>

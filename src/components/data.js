@@ -31,6 +31,8 @@ const heights = [
     "h-[320px]",
 ];
 export const Data = [img2, img3, img4, img5, img6, img7];
+export const Data1 = [img2, img3, img4, img5, img6, img7];
+
 export const Babyset = [baby1, baby2, baby3, baby4, baby5, baby6, baby1, baby2, baby3, baby4, baby5, baby6,].map((src, index) => ({
     src,
     height: heights[index % heights.length],

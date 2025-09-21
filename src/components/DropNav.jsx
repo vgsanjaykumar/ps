@@ -4,7 +4,7 @@ import { FiChevronDown, FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
 import { BiHome } from "react-icons/bi";
-import Logo from "/award/hero-1.jpeg"; 
+import Logo from "/award/hero-1.jpeg";
 
 export const DropDown = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -18,6 +18,15 @@ export const DropDown = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Function to scroll to a section by ID
+  const scrollToId = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setIsMobileMenuOpen(false); // close mobile menu if open
+    }
+  };
+
   return (
     <nav
       className={`fixed w-full z-50 p-4 flex justify-between items-center transition-all duration-300 
@@ -30,8 +39,8 @@ export const DropDown = () => {
 
       {/* Desktop Navigation */}
       <div className="hidden md:flex items-center gap-6 text-white">
-        <Tabs selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
-        <NonDropdownLinks />
+        <Tabs selectedTab={selectedTab} setSelectedTab={setSelectedTab} scrollToId={scrollToId} />
+        <NonDropdownLinks scrollToId={scrollToId} />
       </div>
 
       {/* Mobile Menu Toggle */}
@@ -72,8 +81,7 @@ export const DropDown = () => {
                 >
                   {title}{" "}
                   <FiChevronDown
-                    className={`transition-transform ${expandedMobileTab === id ? "rotate-180" : ""
-                      }`}
+                    className={`transition-transform ${expandedMobileTab === id ? "rotate-180" : ""}`}
                   />
                 </button>
                 <AnimatePresence>
@@ -88,6 +96,7 @@ export const DropDown = () => {
                         selectedTab={expandedMobileTab}
                         isMobile
                         closeMobileMenu={() => setIsMobileMenuOpen(false)}
+                        scrollToId={scrollToId}
                       />
                     </motion.div>
                   )}
@@ -96,16 +105,26 @@ export const DropDown = () => {
             ))}
 
             {/* Non-dropdown links */}
-            {NON_DROPDOWN_LINKS.map(({ id, title, link }) => (
-              <Link
-                key={id}
-                to={link}
-                className="border-b border-gray-700 block text-white py-3"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {title}
-              </Link>
-            ))}
+            {NON_DROPDOWN_LINKS.map(({ id, title, scrollId, link }) =>
+              scrollId ? (
+                <button
+                  key={id}
+                  className="border-b border-gray-700 block text-white py-3 text-left"
+                  onClick={() => scrollToId(scrollId)}
+                >
+                  {title}
+                </button>
+              ) : (
+                <Link
+                  key={id}
+                  to={link}
+                  className="border-b border-gray-700 block text-white py-3"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {title}
+                </Link>
+              )
+            )}
           </motion.div>
         )}
       </AnimatePresence>
@@ -114,7 +133,7 @@ export const DropDown = () => {
 };
 
 // Desktop Tabs
-const Tabs = ({ selectedTab, setSelectedTab }) => (
+const Tabs = ({ selectedTab, setSelectedTab, scrollToId }) => (
   <div
     className="relative flex gap-6 text-white"
     onMouseLeave={() => setSelectedTab(null)}
@@ -128,14 +147,10 @@ const Tabs = ({ selectedTab, setSelectedTab }) => (
     {TABS.map(({ id, title }) => (
       <div key={id} className="relative" onMouseEnter={() => setSelectedTab(id)}>
         <button className="flex items-center gap-2 px-4 py-2 rounded-lg transition hover:bg-gray-800">
-          {title}{" "}
-          <FiChevronDown
-            className={`transition-transform ${selectedTab === id ? "rotate-180" : ""
-              }`}
-          />
+          {title} <FiChevronDown className={`transition-transform ${selectedTab === id ? "rotate-180" : ""}`} />
         </button>
         <AnimatePresence>
-          {selectedTab === id && <DropdownContent selectedTab={selectedTab} />}
+          {selectedTab === id && <DropdownContent selectedTab={selectedTab} scrollToId={scrollToId} />}
         </AnimatePresence>
       </div>
     ))}
@@ -143,22 +158,28 @@ const Tabs = ({ selectedTab, setSelectedTab }) => (
 );
 
 // Desktop Non-dropdown links
-const NonDropdownLinks = () => (
+const NonDropdownLinks = ({ scrollToId }) => (
   <div className="flex items-center gap-6">
-    {NON_DROPDOWN_LINKS.map(({ title, link }) => (
-      <Link
-        key={title}
-        to={link}
-        className="text-white hover:text-gray-300 transition"
-      >
-        {title}
-      </Link>
-    ))}
+    {NON_DROPDOWN_LINKS.map(({ title, scrollId, link }) =>
+      scrollId ? (
+        <button
+          key={title}
+          onClick={() => scrollToId(scrollId)}
+          className="text-white hover:text-gray-300 transition"
+        >
+          {title}
+        </button>
+      ) : (
+        <Link key={title} to={link} className="text-white hover:text-gray-300 transition">
+          {title}
+        </Link>
+      )
+    )}
   </div>
 );
 
 // Dropdown content component
-const DropdownContent = ({ selectedTab, isMobile = false, closeMobileMenu }) => {
+const DropdownContent = ({ selectedTab, isMobile = false, closeMobileMenu, scrollToId }) => {
   const TabComponent = TABS.find(({ id }) => id === selectedTab)?.Component;
   return (
     <motion.div
@@ -168,32 +189,43 @@ const DropdownContent = ({ selectedTab, isMobile = false, closeMobileMenu }) => 
       className={`bg-gray-900 p-4 rounded-lg border border-gray-400 shadow-lg ${isMobile ? "" : "absolute left-0 top-[calc(100%_+_5px)] w-80"
         }`}
     >
-      <TabComponent closeMobileMenu={closeMobileMenu} />
+      <TabComponent closeMobileMenu={closeMobileMenu} scrollToId={scrollToId} />
     </motion.div>
   );
 };
 
 // Submenu for dropdown items
-const Submenu = ({ items, closeMobileMenu }) => (
+const Submenu = ({ items, closeMobileMenu, scrollToId }) => (
   <div className="flex flex-col gap-2 p-2">
-    {items.map((item, index) => (
-      <Link
-        key={index}
-        to={item.link}
-        className="block text-sm text-white transition hover:bg-gray-600 hover:text-white p-2 rounded"
-        onClick={() => closeMobileMenu?.()}
-      >
-        {item.title}
-      </Link>
-    ))}
+    {items.map((item, index) =>
+      item.scrollId ? (
+        <button
+          key={index}
+          onClick={() => scrollToId(item.scrollId)}
+          className="block text-sm text-white transition hover:bg-gray-600 hover:text-white p-2 rounded text-left"
+        >
+          {item.title}
+        </button>
+      ) : (
+        <Link
+          key={index}
+          to={item.link}
+          className="block text-sm text-white transition hover:bg-gray-600 hover:text-white p-2 rounded"
+          onClick={() => closeMobileMenu?.()}
+        >
+          {item.title}
+        </Link>
+      )
+    )}
   </div>
 );
 
 // Dropdown Tab Components
-const About = ({ closeMobileMenu }) => (
+const About = ({ closeMobileMenu, scrollToId }) => (
   <Submenu
-    items={[{ title: "Our Story", link: "#About/Story" }]}
+    items={[{ title: "Our Story", scrollId: "About" }]}
     closeMobileMenu={closeMobileMenu}
+    scrollToId={scrollToId}
   />
 );
 
@@ -244,6 +276,5 @@ const TABS = [
 
 const NON_DROPDOWN_LINKS = [
   { id: 1, title: "Home", link: "/" },
-  { id: 2, title: "Book Now", link: "/contact" },
-  { id: 3, title: "Contact", link: "#Contacts" },
+  { id: 2, title: "Contact", scrollId: "Contacts" },
 ];
