@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { PrewedDataset } from "../../data.js";
 
-export default function OutdoorGallery() {
+export default function PreweddingGallery() {
     const initialCount = 6;
     const loadMoreCount = 6;
     const [visibleCount, setVisibleCount] = useState(initialCount);

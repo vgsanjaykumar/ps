@@ -1,4 +1,4 @@
-import weddingImage1 from "/award/img02.jpeg";
+import weddingImage1 from "/Baby/baby5.jpg";
 
 export default function Babybanner() {
 

@@ -15,9 +15,12 @@ import can07 from "/award/cad07.jpeg";
 import can08 from "/award/cad08.jpeg";
 import can09 from "/award/cad09.jpeg";
 
-
-export const Data = [img2, img3, img4, img5, img6, img7];
-
+import baby1 from "/Baby/Baby1.webp"
+import baby2 from "/Baby/baby2.jpg"
+import baby3 from "/Baby/baby3.jpg"
+import baby4 from "/Baby/baby4.jpg"
+import baby5 from "/Baby/baby5.jpg"
+import baby6 from "/Baby/baby6.jpg"
 
 const heights = [
     "h-[250px]",
@@ -27,6 +30,11 @@ const heights = [
     "h-[275px]",
     "h-[320px]",
 ];
+export const Data = [img2, img3, img4, img5, img6, img7];
+export const Babyset = [baby1, baby2, baby3, baby4, baby5, baby6, baby1, baby2, baby3, baby4, baby5, baby6,].map((src, index) => ({
+    src,
+    height: heights[index % heights.length],
+}));
 
 // ✅ Wedding dataset with heights included
 export const OutdoorDataset = [
@@ -52,6 +60,93 @@ export const OutdoorDataset = [
     },
     {
         id: 3,
+        name: "Mani + Nikhil Sayli",
+        image: img2,
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 4,
+        name: "karupu + sonia",
+        image: img4, // cover image
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 5,
+        name: "Janani + Arvind",
+        image: can09, // cover image
+        images: [can09, can08, can07, can06, can05, can04, can03, can01, can00].map(
+            (src, index) => ({
+                src,
+                height: heights[index % heights.length],
+            })
+        ),
+    },
+    {
+        id: 6,
+        name: "Mani + Nikhil Sayli",
+        image: img2,
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 7,
+        name: "Varuna Thapar + Nikhil Sayli",
+        image: img2, // cover image
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 8,
+        name: "Janani + Arvind",
+        image: can09, // cover image
+        images: [can09, can08, can07, can06, can05, can04, can03, can01, can00].map(
+            (src, index) => ({
+                src,
+                height: heights[index % heights.length],
+            })
+        ),
+    },
+    {
+        id: 9,
+        name: "Mani + Nikhil Sayli",
+        image: img2,
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 10,
+        name: "karupu + sonia",
+        image: img4, // cover image
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 11,
+        name: "Janani + Arvind",
+        image: can09, // cover image
+        images: [can09, can08, can07, can06, can05, can04, can03, can01, can00].map(
+            (src, index) => ({
+                src,
+                height: heights[index % heights.length],
+            })
+        ),
+    },
+    {
+        id: 12,
         name: "Mani + Nikhil Sayli",
         image: img2,
         images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
@@ -114,6 +209,356 @@ export const PostwedDataset = [
     },
     {
         id: 3,
+        name: "Mani + Nikhil Sayli",
+        image: img2,
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+];
+export const CoupleProtraitsDataset = [
+    {
+        id: 1,
+        name: "Varuna Thapar + Nikhil Sayli",
+        image: img2, // cover image
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 2,
+        name: "Janani + Arvind",
+        image: can09, // cover image
+        images: [can09, can08, can07, can06, can05, can04, can03, can01, can00].map(
+            (src, index) => ({
+                src,
+                height: heights[index % heights.length],
+            })
+        ),
+    },
+    {
+        id: 3,
+        name: "Mani + Nikhil Sayli",
+        image: img2,
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 4,
+        name: "karupu + sonia",
+        image: img4, // cover image
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 5,
+        name: "Janani + Arvind",
+        image: can09, // cover image
+        images: [can09, can08, can07, can06, can05, can04, can03, can01, can00].map(
+            (src, index) => ({
+                src,
+                height: heights[index % heights.length],
+            })
+        ),
+    },
+    {
+        id: 6,
+        name: "Mani + Nikhil Sayli",
+        image: img2,
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 7,
+        name: "Varuna Thapar + Nikhil Sayli",
+        image: img2, // cover image
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 8,
+        name: "Janani + Arvind",
+        image: can09, // cover image
+        images: [can09, can08, can07, can06, can05, can04, can03, can01, can00].map(
+            (src, index) => ({
+                src,
+                height: heights[index % heights.length],
+            })
+        ),
+    },
+    {
+        id: 9,
+        name: "Mani + Nikhil Sayli",
+        image: img2,
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 10,
+        name: "karupu + sonia",
+        image: img4, // cover image
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 11,
+        name: "Janani + Arvind",
+        image: can09, // cover image
+        images: [can09, can08, can07, can06, can05, can04, can03, can01, can00].map(
+            (src, index) => ({
+                src,
+                height: heights[index % heights.length],
+            })
+        ),
+    },
+    {
+        id: 12,
+        name: "Mani + Nikhil Sayli",
+        image: img2,
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+];
+export const PortraitsDataset = [
+    {
+        id: 1,
+        name: "Nikhil Sayli",
+        image: can03, // cover image
+        images: [can01, can03, can04, can05, can06, can07].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 2,
+        name: "JANANI",
+        image: can04, // cover image
+        images: [can01, can03, can04, can05, can06, can07].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 3,
+        name: "Mani + Nikhil Sayli",
+        image: img2,
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 4,
+        name: "karupu + sonia",
+        image: img4, // cover image
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 5,
+        name: "Janani + Arvind",
+        image: can09, // cover image
+        images: [can09, can08, can07, can06, can05, can04, can03, can01, can00].map(
+            (src, index) => ({
+                src,
+                height: heights[index % heights.length],
+            })
+        ),
+    },
+    {
+        id: 6,
+        name: "Mani + Nikhil Sayli",
+        image: img2,
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 7,
+        name: "Varuna Thapar + Nikhil Sayli",
+        image: img2, // cover image
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 8,
+        name: "Janani + Arvind",
+        image: can09, // cover image
+        images: [can09, can08, can07, can06, can05, can04, can03, can01, can00].map(
+            (src, index) => ({
+                src,
+                height: heights[index % heights.length],
+            })
+        ),
+    },
+    {
+        id: 9,
+        name: "Mani + Nikhil Sayli",
+        image: img2,
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 10,
+        name: "karupu + sonia",
+        image: img4, // cover image
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 11,
+        name: "Janani + Arvind",
+        image: can09, // cover image
+        images: [can09, can08, can07, can06, can05, can04, can03, can01, can00].map(
+            (src, index) => ({
+                src,
+                height: heights[index % heights.length],
+            })
+        ),
+    },
+    {
+        id: 12,
+        name: "Mani + Nikhil Sayli",
+        image: img2,
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+];
+export const CanditDataset = [
+    {
+        id: 1,
+        name: "Nikhil Sayli",
+        image: can03, // cover image
+        images: [can01, can03, can04, can05, can06, can07].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 2,
+        name: "JANANI",
+        image: can04, // cover image
+        images: [can01, can03, can04, can05, can06, can07].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 3,
+        name: "Mani + Nikhil Sayli",
+        image: img2,
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 4,
+        name: "karupu + sonia",
+        image: img4, // cover image
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 5,
+        name: "Janani + Arvind",
+        image: can09, // cover image
+        images: [can09, can08, can07, can06, can05, can04, can03, can01, can00].map(
+            (src, index) => ({
+                src,
+                height: heights[index % heights.length],
+            })
+        ),
+    },
+    {
+        id: 6,
+        name: "Mani + Nikhil Sayli",
+        image: img2,
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 7,
+        name: "Varuna Thapar + Nikhil Sayli",
+        image: img2, // cover image
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 8,
+        name: "Janani + Arvind",
+        image: can09, // cover image
+        images: [can09, can08, can07, can06, can05, can04, can03, can01, can00].map(
+            (src, index) => ({
+                src,
+                height: heights[index % heights.length],
+            })
+        ),
+    },
+    {
+        id: 9,
+        name: "Mani + Nikhil Sayli",
+        image: img2,
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 10,
+        name: "karupu + sonia",
+        image: img4, // cover image
+        images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({
+            src,
+            height: heights[index % heights.length],
+        })),
+    },
+    {
+        id: 11,
+        name: "Janani + Arvind",
+        image: can09, // cover image
+        images: [can09, can08, can07, can06, can05, can04, can03, can01, can00].map(
+            (src, index) => ({
+                src,
+                height: heights[index % heights.length],
+            })
+        ),
+    },
+    {
+        id: 12,
         name: "Mani + Nikhil Sayli",
         image: img2,
         images: [img2, img3, img4, img5, img6, img7].map((src, index) => ({

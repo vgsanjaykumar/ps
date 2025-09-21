@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { PostwedDataset } from "../../data.js";
 
-export default function OutdoorGallery() {
+export default function PostweddingGallery() {
     const initialCount = 6;
     const loadMoreCount = 6;
     const [visibleCount, setVisibleCount] = useState(initialCount);
@@ -19,7 +19,7 @@ export default function OutdoorGallery() {
     return (
         <div className="relative bg-white py-24 px-6 md:px-6 lg:px-32">
             <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">
-               Post Wedding Gallery
+                Best Post Wedding Gallery
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
