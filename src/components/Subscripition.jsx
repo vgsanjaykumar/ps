@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CountUp from "react-countup";
 import { Parallax } from "react-parallax";
 
 const SubscribeSection = () => {
@@ -35,54 +36,29 @@ const SubscribeSection = () => {
 
     return (
         <Parallax bgImage="/award/testmoni.jpg" strength={400} className="py-10">
-            <section className="">
-                <div className="py-5  text-center w-full ">
-                    <div className="">
-                        <h2 className="text-2xl font-semibold text-white">Subscribe</h2>
-                        <div className="w-12 border-b-2 border-teal-500 mx-auto my-2"></div>
-                        <p className="text-gray-50 text-2xl">Subscribe to our newsletter to stay updated every moment</p>
-                    </div>
-
-
-                    <form onSubmit={onSubmit} className="mt-5 flex md:flex-row flex-col  justify-start md:justify-center items-center gap-8 md:space-x-14 space-x-0 text-white">
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="Enter your email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            className="px-4 py-2 w-80 border-b-2 border-gray-300 outline-none focus:border-teal-400 bg-transparent text-lg text-white"
-                            required
-                        />
-                        <input
-                            type="tel"
-                            name="phone"
-                            placeholder="Enter your phone number"
-                            value={phone}
-                            onChange={(e) => setPhone(e.target.value)}
-                            className="px-4 py-2 w-80 border-b-2 border-gray-300 outline-none text-white focus:border-teal-400 bg-transparent text-lg"
-                        />
-                        <button type="submit" className="bg-teal-400 text-white px-5 py-2 rounded-lg hover:bg-teal-700">
-                            Submit
-                        </button>
-                    </form>
-
-                    {showPopup && (
-                        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-90">
-                            <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-                                <h3 className="text-xl font-bold text-green-600">Success!</h3>
-                                <p className="text-gray-700 mt-2">Your form has been submitted successfully.</p>
-                                <button
-                                    onClick={() => setShowPopup(false)}
-                                    className="mt-4 bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600"
-                                >
-                                    Close
-                                </button>
-                            </div>
+            <section className=" text-white py-10">
+                <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    {[
+                        { end: 10, label: "Locations" },
+                        { end: 500, label: "Model Shoots", suffix: "+" },
+                        { end: 100, label: "Weddings", suffix: "+" },
+                        { end: 1, label: "Dream" },
+                    ].map((item, index) => (
+                        <div key={index} className="flex flex-col items-center gap-2">
+                            <p className="text-3xl font-semibold">
+                                <CountUp
+                                    start={0}
+                                    end={item.end}
+                                    duration={3}
+                                    enableScrollSpy
+                                    scrollSpyOnce
+                                />
+                                {item.suffix && item.suffix}
+                            </p>
+                            <p className="text-lg font-medium">{item.label}</p>
                         </div>
-                    )}
+                    ))}
                 </div>
-
             </section>
         </Parallax>
 

@@ -19,7 +19,7 @@ export const DropDown = () => {
 
   return (
     <nav className={`fixed w-full z-50 p-4 flex justify-between items-center transition-all duration-300 
-        ${isScrolled ? "bg-teal-400" : "bg-[#00000000] "} px-6 md:pr-28 pl-10 z-50`}
+        ${isScrolled ? "bg-[#4ac6bfd5]" : "bg-[#00000000] "} px-6 md:pr-28 pl-10 z-50`}
     >
       {/* Logo */}
       <Link to="/" className="text-white text-xl font-bold">
@@ -50,12 +50,12 @@ export const DropDown = () => {
             className="fixed top-0 right-0 w-3/4 h-full bg-gray-900 p-6 flex flex-col gap-4 z-50"
           >
             <div className="w-full flex justify-end">
-          <button
-        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        className="md:hidden text-white text-3xl hover:text-teal-400"
-      >
-            <MdClose  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}/>
-            </button>
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="md:hidden text-white text-3xl hover:text-teal-400"
+              >
+                <MdClose onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} />
+              </button>
             </div>
             {TABS.map(({ id, title }) => (
               <div key={id} className="border-b border-gray-700">
@@ -95,10 +95,10 @@ const Tabs = ({ selectedTab, setSelectedTab }) => {
       <div className="text-center items-center py-4">
         <Link to="/"> <BiHome className="text-center items-center" /></Link>
       </div>
-     
+
       {TABS.map(({ id, title }) => (
         <div key={id} className="relative" onMouseEnter={() => setSelectedTab(id)}>
-          
+
           <button className="flex items-center gap-2 px-4 py-2 rounded-lg transition hover:bg-gray-800">
             {title}{" "}
             <FiChevronDown
@@ -192,8 +192,7 @@ const Other = () => (
 const About = () => (
   <Submenu
     items={[
-      { title: "Our Story", link: "/about/our-story" },
-      { title: "Our Team", link: "/about/our-team" },
+      { title: "Our Story", link: "#About/Story" },
     ]}
   />
 );
@@ -208,5 +207,5 @@ const TABS = [
 const NON_DROPDOWN_LINKS = [
   { title: "Home", link: "/" }, // Home is a non-dropdown button
   { title: "Book Now", link: "/contact" },
-  { title: "Contact", link: "/SeparateView" },
+  { title: "Contact", link: "#Contacts" },
 ];

@@ -61,7 +61,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Contacts" element={<ContactForm />} />
-        <Route path="/SeparateView" element={<Sephome />} />
+        <Route path="/SeparateView/:slug" element={<Sephome />} />
 
         <Route path="/weddings/outdoor" element={<Weddinghome />} />
         <Route path="/weddings/pre-wedding" element={<Prewedhome />} />

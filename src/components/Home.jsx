@@ -19,17 +19,10 @@ const Home = () => {
 
             <Hero />
             <Events />
-           
-
-            <Numbercount />
-            <SubscribeSection />
-
-
-            
             <About />
             <WhyChooseUs/>
-            
-            <Testimonials />
+            <SubscribeSection />
+       
             <ContactForm/>
             <BookNowNew />
             
