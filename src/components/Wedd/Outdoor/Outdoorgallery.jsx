@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { OutdoorDataset } from "../../data.js";
+import data from "../../Data/Outdoor.json";
 
 export default function OutdoorGallery() {
+    const OutdoorDataset = data.OutdoorDataset; 
+
     const initialCount = 6;
     const loadMoreCount = 6;
     const [visibleCount, setVisibleCount] = useState(initialCount);
@@ -10,11 +12,10 @@ export default function OutdoorGallery() {
     const handleViewMore = () =>
         setVisibleCount((prev) => prev + loadMoreCount);
 
-
     const handleViewLess = () => setVisibleCount(initialCount);
-    const slugify = (name) =>
-        name.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]+/g, ""); 
 
+    const slugify = (name) =>
+        name.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]+/g, "");
 
     return (
         <div className="relative bg-white py-24 px-6 md:px-6 lg:px-32">
@@ -27,7 +28,7 @@ export default function OutdoorGallery() {
                     <Link
                         key={photo.id}
                         to={`/SeparateView/${slugify(photo.name)}`}
-                        state={{ couple: photo }} // still passing state
+                        state={{ couple: photo }}
                     >
                         <div className="relative group overflow-hidden rounded-xl shadow-md cursor-pointer">
                             <img

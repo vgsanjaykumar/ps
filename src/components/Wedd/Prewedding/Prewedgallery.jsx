@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { PrewedDataset } from "../../data.js";
+import data from "../../Data/Prewed.json"; 
 
 export default function PreweddingGallery() {
+    const PrewedDataset = data.PrewedDataset;
     const initialCount = 6;
     const loadMoreCount = 6;
     const [visibleCount, setVisibleCount] = useState(initialCount);

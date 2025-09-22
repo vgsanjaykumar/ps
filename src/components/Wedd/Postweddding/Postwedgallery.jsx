@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { PostwedDataset } from "../../data.js";
+import data from "../../Data/Postwed.json"; 
 
 export default function PostweddingGallery() {
+    const PostwedDataset = data.PostwedDataset; // 👈 get dataset
+
     const initialCount = 6;
     const loadMoreCount = 6;
     const [visibleCount, setVisibleCount] = useState(initialCount);
@@ -10,11 +12,10 @@ export default function PostweddingGallery() {
     const handleViewMore = () =>
         setVisibleCount((prev) => prev + loadMoreCount);
 
-
     const handleViewLess = () => setVisibleCount(initialCount);
+
     const slugify = (name) =>
         name.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]+/g, "");
-
 
     return (
         <div className="relative bg-white py-24 px-6 md:px-6 lg:px-32">
@@ -27,7 +28,7 @@ export default function PostweddingGallery() {
                     <Link
                         key={photo.id}
                         to={`/SeparateView/${slugify(photo.name)}`}
-                        state={{ couple: photo }} 
+                        state={{ couple: photo }}
                     >
                         <div className="relative group overflow-hidden rounded-xl shadow-md cursor-pointer">
                             <img
@@ -36,7 +37,9 @@ export default function PostweddingGallery() {
                                 className="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-60 flex items-end p-4">
-                                <h3 className="text-white text-lg font-semibold">{photo.name}</h3>
+                                <h3 className="text-white text-lg font-semibold">
+                                    {photo.name}
+                                </h3>
                             </div>
                         </div>
                     </Link>

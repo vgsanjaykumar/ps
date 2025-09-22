@@ -1,25 +1,9 @@
 
 import React, { useState } from "react";
-
-const weddingPhotos = [
-    { id: 1, name: "Varuna Thapar + Nikhil Sayli", image: "/award/img01.jpeg" },
-    { id: 2, name: "Janani + Arvind", image: "/award/img07.jpeg" },
-    { id: 3, name: "Karthika + Sachin Kumar", image: "/award/img06.jpeg" },
-    { id: 4, name: "Alekhya + Sai Teja", image: "/award/img03.jpeg" },
-    { id: 5, name: "Lavanya Yaddanapudi + Sreevathaan", image: "/award/img06.jpeg" },
-    { id: 6, name: "Varuna Thapar + Nikhil Sayli", image: "/award/img01.jpeg" },
-    { id: 7, name: "Janani + Arvind", image: "/award/img07.jpeg" },
-    { id: 8, name: "Karthika + Sachin Kumar", image: "/award/img06.jpeg" },
-    { id: 9, name: "Alekhya + Sai Teja", image: "/award/img03.jpeg" },
-    { id: 10, name: "Varuna Thapar + Nikhil Sayli", image: "/award/img01.jpeg" },
-    { id: 11, name: "Janani + Arvind", image: "/award/img07.jpeg" },
-    { id: 12, name: "Karthika + Sachin Kumar", image: "/award/img06.jpeg" },
-    { id: 13, name: "Alekhya + Sai Teja", image: "/award/img03.jpeg" },
-
-
-];
+import data from "../../Data/Event.json"
 
 export default function EventGallery() {
+    const Eventdataset=data.EventDataset
     const initialRows = 3; // Show 3 rows initially
     const rowsPerClick = 6; // Load 6 more rows each time
     const columns = 3; // Number of columns (adjust based on screen size)
@@ -41,7 +25,7 @@ export default function EventGallery() {
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {weddingPhotos.slice(0, visibleCount).map((photo) => (
+                {Eventdataset.slice(0, visibleCount).map((photo) => (
                     <div key={photo.id} className="relative group overflow-hidden rounded-xl shadow-md">
                         <img
                             src={photo.image}
@@ -57,7 +41,7 @@ export default function EventGallery() {
 
             {/* Buttons */}
             <div className="flex justify-end mt-8 gap-4">
-                {visibleCount < weddingPhotos.length && (
+                {visibleCount < Eventdataset.length && (
                     <button
                         onClick={handleViewMore}
                         className="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition"

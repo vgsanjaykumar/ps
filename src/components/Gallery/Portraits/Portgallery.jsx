@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { PortraitsDataset } from "../../data.js";
+import data from "../../Data/Portraits.json";
 
 export default function PortraitsGallery() {
+    const PortraitsDataset =data.PortraitsDataset
     const initialCount = 6;
     const loadMoreCount = 6;
     const [visibleCount, setVisibleCount] = useState(initialCount);

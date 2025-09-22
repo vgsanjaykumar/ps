@@ -4,9 +4,10 @@ import { motion } from "framer-motion";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
-import { Babyset } from "../../data"; 
+import data from "../../Data/Baby.json"; 
 
 const BabyGallery = () => {
+    const Babyset = data.Babyset;
     const initialLoad = 6; // initial images
     const loadMoreCount = 6; // load more per scroll
     const [visibleImages, setVisibleImages] = useState(Babyset.slice(0, initialLoad));

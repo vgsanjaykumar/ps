@@ -3,69 +3,10 @@ import { motion } from "framer-motion";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css"; // Import styles
-
-
-import img2 from "/award/img02.jpeg";
-import img3 from "/award/img03.jpeg";
-import img4 from "/award/img04.jpeg";
-import img5 from "/award/img05.jpeg";
-import img6 from "/award/img06.jpeg";
-import img7 from "/award/img07.jpeg";
-
-const allImages = [
-    { src: img2, height: "h-[250px]" },
-    { src: img2, height: "h-[300px]" },
-    { src: img3, height: "h-[350px]" },
-    { src: img4, height: "h-[400px]" },
-    { src: img5, height: "h-auto" },
-    { src: img6, height: "h-[275px]" },
-    { src: img7, height: "h-[320px]" },
-    { src: img2, height: "h-[280px]" },
-    { src: img6, height: "h-[370px]" },
-    { src: img3, height: "h-[330px]" },
-    { src: img5, height: "h-[290px]" },
-    { src: img4, height: "h-[310px]" },
-    { src: img2, height: "h-[260px]" },
-    { src: img7, height: "h-[340px]" },
-    { src: img3, height: "h-[390px]" },
-    { src: img6, height: "h-[350px]" },
-    { src: img2, height: "h-[270px]" },
-    { src: img5, height: "h-[325px]" },
-    { src: img4, height: "h-[400px]" },
-    { src: img7, height: "h-[360px]" },
-    { src: img2, height: "h-[300px]" },
-    { src: img6, height: "h-[280px]" },
-    { src: img2, height: "h-[310px]" },
-    { src: img3, height: "h-[380px]" },
-    { src: img5, height: "h-[295px]" },
-    { src: img2, height: "h-[250px]" },
-    { src: img2, height: "h-[300px]" },
-    { src: img3, height: "h-[350px]" },
-    { src: img4, height: "h-[400px]" },
-    { src: img5, height: "h-auto" },
-    { src: img6, height: "h-[275px]" },
-    { src: img7, height: "h-[320px]" },
-    { src: img2, height: "h-[280px]" },
-    { src: img6, height: "h-[370px]" },
-    { src: img3, height: "h-[330px]" },
-    { src: img5, height: "h-[290px]" },
-    { src: img4, height: "h-[310px]" },
-    { src: img2, height: "h-[260px]" },
-    { src: img7, height: "h-[340px]" },
-    { src: img3, height: "h-[390px]" },
-    { src: img6, height: "h-[350px]" },
-    { src: img2, height: "h-[270px]" },
-    { src: img5, height: "h-[325px]" },
-    { src: img4, height: "h-[400px]" },
-    { src: img7, height: "h-[360px]" },
-    { src: img2, height: "h-[300px]" },
-    { src: img6, height: "h-[280px]" },
-    { src: img2, height: "h-[310px]" },
-    { src: img3, height: "h-[380px]" },
-    { src: img5, height: "h-[295px]" },
-];
+import data from "../../Data/Photoedit.json"
 
 const PhotoeditGallery = () => {
+    const allImages =data.Photoedit
     const initialLoad = 12;
     const loadMoreCount = 6;
 

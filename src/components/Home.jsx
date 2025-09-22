@@ -10,7 +10,10 @@ import Testimonials from './Testimonals'
 import BookNowNew from './BookNowNew'
 import WhyChooseUs from './WhyChooseus'
 import ContactForm from './Enquriy'
-import SubscribeSection from './Subscripition'
+
+import WeddingCoupleSection from './WeddingCoupleSection'
+import NumCount from './Numcount'
+import OutdoorCoupleShoot from './CoupleSection'
 
 
 const Home = () => {
@@ -18,11 +21,13 @@ const Home = () => {
         <div>
 
             <Hero />
-            <Events />
+            <WeddingCoupleSection />
+            <OutdoorCoupleShoot />
             <About />
+            <NumCount />
             <WhyChooseUs/>
-            <SubscribeSection />
-       
+            <Events />
+            <Testimonials/>
             <ContactForm/>
             <BookNowNew />
             

@@ -34,8 +34,8 @@ import Notfoundhome from "./components/Notfound/Notfoundhome"
 import ScrollToTop from "./components/ScroltoTop"
 import ContactForm from "./components/Enquriy"
 import Sephome from "./components/Seperate/Sephome"
-import Subscripition from "./components/Subscripition"
-import SubscribeSection from "./components/Subscripition"
+
+
 
 
 

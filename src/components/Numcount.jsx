@@ -2,7 +2,7 @@ import { useState } from "react";
 import CountUp from "react-countup";
 import { Parallax } from "react-parallax";
 
-const SubscribeSection = () => {
+const NumCount = () => {
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const [result, setResult] = useState("");
@@ -39,9 +39,9 @@ const SubscribeSection = () => {
             <section className=" text-white py-10">
                 <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                     {[
-                        { end: 10, label: "Locations" },
+                        { end: 100, label: "Locations", suffix: "+" },
                         { end: 500, label: "Model Shoots", suffix: "+" },
-                        { end: 100, label: "Weddings", suffix: "+" },
+                        { end: 1000, label: "Weddings", suffix: "+" },
                         { end: 1, label: "Dream" },
                     ].map((item, index) => (
                         <div key={index} className="flex flex-col items-center gap-2">
@@ -65,4 +65,4 @@ const SubscribeSection = () => {
     );
 };
 
-export default SubscribeSection;
+export default NumCount;

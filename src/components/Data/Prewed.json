@@ -1,0 +1,22 @@
+{
+  "PrewedDataset": [
+    {
+      "id": 1,
+      "name": "Kavya & Arjun",
+      "image": "/postwed/img01.jpeg",
+      "images": [
+        { "src": "/postwed/img01.jpeg", "height": "h-[250px]" },
+        { "src": "/postwed/img02.jpeg", "height": "h-[350px]" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Sneha & Mani",
+      "image": "/postwed/img03.jpeg",
+      "images": [
+        { "src": "/postwed/img03.jpeg", "height": "h-[300px]" },
+        { "src": "/postwed/img04.jpeg", "height": "h-[250px]" }
+      ]
+    }
+  ]
+}
