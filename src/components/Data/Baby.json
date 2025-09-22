@@ -1,16 +1,19 @@
 {
   "Babyset": [
+    { "src": "/Baby/POST.jpg", "height": "h-[250px]" },
     { "src": "/Baby/Baby1.webp", "height": "h-[250px]" },
     { "src": "/Baby/baby2.jpg", "height": "h-[300px]" },
     { "src": "/Baby/baby3.jpg", "height": "h-[350px]" },
     { "src": "/Baby/baby4.jpg", "height": "h-[250px]" },
     { "src": "/Baby/baby5.jpg", "height": "h-[300px]" },
     { "src": "/Baby/baby6.jpg", "height": "h-[350px]" },
-    { "src": "/Baby/Baby1.webp", "height": "h-[250px]" },
-    { "src": "/Baby/baby2.jpg", "height": "h-[300px]" },
-    { "src": "/Baby/baby3.jpg", "height": "h-[350px]" },
-    { "src": "/Baby/baby4.jpg", "height": "h-[250px]" },
-    { "src": "/Baby/baby5.jpg", "height": "h-[300px]" },
-    { "src": "/Baby/baby6.jpg", "height": "h-[350px]" }
+    { "src": "/Baby/aaNDAL/01.jpg", "height": "h-[250px]" },
+    { "src": "/Baby/aaNDAL/02.jpg", "height": "h-[300px]" },
+    { "src": "/Baby/aaNDAL/02orihin.jpg", "height": "h-[350px]" },
+    { "src": "/Baby/aaNDAL/03.jpg", "height": "h-[250px]" },
+    { "src": "/Baby/aaNDAL/03cp.jpg", "height": "h-[300px]" },
+    { "src": "/Baby/aaNDAL/04.jpg", "height": "h-[350px]" },
+    { "src": "/Baby/aaNDAL/05.jpg", "height": "h-[350px]" },
+    { "src": "/Baby/aaNDAL/06.jpg", "height": "h-[250px]" }
   ]
 }
