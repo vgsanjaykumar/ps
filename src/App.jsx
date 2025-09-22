@@ -21,7 +21,6 @@ import GalleryWeddinghome from "./components/Gallery/Wedding/Weddinghome"
 import Portraitshome from "./components/Gallery/Portraits/Portraitshome"
 import Eventhome from "./components/Gallery/Events/Eventhome"
 import Couplehome from "./components/Gallery/Couple Portraits/Couplehome"
-import Candidhome from "./components/Gallery/candid Momenet/Candidhome"
 
 import Babyhome from "./components/others/Baby/Babyhome"
 import Birthhome from "./components/others/birthday/Birthhome"
@@ -34,6 +33,7 @@ import Notfoundhome from "./components/Notfound/Notfoundhome"
 import ScrollToTop from "./components/ScroltoTop"
 import ContactForm from "./components/Enquriy"
 import Sephome from "./components/Seperate/Sephome"
+import FamilyPortaitsHome from "./components/Gallery/Family portratits/FamilyPortaitsHome"
 
 
 
@@ -68,7 +68,7 @@ function App() {
         <Route path="/weddings/post-wedding" element={<Postwedhome />} />
         <Route path="/gallery/wedding/" element={<GalleryWeddinghome />} />
 
-        <Route path="/gallery/candid-moment" element={<Candidhome />} />
+        <Route path="/gallery/family-portraits" element={<FamilyPortaitsHome />} />
         <Route path="/gallery/couple-portraits" element={<Couplehome />} />
         <Route path="/gallery/events" element={<Eventhome />} />
         <Route path="/gallery/portraits" element={<Portraitshome />} />

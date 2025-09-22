@@ -14,6 +14,9 @@ import ContactForm from './Enquriy'
 import WeddingCoupleSection from './WeddingCoupleSection'
 import NumCount from './Numcount'
 import OutdoorCoupleShoot from './CoupleSection'
+import Weddingmagzine from './Weddingmagzine'
+import Modelshoot from './ModelShoot'
+import Babysection from './BabySection'
 
 
 const Home = () => {
@@ -21,8 +24,13 @@ const Home = () => {
         <div>
 
             <Hero />
+            <Modelshoot />
             <WeddingCoupleSection />
+            
             <OutdoorCoupleShoot />
+            <Weddingmagzine />
+            <Babysection/>
+          
             <About />
             <NumCount />
             <WhyChooseUs/>

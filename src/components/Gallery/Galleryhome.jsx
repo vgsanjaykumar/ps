@@ -8,7 +8,8 @@ import Booking from '../Constants/Booking'
 import PortraitsGallery from './Portraits/Portgallery'
 import EventGallery from './Events/EventGallery'
 import CoupleGallery from './Couple Portraits/Couplegallery'
-import CandidGallery from './candid Momenet/CandidGallery'
+import FamilyPortaitsGallery from './Family portratits/FamilyPortaitsGallery'
+
 
 
 const Galleryhome = () => {
@@ -23,7 +24,7 @@ const Galleryhome = () => {
       <PortraitsGallery/>
       <EventGallery/>
       <CoupleGallery/>
-      <CandidGallery/>
+      <FamilyPortaitsGallery/>
       
 
 

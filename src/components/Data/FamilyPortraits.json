@@ -1,0 +1,33 @@
+{
+  "CandidDataset": [
+    {
+      "id": 1,
+      "name":"Family-Shoot-1",
+      "image": "/Family portait/01/02.jpg",
+      "images": [
+        { "src": "/Family portait/01/02.jpg", "height": "h-[250px]" },
+        { "src": "/Family portait/01/03.jpg", "height": "h-[250px]" },
+        { "src": "/Family portait/01/06.jpg", "height": "h-[300px]" },
+        { "src": "/Family portait/01/07.jpg", "height": "h-[350px]" },
+        { "src": "/Family portait/01/GMSK9275.JPG", "height": "h-[250px]" },
+        { "src": "/Family portait/01/Untitled-1.jpg", "height": "h-[350px]" },
+         { "src": "/Family portait/01/02.jpg", "height": "h-[250px]" },
+        { "src": "/Family portait/01/03.jpg", "height": "h-[250px]" },
+        { "src": "/Family portait/01/06.jpg", "height": "h-[300px]" },
+        { "src": "/Family portait/01/07.jpg", "height": "h-[350px]" },
+        { "src": "/Family portait/01/GMSK9275.JPG", "height": "h-[250px]" },
+        { "src": "/Family portait/01/Untitled-1.jpg", "height": "h-[350px]" }
+      
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Family-Shoot-2",
+      "image": "/Family portait/02/0I8A7779.jpg",
+      "images": [
+        { "src": "/award/img04.jpeg", "height": "h-[250px]" },
+        { "src": "/award/img05.jpeg", "height": "h-[350px]" }
+      ]
+    }
+  ]
+}

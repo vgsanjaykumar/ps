@@ -247,7 +247,7 @@ const Gallery = ({ closeMobileMenu }) => (
       { title: "Portraits", link: "/gallery/portraits" },
       { title: "Events", link: "/gallery/events" },
       { title: "Couple Portraits", link: "/gallery/couple-portraits" },
-      { title: "Candid Moments", link: "/gallery/candid-moment" },
+      { title: "Family Portraits", link: "/gallery/family-portraits" },
     ]}
     closeMobileMenu={closeMobileMenu}
   />

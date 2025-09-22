@@ -31,7 +31,7 @@ export default function OutdoorCoupleShoot() {
                         <div className="w-16 h-[2px] bg-yellow-500 my-2 mx-auto md:mx-0"></div>
 
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            Outdoor Couple Shoot
+                            Couple Shoot
                         </h2>
 
                         <p className="text-gray-600 leading-relaxed mb-6 max-w-lg mx-auto md:mx-0">
