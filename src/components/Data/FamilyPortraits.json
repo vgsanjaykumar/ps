@@ -23,10 +23,21 @@
     {
       "id": 2,
       "name": "Family-Shoot-2",
-      "image": "/Family portait/02/0I8A7779.jpg",
+      "image": "/Family portait/02/0I8A7933.jpg",
       "images": [
-        { "src": "/award/img04.jpeg", "height": "h-[250px]" },
-        { "src": "/award/img05.jpeg", "height": "h-[350px]" }
+       { "src": "/Family portait/02/0I8A7779.jpg", "height": "h-[250px]" },
+        { "src": "/Family portait/02/0I8A7797.jpg", "height": "h-[250px]" },
+        { "src": "/Family portait/02/0I8A7842.jpg", "height": "h-[300px]" },
+        { "src": "/Family portait/02/0I8A7843.jpg", "height": "h-[350px]" },
+        { "src": "/Family portait/02/0I8A7869 text.jpg", "height": "h-[250px]" },
+        { "src": "/Family portait/02/0I8A7876.jpg", "height": "h-[350px]" },
+         { "src": "/Family portait/02/0I8A7884.jpg", "height": "h-[250px]" },
+        { "src": "/Family portait/02/0I8A7907.jpg", "height": "h-[250px]" },
+        { "src": "/Family portait/02/0I8A7910.jpg", "height": "h-[300px]" },
+        { "src": "/Family portait/02/0I8A7933.jpg", "height": "h-[350px]" },
+        { "src": "/Family portait/02/0I8A7944.jpg.JPG", "height": "h-[250px]" },
+        { "src": "/Family portait/02/p2.jpg", "height": "h-[350px]" },
+             { "src": "/Family portait/02/p3.jpg", "height": "h-[350px]" }
       ]
     }
   ]
