@@ -18,6 +18,26 @@
     { "src": "/Reciption/Mahesh hemprethi/013.webp", "height": "h-[250px]" },
     { "src": "/Reciption/Mahesh hemprethi/016.webp", "height": "h-[300px]" }
       ]
+    },
+    {
+      "id": 2,
+      "name": "Shoot-2",
+      "image": "/Wedding/ramkumar x niranjana/postwed/cover/050.webp",
+      "images": [
+        { "src": "/Wedding/ramkumar x niranjana/postwed/01.webp", "height": "h-[250px]" },
+        { "src": "/Wedding/ramkumar x niranjana/postwed/08.webp", "height": "h-[300px]" },
+        { "src": "/Wedding/ramkumar x niranjana/postwed/09.webp", "height": "h-[350px]" },
+        { "src": "/Wedding/ramkumar x niranjana/postwed/10.webp", "height": "h-[300px]" },
+        { "src": "/Wedding/ramkumar x niranjana/postwed/11.webp", "height": "h-[300px]" }, 
+        { "src": "/Wedding/ramkumar x niranjana/postwed/011.webp", "height": "h-[350px]" },
+        { "src": "/Wedding/ramkumar x niranjana/postwed/12.webp", "height": "h-[350px]" },
+        { "src": "/Wedding/ramkumar x niranjana/postwed/08.webp", "height": "h-[300px]" },
+        { "src": "/Wedding/ramkumar x niranjana/postwed/09.webp", "height": "h-[350px]" },
+        { "src": "/Wedding/ramkumar x niranjana/postwed/10.webp", "height": "h-[300px]" },
+        { "src": "/Wedding/ramkumar x niranjana/postwed/11.webp", "height": "h-[300px]" }, 
+        { "src": "/Wedding/ramkumar x niranjana/postwed/011.webp", "height": "h-[350px]" },
+        { "src": "/Wedding/ramkumar x niranjana/postwed/12.webp", "height": "h-[350px]" }
+      ]
     }
   ]
 }

@@ -2,11 +2,17 @@
   "OutdoorDataset": [
     {
       "id": 1,
-      "name": " + Nikhil Sayli",
-      "image": "/award/img02.jpeg",
+      "name": "Ramkumar & Niranjana",
+      "image": "/Wedding/ramkumar x niranjana/oudoor/cover/000.webp",
       "images": [
-        { "src": "/award/img02.jpeg", "height": "h-[250px]" },
-        { "src": "/award/img03.jpeg", "height": "h-[350px]" }
+        { "src": "/Wedding/ramkumar x niranjana/oudoor/00.webp", "height": "h-[250px]" },
+        { "src": "/Wedding/ramkumar x niranjana/oudoor/01.webp", "height": "h-[350px]" },
+        { "src": "/Wedding/ramkumar x niranjana/oudoor/02.webp", "height": "h-[300px]" },
+        { "src": "/Wedding/ramkumar x niranjana/oudoor/03.webp", "height": "h-[350px]" },
+        { "src": "/Wedding/ramkumar x niranjana/oudoor/04.webp", "height": "h-[350px]" },
+        { "src": "/Wedding/ramkumar x niranjana/oudoor/05.webp", "height": "h-[300px]" },
+        { "src": "/Wedding/ramkumar x niranjana/oudoor/06.webp", "height": "h-[250px]" },
+        { "src": "/Wedding/ramkumar x niranjana/oudoor/07.webp", "height": "h-[350px]" }
       ]
     },
     {
@@ -14,18 +20,27 @@
       "name": "Mahesh + Hemprethi",
       "image": "/Reciption/Mahesh hemprethi/Outdoor/cover.webp",
       "images": [
-        {"src":"/Reciption/Mahesh hemprethi/Outdoor/cover.webp","height":"h-[350px]"},
         { "src": "/Reciption/Mahesh hemprethi/Outdoor/000.webp", "height": "h-[250px]" },
         { "src": "/Reciption/Mahesh hemprethi/Outdoor/001.webp", "height": "h-[300px]" },
         { "src": "/Reciption/Mahesh hemprethi/Outdoor/003.webp", "height": "h-[250px]" },
         { "src": "/Reciption/Mahesh hemprethi/Outdoor/004.webp", "height": "h-[300px]" },
         { "src": "/Reciption/Mahesh hemprethi/Outdoor/005.webp", "height": "h-[350px]" },
-        { "src": "/Reciption/Mahesh hemprethi/Outdoor/006.webp", "height": "h-[250px]" },
         { "src": "/Reciption/Mahesh hemprethi/Outdoor/007.webp", "height": "h-[300px]" },
         { "src": "/Reciption/Mahesh hemprethi/Outdoor/008.webp", "height": "h-[350px]" },
         { "src": "/Reciption/Mahesh hemprethi/Outdoor/009.webp", "height": "h-[250px]" },
         { "src": "/Reciption/Mahesh hemprethi/Outdoor/010.webp", "height": "h-[300px]" },
-        { "src": "/Reciption/Mahesh hemprethi/Outdoor/011.webp", "height": "h-[350px]" }
+        { "src": "/Reciption/Mahesh hemprethi/Outdoor/011.webp", "height": "h-[350px]" },
+        { "src": "/Wedding/mahesh x hempreethi/outdoor/001.webp", "height": "h-[250px]" },
+        { "src": "/Wedding/mahesh x hempreethi/outdoor/02.webp", "height": "h-[300px]" },
+        { "src": "/Wedding/mahesh x hempreethi/outdoor/002.webp", "height": "h-[350px]" },
+        { "src": "/Wedding/mahesh x hempreethi/outdoor/006.webp", "height": "h-[250px]" },
+        { "src": "/Wedding/mahesh x hempreethi/outdoor/007.webp", "height": "h-[300px]" },
+        { "src": "/Wedding/mahesh x hempreethi/outdoor/008.webp", "height": "h-[350px]" },
+        { "src": "/Wedding/mahesh x hempreethi/outdoor/010.webp", "height": "h-[250px]" },
+        { "src": "/Wedding/mahesh x hempreethi/outdoor/050.webp", "height": "h-[300px]" },
+        { "src": "/Wedding/mahesh x hempreethi/outdoor/060.webp", "height": "h-[350px]" },
+        { "src": "/Wedding/mahesh x hempreethi/outdoor/001.webp", "height": "h-[350px]" }
+
       ]
     },{
       "id":3,
