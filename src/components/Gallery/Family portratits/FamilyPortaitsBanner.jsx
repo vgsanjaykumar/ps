@@ -1,4 +1,4 @@
-import weddingImage from "/Family portait/02/0I8A7944.jpg";
+import weddingImage from "/Family portait/02/0I8A7944.webp";
 import { motion } from "framer-motion";
 
 export default function Candidbanner() {

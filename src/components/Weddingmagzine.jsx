@@ -1,5 +1,5 @@
 import React from "react";
-import wedingmagzine from "/COVER/MPK01541 copy.jpg";
+import wedingmagzine from "/COVER/MPK01541 copy.webp";
 import FadeInSection from "./FadeIn";
 import { FaDeaf } from "react-icons/fa";
 

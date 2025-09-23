@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import data from "../../Data/Event.json"
 
 export default function EventGallery() {
-    const Eventdataset=data.EventDataset
+    const Eventdataset=data.Event;
     const initialRows = 3; // Show 3 rows initially
     const rowsPerClick = 6; // Load 6 more rows each time
     const columns = 3; // Number of columns (adjust based on screen size)

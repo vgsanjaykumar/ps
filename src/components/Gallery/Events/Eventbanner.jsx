@@ -1,4 +1,4 @@
-import weddingImage from "/award/img02.jpeg";
+import weddingImage from "/award/cad05.jpeg";
 
 export default function Eventbanner() {
 

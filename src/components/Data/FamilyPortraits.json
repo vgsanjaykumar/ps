@@ -3,35 +3,35 @@
     {
       "id": 1,
       "name":"Family-Shoot-1",
-      "image": "/Family portait/01/02.jpg",
+      "image": "/Family portait/01/02.webp",
       "images": [
-        { "src": "/Family portait/01/02.jpg", "height": "h-[250px]" },
-        { "src": "/Family portait/01/03.jpg", "height": "h-[250px]" },
-        { "src": "/Family portait/01/06.jpg", "height": "h-[300px]" },
-        { "src": "/Family portait/01/07.jpg", "height": "h-[350px]" },
-        { "src": "/Family portait/01/GMSK9275.JPG", "height": "h-[250px]" },
-        { "src": "/Family portait/01/Untitled-1.jpg", "height": "h-[350px]" }
+        { "src": "/Family portait/01/02.webp", "height": "h-[250px]" },
+        { "src": "/Family portait/01/03.webp", "height": "h-[250px]" },
+        { "src": "/Family portait/01/06.webp", "height": "h-[300px]" },
+        { "src": "/Family portait/01/07.webp", "height": "h-[350px]" },
+        { "src": "/Family portait/01/GMSK9275.webp", "height": "h-[250px]" },
+        { "src": "/Family portait/01/Untitled-1.webp", "height": "h-[350px]" }
       
       ]
     },
     {
       "id": 2,
       "name": "Family-Shoot-2",
-      "image": "/Family portait/02/0I8A7933.jpg",
+      "image": "/Family portait/02/0I8A7933.webp",
       "images": [
-       { "src": "/Family portait/02/0I8A7779.jpg", "height": "h-[250px]" },
-        { "src": "/Family portait/02/0I8A7797.jpg", "height": "h-[250px]" },
-        { "src": "/Family portait/02/0I8A7842.jpg", "height": "h-[300px]" },
-        { "src": "/Family portait/02/0I8A7843.jpg", "height": "h-[350px]" },
-        { "src": "/Family portait/02/0I8A7869 text.jpg", "height": "h-[250px]" },
-        { "src": "/Family portait/02/0I8A7876.jpg", "height": "h-[350px]" },
-         { "src": "/Family portait/02/0I8A7884.jpg", "height": "h-[250px]" },
-        { "src": "/Family portait/02/0I8A7907.jpg", "height": "h-[250px]" },
-        { "src": "/Family portait/02/0I8A7910.jpg", "height": "h-[300px]" },
-        { "src": "/Family portait/02/0I8A7933.jpg", "height": "h-[350px]" },
-        { "src": "/Family portait/02/0I8A7944.jpg.JPG", "height": "h-[250px]" },
-        { "src": "/Family portait/02/p2.jpg", "height": "h-[350px]" },
-             { "src": "/Family portait/02/p3.jpg", "height": "h-[350px]" }
+       { "src": "/Family portait/02/0I8A7779.webp", "height": "h-[250px]" },
+        { "src": "/Family portait/02/0I8A7797.webp", "height": "h-[250px]" },
+        { "src": "/Family portait/02/0I8A7842.webp", "height": "h-[300px]" },
+        { "src": "/Family portait/02/0I8A7843.webp", "height": "h-[350px]" },
+        { "src": "/Family portait/02/0I8A7869 text.webp", "height": "h-[250px]" },
+        { "src": "/Family portait/02/0I8A7876.webp", "height": "h-[350px]" },
+         { "src": "/Family portait/02/0I8A7884.webp", "height": "h-[250px]" },
+        { "src": "/Family portait/02/0I8A7907.webp", "height": "h-[250px]" },
+        { "src": "/Family portait/02/0I8A7910.webp", "height": "h-[300px]" },
+        { "src": "/Family portait/02/0I8A7933.webp", "height": "h-[350px]" },
+        { "src": "/Family portait/02/0I8A7944.webp", "height": "h-[250px]" },
+        { "src": "/Family portait/02/p2.webp", "height": "h-[350px]" },
+             { "src": "/Family portait/02/p3.webp", "height": "h-[350px]" }
       ]
     }
   ]
