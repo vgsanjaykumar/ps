@@ -2,20 +2,23 @@
   "PostwedDataset": [
     {
       "id": 1,
-      "name": "Kavya & Arjun",
-      "image": "/postwed/img01.jpeg",
+      "name": "Shoot-1",
+      "image": "/Reciption/Mahesh hemprethi/cover/009.webp",
       "images": [
-        { "src": "/postwed/img01.jpeg", "height": "h-[250px]" },
-        { "src": "/postwed/img02.jpeg", "height": "h-[350px]" }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Sneha & Varun",
-      "image": "/postwed/img03.jpeg",
-      "images": [
-        { "src": "/postwed/img03.jpeg", "height": "h-[300px]" },
-        { "src": "/postwed/img04.jpeg", "height": "h-[250px]" }
+    { "src": "/Reciption/Mahesh hemprethi/000.webp", "height": "h-[250px]" },
+    { "src": "/Reciption/Mahesh hemprethi/001.webp", "height": "h-[300px]" },
+    { "src": "/Reciption/Mahesh hemprethi/002.webp", "height": "h-[350px]" },
+    { "src": "/Reciption/Mahesh hemprethi/003.webp", "height": "h-[250px]" },
+    { "src": "/Reciption/Mahesh hemprethi/004.webp", "height": "h-[300px]" }, 
+    { "src": "/Reciption/Mahesh hemprethi/005.webp", "height": "h-[350px]" },
+    { "src": "/Reciption/Mahesh hemprethi/006.webp", "height": "h-[250px]" },
+    { "src": "/Reciption/Mahesh hemprethi/007.webp", "height": "h-[300px]" },
+    { "src": "/Reciption/Mahesh hemprethi/008.webp", "height": "h-[350px]" },
+    { "src": "/Reciption/Mahesh hemprethi/010.webp", "height": "h-[250px]" },
+    { "src": "/Reciption/Mahesh hemprethi/011.webp", "height": "h-[300px]" },
+    { "src": "/Reciption/Mahesh hemprethi/012.webp", "height": "h-[350px]" },
+    { "src": "/Reciption/Mahesh hemprethi/013.webp", "height": "h-[250px]" },
+    { "src": "/Reciption/Mahesh hemprethi/016.webp", "height": "h-[300px]" }
       ]
     }
   ]
