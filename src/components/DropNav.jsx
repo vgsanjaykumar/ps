@@ -223,7 +223,10 @@ const Submenu = ({ items, closeMobileMenu, scrollToId }) => (
 // Dropdown Tab Components
 const About = ({ closeMobileMenu, scrollToId }) => (
   <Submenu
-    items={[{ title: "Our Story", scrollId: "About" }]}
+    items={[
+      { title: "Our Serives", scrollId: "Serives" },
+      { title: "Our Story", scrollId: "About" },
+    ]}
     closeMobileMenu={closeMobileMenu}
     scrollToId={scrollToId}
   />

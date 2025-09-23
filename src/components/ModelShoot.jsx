@@ -3,7 +3,7 @@ import FadeInSection from "./FadeIn";
 
 export default function Modelshoot() {
     return (
-        <section className="max-w-6xl mx-auto px-6 lg:px-0 py-16 ">
+        <section className="max-w-6xl mx-auto px-6 lg:px-0 py-16 " id="Serives">
             <div className="container mx-auto flex flex-col md:flex-row items-center gap-12">
 
                 {/* Left Images */}

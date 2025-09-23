@@ -73,6 +73,8 @@ function App() {
         <Route path="/gallery/events" element={<Eventhome />} />
         <Route path="/gallery/portraits" element={<Portraitshome />} />
         <Route path="/gallery/all" element={<Galleryhome />} />
+        <Route path="/gallery/:category" element={<Galleryhome />} />
+        <Route path="/gallery" element={<Galleryhome />} />
         <Route path="/other/baby-photography" element={<Babyhome />} />
         <Route path="/other/birthday-celebration" element={<Birthhome />} />
         <Route path="/other/drone-photography" element={<Dronehome />} />

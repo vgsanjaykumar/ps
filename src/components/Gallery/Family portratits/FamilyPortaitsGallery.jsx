@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import data from "../../Data/FamilyPortraits.json"; 
+import data from "../../Data/FamilyPortraits.json";
 
 export default function FamilyPortaitsGallery() {
     const CanditDataset = data.CandidDataset;
@@ -20,7 +20,7 @@ export default function FamilyPortaitsGallery() {
     return (
         <div className="relative bg-white py-24 px-6 md:px-6 lg:px-32">
             <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">
-                Candid Gallery
+                Family Portaits Gallery
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

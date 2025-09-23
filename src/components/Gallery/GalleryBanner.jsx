@@ -1,4 +1,4 @@
-import weddingImage from "/award/img02.jpeg";
+import weddingImage from "/award/hero-1.jpeg";
 
 export default function Gallerybanner() {
 
