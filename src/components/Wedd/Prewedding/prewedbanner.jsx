@@ -1,7 +1,7 @@
 import weddingImage from "/Wedding/ramkumar x niranjana/oudoor/cover/000.webp";
 import { motion } from "framer-motion";
 
-export default function Candidbanner() {
+export default function PreWeddingbanner() {
     return (
         <div className="font-sans">
             <motion.div

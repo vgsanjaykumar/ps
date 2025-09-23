@@ -1,7 +1,7 @@
 import weddingImage from "/HomePage Cover/12.jpg";
 import { motion } from "framer-motion";
 
-export default function Candidbanner() {
+export default function PostWeddingbanner() {
     return (
         <div className="font-sans">
             <motion.div

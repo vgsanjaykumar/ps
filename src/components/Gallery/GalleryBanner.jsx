@@ -1,7 +1,7 @@
 import weddingImage from "/award/hero-1.jpeg";
 import { motion } from "framer-motion";
 
-export default function Candidbanner() {
+export default function Gallerybanner() {
     return (
         <div className="font-sans">
             <motion.div

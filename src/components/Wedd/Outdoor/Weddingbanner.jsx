@@ -1,7 +1,7 @@
 import weddingImage from "/Reciption/Mahesh hemprethi/016.webp";
 import { motion } from "framer-motion";
 
-export default function Candidbanner() {
+export default function Weddingbanner() {
     return (
         <div className="font-sans">
             <motion.div
