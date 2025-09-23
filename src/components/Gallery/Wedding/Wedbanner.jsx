@@ -1,4 +1,4 @@
-import weddingImage from "/HomePage Cover/12.jpg";
+import weddingImage from "/HomePage Cover/12.webp";
 import { motion } from "framer-motion";
 
 export default function Wedgallerybanner1() {
