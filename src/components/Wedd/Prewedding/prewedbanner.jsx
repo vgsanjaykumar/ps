@@ -1,4 +1,4 @@
-import weddingImage from "/award/img02.jpeg";
+import weddingImage from "/Wedding/ramkumar x niranjana/oudoor/cover/000.webp";
 
 export default function PreWeddingbanner() {
 

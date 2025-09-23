@@ -1,4 +1,4 @@
-import weddingImage from "/award/img02.jpeg";
+import weddingImage from "/HomePage Cover/12.jpg";
 
 export default function PostWeddingbanner() {
 

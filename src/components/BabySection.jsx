@@ -1,5 +1,5 @@
 import React from "react";
-import wedingmagzine from "/Baby/POST.webp";
+import Baby from "/HomePage Cover/baby.webp";
 import FadeInSection from "./FadeIn";
 import { FaDeaf } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -11,7 +11,7 @@ const Babysection = () => {
             <FadeInSection>
                 <div className="flex-1">
                     <img
-                        src={wedingmagzine}
+                        src={Baby}
                         alt="Wedding Magzine"
                         className="w-[1000px] h-[200px] object-cover rounded-lg shadow-lg"
                     />

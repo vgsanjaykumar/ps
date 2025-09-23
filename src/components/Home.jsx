@@ -18,6 +18,8 @@ import Weddingmagzine from './Weddingmagzine'
 import Modelshoot from './ModelShoot'
 import Babysection from './BabySection'
 import Footer1 from './Footer'
+import WhatsAppButton from './Whatappbtn'
+import ScrollToTop from './ScroltoTop'
 
 
 const Home = () => {
@@ -25,10 +27,12 @@ const Home = () => {
         <div>
 
             <Hero />
-            <Modelshoot />
-            <WeddingCoupleSection />
-            
             <OutdoorCoupleShoot />
+            <Modelshoot />
+           
+            
+           
+            <WeddingCoupleSection />
             <Weddingmagzine />
             <Babysection/>
           
@@ -38,6 +42,10 @@ const Home = () => {
             <Events />
             <Testimonials/>
             <ContactForm/>
+            
+            <WhatsAppButton />
+            <ScrollToTop />
+            <BookNowNew />
             <Footer1/>
             {/* <BookNowNew /> */}
             

@@ -1,4 +1,4 @@
-import weddingImage from "/award/img02.jpeg";
+import weddingImage from "/Reciption/Mahesh hemprethi/016.webp";
 
 export default function Weddingbanner() {
 

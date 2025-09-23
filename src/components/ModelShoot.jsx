@@ -7,23 +7,6 @@ export default function Modelshoot() {
     return (
         <section className="max-w-6xl mx-auto px-6 lg:px-0 py-16" id="Serives">
             <div className="container mx-auto flex flex-col md:flex-row items-center gap-12">
-                {/* Left Images */}
-                <FadeInSection>
-                    <div className="relative flex-1 flex justify-center">
-                        <img
-                            src="/model/riya/logo/05.webp"
-                            alt="Outdoor Couple"
-                            className="w-[400px] rounded-lg shadow-lg"
-                        />
-                        <img
-                            src="/model/riya/logo/08.webp"
-                            alt="Indoor Couple"
-                            className="w-60 rounded-lg shadow-lg absolute -top-8 -left-10 hidden sm:block"
-                        />
-                    </div>
-                </FadeInSection>
-
-                {/* Right Text */}
                 <FadeInSection>
                     <div className="flex-1 text-center md:text-left">
                         <span className="text-gray-500 font-medium text-sm">Our Service</span>
@@ -48,6 +31,23 @@ export default function Modelshoot() {
                         </button>
                     </div>
                 </FadeInSection>
+                <FadeInSection>
+                    <div className="relative flex-1 flex justify-center">
+                        <img
+                            src="/model/riya/logo/05.webp"
+                            alt="Outdoor Couple"
+                            className="w-[400px] rounded-lg shadow-lg"
+                        />
+                        <img
+                            src="/model/riya/logo/08.webp"
+                            alt="Indoor Couple"
+                            className="w-60 rounded-lg shadow-lg absolute -top-8 -left-10 hidden sm:block"
+                        />
+                    </div>
+                </FadeInSection>
+
+               
+
             </div>
         </section>
     );

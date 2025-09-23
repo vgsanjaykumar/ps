@@ -134,7 +134,7 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
                             <div className="flex justify-center gap-2">
                                 <button
                                     onClick={() => setIsOpen(false)}
-                                    className="bg-transparent w-full  hover:bg-[rgb(206,142,59)] transition-colors text-white font-semibold text-lg md:text-3xl py-2 rounded"
+                                    className="bg-transparent w-full  hover:bg-[#48b3afcd] transition-colors text-white font-semibold text-lg md:text-3xl py-2 rounded"
                                 >
                                     Go back
                                 </button>

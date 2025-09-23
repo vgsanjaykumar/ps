@@ -1,5 +1,5 @@
 import React from "react";
-import coupleImage from "/award/img04.jpeg";
+import coupleImage from "/HomePage Cover/preWed.webp";
 import FadeInSection from "./FadeIn";
 import { FaDeaf } from "react-icons/fa";
 
@@ -29,11 +29,11 @@ const WeddingCoupleSection = () => {
 
             {/* Right Image */}
             <FadeInSection>
-                <div className="flex-1">
+                <div className="">
                     <img
                         src={coupleImage}
                         alt="Wedding Couple"
-                        className="w-full h-auto object-cover rounded-lg shadow-lg"
+                        className="w-[1000px]  h-[250px] object-cover rounded-lg shadow-lg"
                     />
                 </div>
             </FadeInSection>

@@ -11,13 +11,13 @@ export default function OutdoorCoupleShoot() {
                     <div className="relative flex-1 flex justify-center">
                         {/* Big Image */}
                         <img
-                            src="/award/img05.jpeg"
+                            src="/HomePage Cover/Outdoor.webp"
                             alt="Outdoor Couple"
                             className="w-[400px] rounded-lg shadow-lg"
                         />
                         {/*  Small Image */}
                         <img
-                            src="/award/img05.jpeg"
+                            src="/HomePage Cover/Outdoor2.webp"
                             alt="Indoor Couple"
                             className="w-60 rounded-lg shadow-lg absolute -top-8 -left-10 hidden sm:block"
                         />
