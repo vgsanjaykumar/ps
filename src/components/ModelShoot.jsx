@@ -11,13 +11,13 @@ export default function Modelshoot() {
                     <div className="relative flex-1 flex justify-center">
                         {/* Big Image */}
                         <img
-                            src="/model/riya/logo/05.jpg"
+                            src="/model/riya/logo/05.webp"
                             alt="Outdoor Couple"
                             className="w-[400px]  rounded-lg shadow-lg"
                         />
                         {/* Floating Small Image */}
                         <img
-                            src="/model/riya/logo/08.jpg"
+                            src="/model/riya/logo/08.webp"
                             alt="Indoor Couple"
                             className="w-60 rounded-lg shadow-lg absolute -top-8 -left-10 hidden sm:block"
                         />

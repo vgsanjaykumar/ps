@@ -24,10 +24,82 @@
     { "src": "/model/Dharsu/0I8A7953.webpp", "height": "h-[250px]" },
     { "src": "/model/Dharsu/0I8A7957.webp", "height": "h-[300px]" },
     { "src": "/model/Dharsu/0I8A7963.webp", "height": "h-[350px]" },
-      { "src": "/model/Dharsu/0I8A7967.webp", "height": "h-[250px]" },
+    { "src": "/model/Dharsu/0I8A7967.webp", "height": "h-[250px]" },
     { "src": "/model/Dharsu/0I8A8011.webp", "height": "h-[300px]" },
     { "src": "/model/Dharsu/0I8A8068.webp", "height": "h-[350px]" }
       ]
+    },
+    {
+      "id": 3,
+      "name": "Shoot-3",
+      "image": "/model/riya/logo/01.webp",
+      "images": [
+    { "src": "/model/riya/logo/01 copy.webp", "height": "h-[250px]" },
+    { "src": "/model/riya/logo/02.webp", "height": "h-[300px]" },
+    { "src": "/model/riya/logo/03.webp", "height": "h-[350px]" },
+    { "src": "/model/riya/logo/04.webp", "height": "h-[250px]" },
+    { "src": "/model/riya/logo/05.webp", "height": "h-[300px]" },
+    { "src": "/model/riya/logo/06.webp", "height": "h-[350px]" },
+    { "src": "/model/riya/logo/07.webp", "height": "h-[250px]" },
+    { "src": "/model/riya/logo/08.webp", "height": "h-[300px]" },
+    { "src": "/model/riya/logo/09.webp", "height": "h-[300px]" },
+    { "src": "/model/riya/logo/01.webp", "height": "h-[350px]" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Shoot-4",
+      "image": "/model/New folder/03.webp",
+      "images": [
+    { "src": "/model/New folder/01.webp", "height": "h-[250px]" },
+    { "src": "/model/New folder/02.webp", "height": "h-[300px]" },
+    { "src": "/model/New folder/03.webp", "height": "h-[350px]" },
+    { "src": "/model/New folder/04 NEW01.webp", "height": "h-[250px]" },
+    { "src": "/model/New folder/05 NEW.webp", "height": "h-[300px]" },
+    { "src": "/model/New folder/06 NEW.webp", "height": "h-[350px]" },
+    { "src": "/model/New folder/07 new.webp", "height": "h-[250px]" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Shoot-5",
+      "image": "/model/MODEL 2/MPK07168.webp",
+      "images": [
+    { "src": "/model/MODEL 2/MPK07135.webp", "height": "h-[250px]" },
+    { "src": "/model/MODEL 2/MPK07154.webp", "height": "h-[300px]" },
+    { "src": "/model/MODEL 2/MPK07155.webp", "height": "h-[350px]" },
+    { "src": "/model/MODEL 2/MPK07156.webp", "height": "h-[250px]" },
+    { "src": "/model/MODEL 2/MPK07157.webp", "height": "h-[300px]" },
+    { "src": "/model/MODEL 2/MPK07158.webp", "height": "h-[350px]" },
+    { "src": "/model/MODEL 2/MPK07159.webp", "height": "h-[250px]" },
+    { "src": "/model/MODEL 2/MPK07160.webp", "height": "h-[300px]" },
+    { "src": "/model/MODEL 2/MPK07161.webp", "height": "h-[350px]" },
+    { "src": "/model/MODEL 2/MPK07162.webp", "height": "h-[250px]" },
+    { "src": "/model/MODEL 2/MPK07164.webp", "height": "h-[300px]" },
+    { "src": "/model/MODEL 2/MPK07165.webp", "height": "h-[350px]" },
+    { "src": "/model/MODEL 2/MPK07166.webp", "height": "h-[350px]" },
+    { "src": "/model/MODEL 2/MPK07167.webp", "height": "h-[250px]" },
+    { "src": "/model/MODEL 2/MPK07168.webp", "height": "h-[300px]" },
+    { "src": "/model/MODEL 2/MPK07173.webp", "height": "h-[350px]" }
+      ]    
+    },
+        {
+      "id": 6,
+      "name": "Shoot-6",
+      "image": "/model/MODEL/MPK04588.webp",
+      "images": [
+    { "src": "/model/MODEL/MPK04549.webp", "height": "h-[250px]" },
+    { "src": "/model/MODEL/MPK04557.webp", "height": "h-[300px]" },
+    { "src": "/model/MODEL/MPK04588.webp", "height": "h-[350px]" },
+    { "src": "/model/MODEL/MPK04626.webp", "height": "h-[250px]" },
+    { "src": "/model/MODEL/MPK04667.webp", "height": "h-[300px]" },
+    { "src": "/model/MODEL/MPK04920.webp", "height": "h-[350px]" },
+    { "src": "/model/MODEL/MPK04979.webp", "height": "h-[250px]" },
+    { "src": "/model/MODEL/MPK05046.webp", "height": "h-[300px]" },
+    { "src": "/model/MODEL/MPK05082.webp", "height": "h-[350px]" },
+    { "src": "/model/MODEL/MPK05094.webp", "height": "h-[250px]" },
+    { "src": "/model/MODEL/MPK05105.webp", "height": "h-[300px]" }
+      ]    
     }
   ]
 }
