@@ -1,30 +1,27 @@
 {
   "wedding": [
-    "/award/img02.jpeg",
-    "/award/img03.jpeg",
-    "/award/img04.jpeg",
-    "/award/img05.jpeg",
-    "/award/img06.jpeg",
-    "/award/img07.jpeg"
+    "/Wedding/ramkumar x niranjana/postwed/01.webp",
+    "/Wedding/ramkumar x niranjana/postwed/011.webp",
+    "/Wedding/mahesh x hempreethi/cover/000.webp",
+    "/Wedding/Nithiya/nithiya x sukumar/marrige/002.webp",
+    "/Wedding/sasi/sasi x shankari/prewed/002.webp",
+    "/Wedding/mahesh x hempreethi/post wed/003.webp"
   ],
   "Portraits": [
-    "/model/Dharsu/0I8A7942.webp",
-    "/model/Dharsu/0I8A7945.webp",
+    "/pHOTOcLICK/MPK08327.webp",
+    "/pHOTOcLICK/MPK08339.webp",
     "/model/Dharsu/0I8A7947.webp",
     "/model/Dharsu/0I8A7953.webp",
-    "/model/Dharsu/0I8A7957.webp",
-    "/model/Dharsu/0I8A7963.webp"
+    "/model/MODEL/MPK04979.webp",
+    "/model/MODEL/MPK05094.webp"
   ],
   "outdoors": [
-    "/award/cad09.jpeg",
-    "/award/cad08.jpeg",
-    "/award/cad07.jpeg",
-    "/award/cad06.jpeg",
-    "/award/cad05.jpeg",
-    "/award/cad04.jpeg",
-    "/award/cad03.jpeg",
-    "/award/cad01.jpeg",
-    "/award/cad00.jpeg"
+    "/Wedding/ramkumar x niranjana/oudoor/02.webp",
+    "/model/MODEL 2/MPK07165.webp",
+    "/Wedding/ramkumar x niranjana/oudoor/06.webp",
+    "/Wedding/mahesh x hempreethi/outdoor/001.webp",
+    "/award/img02.jpeg",
+    "/award/img04.jpeg"
   ],
   "birthday": [
     "/award/cad09.jpeg",
@@ -38,12 +35,13 @@
     "/award/cad00.jpeg"
   ],
   "puberty": [
-    "/award/img02.jpeg",
-    "/award/img03.jpeg",
-    "/award/img04.jpeg",
-    "/award/img05.jpeg",
-    "/award/img06.jpeg",
-    "/award/img07.jpeg"
+    "/pubnerty/01.png",
+    "/pubnerty/02.png",
+    "/pubnerty/03.png",
+    "/pubnerty/04.png",
+    "/pubnerty/05.png",
+    "/pubnerty/06.png",
+    "/pubnerty/07.png"
   ],
   "reception": [
     "/award/img02.jpeg",
@@ -65,11 +63,11 @@
     "/award/cad00.jpeg"
   ],
   "commercial": [
-    "/award/img02.jpeg",
-    "/award/img03.jpeg",
-    "/award/img04.jpeg",
-    "/award/img05.jpeg",
-    "/award/img06.jpeg",
-    "/award/img07.jpeg"
+    "/commerical/farmhouse/IMG_0118.webp",
+    "/commerical/farmhouse/IMG_0125.webp",
+    "/commerical/farmhouse/IMG_0142.webp",
+    "/commerical/farmhouse/IMG_0174.webp",
+    "/commerical/farmhouse/IMG_0189.webp",
+    "/commerical/farmhouse/IMG_0153.webp"
   ]
 }
