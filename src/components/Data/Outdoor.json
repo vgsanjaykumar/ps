@@ -2,7 +2,7 @@
   "OutdoorDataset": [
     {
       "id": 1,
-      "name": "Varuna Thapar + Nikhil Sayli",
+      "name": " + Nikhil Sayli",
       "image": "/award/img02.jpeg",
       "images": [
         { "src": "/award/img02.jpeg", "height": "h-[250px]" },
@@ -11,11 +11,50 @@
     },
     {
       "id": 2,
-      "name": "Another Couple",
-      "image": "/award/img04.jpeg",
+      "name": "Mahesh + Hemprethi",
+      "image": "/Reciption/Mahesh hemprethi/Outdoor/cover.webp",
       "images": [
-        { "src": "/award/img04.jpeg", "height": "h-[250px]" },
-        { "src": "/award/img05.jpeg", "height": "h-[350px]" }
+        {"src":"/Reciption/Mahesh hemprethi/Outdoor/cover.webp","height":"h-[350px]"},
+        { "src": "/Reciption/Mahesh hemprethi/Outdoor/000.webp", "height": "h-[250px]" },
+        { "src": "/Reciption/Mahesh hemprethi/Outdoor/001.webp", "height": "h-[300px]" },
+        { "src": "/Reciption/Mahesh hemprethi/Outdoor/003.webp", "height": "h-[250px]" },
+        { "src": "/Reciption/Mahesh hemprethi/Outdoor/004.webp", "height": "h-[300px]" },
+        { "src": "/Reciption/Mahesh hemprethi/Outdoor/005.webp", "height": "h-[350px]" },
+        { "src": "/Reciption/Mahesh hemprethi/Outdoor/006.webp", "height": "h-[250px]" },
+        { "src": "/Reciption/Mahesh hemprethi/Outdoor/007.webp", "height": "h-[300px]" },
+        { "src": "/Reciption/Mahesh hemprethi/Outdoor/008.webp", "height": "h-[350px]" },
+        { "src": "/Reciption/Mahesh hemprethi/Outdoor/009.webp", "height": "h-[250px]" },
+        { "src": "/Reciption/Mahesh hemprethi/Outdoor/010.webp", "height": "h-[300px]" },
+        { "src": "/Reciption/Mahesh hemprethi/Outdoor/011.webp", "height": "h-[350px]" }
+      ]
+    },{
+      "id":3,
+      "name":"Nithya & Sukumar",
+      "image":"/Wedding/Nithiya/nithiya x sukumar/cover/001.webp",
+      "images":[
+        {"src":"/Wedding/Nithiya/nithiya x sukumar/000.webp","height":"h-[350px]"},
+        {"src":"/Wedding/Nithiya/nithiya x sukumar/001.webp","height":"h-[300px]"},
+        {"src":"/Wedding/Nithiya/nithiya x sukumar/002.webp","height":"h-[350px]"},
+        {"src":"/Wedding/Nithiya/nithiya x sukumar/003.webp","height":"h-[250px]"},
+        {"src":"/Wedding/Nithiya/nithiya x sukumar/004.webp","height":"h-[300px]"},
+        {"src":"/Wedding/Nithiya/nithiya x sukumar/005.webp","height":"h-[350px]"},
+        {"src":"/Wedding/Nithiya/nithiya x sukumar/006.webp","height":"h-[350px]"}
+      ]
+    },
+    {
+      "id":4,
+      "name":"Sasi & Shankari",
+      "image":"/Wedding/sasi/sasi x shankari/00.webp",
+      "images":[
+        {"src":"/Wedding/sasi/sasi x shankari/001.webp","height":"h-[350px]"},
+        {"src":"/Wedding/sasi/sasi x shankari/003.webp","height":"h-[300px]"},
+        {"src":"/Wedding/sasi/sasi x shankari/004.webp","height":"h-[350px]"},
+        {"src":"/Wedding/sasi/sasi x shankari/005.webp","height":"h-[250px]"},
+        {"src":"/Wedding/sasi/sasi x shankari/006.webp","height":"h-[300px]"},
+        {"src":"/Wedding/sasi/sasi x shankari/007.webp","height":"h-[350px]"},
+        {"src":"/Wedding/sasi/sasi x shankari/008.webp","height":"h-[350px]"},
+        {"src":"/Wedding/sasi/sasi x shankari/009.webp","height":"h-[250px]"},
+        {"src":"/Wedding/sasi/sasi x shankari/010.webp","height":"h-[300px]"}
       ]
     }
   ]

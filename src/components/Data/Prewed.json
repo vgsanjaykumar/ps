@@ -2,20 +2,38 @@
   "PrewedDataset": [
     {
       "id": 1,
-      "name": "Kavya & Arjun",
-      "image": "/postwed/img01.jpeg",
+      "name": "Nithiya & Sukumar",
+      "image": "/Wedding/Nithiya/nithiya x sukumar/cover/001.webp",
       "images": [
-        { "src": "/postwed/img01.jpeg", "height": "h-[250px]" },
-        { "src": "/postwed/img02.jpeg", "height": "h-[350px]" }
+        { "src": "/Wedding/Nithiya/nithiya x sukumar/marrige/001.webp", "height": "h-[250px]" },
+        { "src": "/Wedding/Nithiya/nithiya x sukumar/marrige/002.webp", "height": "h-[300px]" },
+        { "src": "/Wedding/Nithiya/nithiya x sukumar/marrige/003.webp", "height": "h-[350px]" },
+        { "src": "/Wedding/Nithiya/nithiya x sukumar/marrige/004.webp", "height": "h-[250px]" },
+        { "src": "/Wedding/Nithiya/nithiya x sukumar/marrige/005.webp", "height": "h-[300px]" }, 
+        { "src": "/Wedding/Nithiya/nithiya x sukumar/marrige/006.webp", "height": "h-[350px]" },
+        { "src": "/Wedding/Nithiya/nithiya x sukumar/marrige/007.webp", "height": "h-[250px]" },
+        { "src": "/Wedding/Nithiya/nithiya x sukumar/marrige/008.webp", "height": "h-[300px]" },
+        { "src": "/Wedding/Nithiya/nithiya x sukumar/marrige/009.webp", "height": "h-[350px]" },
+        { "src": "/Wedding/Nithiya/nithiya x sukumar/marrige/010.webp", "height": "h-[250px]" },
+        { "src": "/Wedding/Nithiya/nithiya x sukumar/marrige/011.webp", "height": "h-[300px]" },
+        { "src": "/Wedding/Nithiya/nithiya x sukumar/marrige/cover.webp", "height": "h-[350px]" }
       ]
     },
     {
       "id": 2,
-      "name": "Sneha & Mani",
-      "image": "/postwed/img03.jpeg",
+      "name": "Sasi & Shankari",
+      "image": "/Wedding/sasi/sasi x shankari/00.webp",
       "images": [
-        { "src": "/postwed/img03.jpeg", "height": "h-[300px]" },
-        { "src": "/postwed/img04.jpeg", "height": "h-[250px]" }
+        { "src": "/Wedding/sasi/sasi x shankari/prewed/002.webp", "height": "h-[300px]" },
+        { "src": "/Wedding/sasi/sasi x shankari/prewed/FINAL 01.webp", "height": "h-[250px]" },
+        { "src": "/Wedding/sasi/sasi x shankari/prewed/FINAL 02.webp", "height": "h-[350px]" },
+        { "src": "/Wedding/sasi/sasi x shankari/prewed/FINAL 03.webp", "height": "h-[300px]" },
+        { "src": "/Wedding/sasi/sasi x shankari/prewed/FINAL 04.webp", "height": "h-[250px]" },
+        { "src": "/Wedding/sasi/sasi x shankari/prewed/FINAL 01.webp", "height": "h-[250px]" },
+        { "src": "/Wedding/sasi/sasi x shankari/prewed/FINAL 02.webp", "height": "h-[350px]" },
+        { "src": "/Wedding/sasi/sasi x shankari/prewed/FINAL 03.webp", "height": "h-[300px]" },
+        { "src": "/Wedding/sasi/sasi x shankari/prewed/FINAL 04.webp", "height": "h-[250px]" }
+
       ]
     }
   ]
