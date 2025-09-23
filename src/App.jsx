@@ -24,7 +24,7 @@ import Couplehome from "./components/Gallery/Couple Portraits/Couplehome"
 
 import Babyhome from "./components/others/Baby/Babyhome"
 import Birthhome from "./components/others/birthday/Birthhome"
-import Dronehome from "./components/others/drone/Dronehome"
+import Maternityhome from "./components/others/drone/Maternityhome"
 import Videohome from "./components/others/video/Videohome"
 import Photohome from "./components/others/Photoedit/Photohome"
 import Otherhome from "./components/others/Otherhome"
@@ -79,7 +79,7 @@ function App() {
         <Route path="/gallery" element={<Galleryhome />} />
         <Route path="/other/baby-photography" element={<Babyhome />} />
         <Route path="/other/birthday-celebration" element={<Birthhome />} />
-        <Route path="/other/reception" element={<Dronehome />} />
+        <Route path="/other/maternity-photography" element={<Maternityhome />} />
         <Route path="/other/video-shoot" element={<Videohome />} />
         <Route path="/other/photo-edit" element={<Photohome />} />
         <Route path="/other/all" element={<Otherhome />} />

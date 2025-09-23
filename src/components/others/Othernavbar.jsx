@@ -5,7 +5,7 @@ const OthersNavbar = () => {
     const [selectedCategory, setSelectedCategory] = useState("all");
     const navigate = useNavigate();
     const categories = [
-        "All", "Baby Photography", "Birthday Celebration", "Drone Photography", "Video Shoot", "Photo Edit"
+        "All", "Baby Photography", "Birthday Celebration", "Maternity Photography", "Video Shoot", "Photo Edit"
     ];
 
     const handleCategoryClick = (category) => {

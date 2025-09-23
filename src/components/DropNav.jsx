@@ -260,7 +260,7 @@ const Other = ({ closeMobileMenu }) => (
     items={[
       { title: "Baby Photography", link: "/other/baby-photography" },
       { title: "Birthday Celebration", link: "/other/birthday-celebration" },
-      { title: "Drone Photography", link: "/other/drone-photography" },
+      { title: "Maternity Photography", link: "/other/maternity-photography" },
       { title: "Video Shoots", link: "/other/video-shoot" },
       { title: "Photo Editing", link: "/other/photo-edit" },
     ]}
