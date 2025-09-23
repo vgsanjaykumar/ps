@@ -2,20 +2,31 @@
   "PortraitsDataset": [
     {
       "id": 1,
-      "name": "Varun",
-      "image": "/award/img02.jpeg",
+      "name": "Shoot-1",
+      "image": "/Baby/aaNDAL/02.webp",
       "images": [
-        { "src": "/award/img02.jpeg", "height": "h-[250px]" },
-        { "src": "/award/img03.jpeg", "height": "h-[350px]" }
+    { "src": "/Baby/aaNDAL/01.webp", "height": "h-[250px]" },
+    { "src": "/Baby/aaNDAL/02.webp", "height": "h-[300px]" },
+    { "src": "/Baby/aaNDAL/03.webp", "height": "h-[350px]" },
+    { "src": "/Baby/aaNDAL/04.webp", "height": "h-[250px]" },
+    { "src": "/Baby/aaNDAL/05.webp", "height": "h-[300px]" },
+    { "src": "/Baby/aaNDAL/06.webp", "height": "h-[350px]" }
       ]
     },
     {
       "id": 2,
-      "name": "Another Couple",
-      "image": "/award/img04.jpeg",
+      "name": "Shoot-2",
+      "image": "/model/Dharsu/0I8A7947.webp",
       "images": [
-        { "src": "/award/img04.jpeg", "height": "h-[250px]" },
-        { "src": "/award/img05.jpeg", "height": "h-[350px]" }
+    { "src": "/model/Dharsu/0I8A7942.webp", "height": "h-[250px]" },
+    { "src": "/model/Dharsu/0I8A7945.webp", "height": "h-[300px]" },
+    { "src": "/model/Dharsu/0I8A7947.webp", "height": "h-[350px]" },
+    { "src": "/model/Dharsu/0I8A7953.webpp", "height": "h-[250px]" },
+    { "src": "/model/Dharsu/0I8A7957.webp", "height": "h-[300px]" },
+    { "src": "/model/Dharsu/0I8A7963.webp", "height": "h-[350px]" },
+      { "src": "/model/Dharsu/0I8A7967.webp", "height": "h-[250px]" },
+    { "src": "/model/Dharsu/0I8A8011.webp", "height": "h-[300px]" },
+    { "src": "/model/Dharsu/0I8A8068.webp", "height": "h-[350px]" }
       ]
     }
   ]

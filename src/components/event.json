@@ -1,0 +1,75 @@
+{
+  "wedding": [
+    "/award/img02.jpeg",
+    "/award/img03.jpeg",
+    "/award/img04.jpeg",
+    "/award/img05.jpeg",
+    "/award/img06.jpeg",
+    "/award/img07.jpeg"
+  ],
+  "Portraits": [
+    "/model/Dharsu/0I8A7942.webp",
+    "/model/Dharsu/0I8A7945.webp",
+    "/model/Dharsu/0I8A7947.webp",
+    "/model/Dharsu/0I8A7953.webp",
+    "/model/Dharsu/0I8A7957.webp",
+    "/model/Dharsu/0I8A7963.webp"
+  ],
+  "outdoors": [
+    "/award/cad09.jpeg",
+    "/award/cad08.jpeg",
+    "/award/cad07.jpeg",
+    "/award/cad06.jpeg",
+    "/award/cad05.jpeg",
+    "/award/cad04.jpeg",
+    "/award/cad03.jpeg",
+    "/award/cad01.jpeg",
+    "/award/cad00.jpeg"
+  ],
+  "birthday": [
+    "/award/cad09.jpeg",
+    "/award/cad08.jpeg",
+    "/award/cad07.jpeg",
+    "/award/cad06.jpeg",
+    "/award/cad05.jpeg",
+    "/award/cad04.jpeg",
+    "/award/cad03.jpeg",
+    "/award/cad01.jpeg",
+    "/award/cad00.jpeg"
+  ],
+  "puberty": [
+    "/award/img02.jpeg",
+    "/award/img03.jpeg",
+    "/award/img04.jpeg",
+    "/award/img05.jpeg",
+    "/award/img06.jpeg",
+    "/award/img07.jpeg"
+  ],
+  "reception": [
+    "/award/img02.jpeg",
+    "/award/img03.jpeg",
+    "/award/img04.jpeg",
+    "/award/img05.jpeg",
+    "/award/img06.jpeg",
+    "/award/img07.jpeg"
+  ],
+  "maternity": [
+    "/award/cad09.jpeg",
+    "/award/cad08.jpeg",
+    "/award/cad07.jpeg",
+    "/award/cad06.jpeg",
+    "/award/cad05.jpeg",
+    "/award/cad04.jpeg",
+    "/award/cad03.jpeg",
+    "/award/cad01.jpeg",
+    "/award/cad00.jpeg"
+  ],
+  "commercial": [
+    "/award/img02.jpeg",
+    "/award/img03.jpeg",
+    "/award/img04.jpeg",
+    "/award/img05.jpeg",
+    "/award/img06.jpeg",
+    "/award/img07.jpeg"
+  ]
+}

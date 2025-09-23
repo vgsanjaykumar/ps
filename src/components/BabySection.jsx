@@ -1,5 +1,5 @@
 import React from "react";
-import wedingmagzine from "/Baby/POST.jpg";
+import wedingmagzine from "/Baby/POST.webp";
 import FadeInSection from "./FadeIn";
 import { FaDeaf } from "react-icons/fa";
 
@@ -8,7 +8,7 @@ const Babysection = () => {
         <section className="max-w-6xl mx-auto px-6 lg:px-0 py-12 flex flex-col lg:flex-row items-center gap-8">
 
             {/* Left Content */}
-    
+
 
 
             {/* Right Image */}
