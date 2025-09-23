@@ -5,64 +5,33 @@ import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css"; // Import styles
 
 
-import img2 from "/award/img02.jpeg";
-import img3 from "/award/img03.jpeg";
-import img4 from "/award/img04.jpeg";
-import img5 from "/award/img05.jpeg";
-import img6 from "/award/img06.jpeg";
-import img7 from "/award/img07.jpeg";
+import img2 from "/babyshower/01.png";
+import img3 from "/babyshower/02.png";
+import img4 from "/babyshower/03.png";
+import img5 from "/babyshower/04.png";
+import img6 from "/babyshower/05.png";
+import img7 from "/babyshower/06.png";
+import img8 from "/babyshower/07.png";
+import img9 from "/babyshower/08.png";
+import img10 from "/babyshower/09.png";
+import img11 from "/babyshower/10.png";
 
 const allImages = [
     { src: img2, height: "h-[250px]" },
-    { src: img2, height: "h-[300px]" },
-    { src: img3, height: "h-[350px]" },
-    { src: img4, height: "h-[400px]" },
-    { src: img5, height: "h-auto" },
-    { src: img6, height: "h-[275px]" },
-    { src: img7, height: "h-[320px]" },
-    { src: img2, height: "h-[280px]" },
-    { src: img6, height: "h-[370px]" },
-    { src: img3, height: "h-[330px]" },
-    { src: img5, height: "h-[290px]" },
-    { src: img4, height: "h-[310px]" },
+    { src: img3, height: "h-[300px]" },
+    { src: img4, height: "h-[350px]" },
+    { src: img5, height: "h-[350px]" },
+    { src: img6, height: "h-[285px]" },
+    { src: img7, height: "h-[250px]" },
+    { src: img8, height: "h-[320px]" },
+    { src: img9, height: "h-[280px]" },
+    { src: img10, height: "h-[370px]" },
+    { src: img11, height: "h-[315px]" },
+    { src: img6, height: "h-[290px]" },
+    { src: img8, height: "h-[310px]" },
     { src: img2, height: "h-[260px]" },
     { src: img7, height: "h-[340px]" },
-    { src: img3, height: "h-[390px]" },
-    { src: img6, height: "h-[350px]" },
-    { src: img2, height: "h-[270px]" },
-    { src: img5, height: "h-[325px]" },
-    { src: img4, height: "h-[400px]" },
-    { src: img7, height: "h-[360px]" },
-    { src: img2, height: "h-[300px]" },
-    { src: img6, height: "h-[280px]" },
-    { src: img2, height: "h-[310px]" },
-    { src: img3, height: "h-[380px]" },
-    { src: img5, height: "h-[295px]" },
-    { src: img2, height: "h-[250px]" },
-    { src: img2, height: "h-[300px]" },
-    { src: img3, height: "h-[350px]" },
-    { src: img4, height: "h-[400px]" },
-    { src: img5, height: "h-auto" },
-    { src: img6, height: "h-[275px]" },
-    { src: img7, height: "h-[320px]" },
-    { src: img2, height: "h-[280px]" },
-    { src: img6, height: "h-[370px]" },
-    { src: img3, height: "h-[330px]" },
-    { src: img5, height: "h-[290px]" },
-    { src: img4, height: "h-[310px]" },
-    { src: img2, height: "h-[260px]" },
-    { src: img7, height: "h-[340px]" },
-    { src: img3, height: "h-[390px]" },
-    { src: img6, height: "h-[350px]" },
-    { src: img2, height: "h-[270px]" },
-    { src: img5, height: "h-[325px]" },
-    { src: img4, height: "h-[400px]" },
-    { src: img7, height: "h-[360px]" },
-    { src: img2, height: "h-[300px]" },
-    { src: img6, height: "h-[280px]" },
-    { src: img2, height: "h-[310px]" },
-    { src: img3, height: "h-[380px]" },
-    { src: img5, height: "h-[295px]" },
+    { src: img3, height: "h-[335px]" },
 ];
 
 const MaternityGallery = () => {
