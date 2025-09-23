@@ -5,30 +5,15 @@ import img4 from "/award/img04.jpeg";
 import img5 from "/award/img05.jpeg";
 import img6 from "/award/img06.jpeg";
 import img7 from "/award/img07.jpeg";
-
-import can00 from "/award/cad00.jpeg";
-import can01 from "/award/cad01.jpeg";
-import can03 from "/award/cad03.jpeg";
-import can04 from "/award/cad04.jpeg";
-import can05 from "/award/cad05.jpeg";
-import can06 from "/award/cad06.jpeg";
-import can07 from "/award/cad07.jpeg";
-import can08 from "/award/cad08.jpeg";
-import can09 from "/award/cad09.jpeg";
+import sasi1 from "/Wedding/sasi/sasi x shankari/prewed/FINAL 01.webp";
+import sasi0 from "/Wedding/sasi/sasi x shankari/prewed/FINAL 02.webp";
+import sasi2 from "/Wedding/sasi/sasi x shankari/prewed/FINAL 03.webp";
+import sasi3 from "/Wedding/sasi/sasi x shankari/prewed/FINAL 04.webp";
+import ram1 from "/Wedding/ramkumar x niranjana/prewed/09.webp";
+import family from "/Family portait/01/03.webp";
+import sasi4 from "/Wedding/sasi/sasi x shankari/001.webp";
 
 
 
-export const Data = [img2, img3, img4, img5, img6, img7];
-export const Data1 = [img2, img3, img4, img5, img6, img7];
 
-export const Canimg = [
-    can09,
-    can08,
-    can07,
-    can06,
-    can05,
-    can04,
-    can03,
-    can01,
-    can00,
-];
+export const Data = [sasi4, sasi2, sasi3, family, img2, sasi1, img3, img4, sasi0, img5, img6, sasi2, img7, ram1,];

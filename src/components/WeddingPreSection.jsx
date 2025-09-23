@@ -7,7 +7,16 @@ const WeddingCoupleSection = () => {
     return (
         <section className="max-w-6xl mx-auto px-6 lg:px-0 py-12 flex flex-col lg:flex-row items-center gap-8">
 
-            {/* Left Content */}
+    
+            <FadeInSection>
+                <div className="">
+                    <img
+                        src={coupleImage}
+                        alt="Wedding Couple"
+                        className="w-[1000px]  h-[250px] object-cover rounded-lg shadow-lg"
+                    />
+                </div>
+            </FadeInSection>
             <FadeInSection>
                 <div className="flex-1">
                     <p className="text-sm text-gray-500 mb-2">Our Service</p>
@@ -27,16 +36,8 @@ const WeddingCoupleSection = () => {
             </FadeInSection>
 
 
-            {/* Right Image */}
-            <FadeInSection>
-                <div className="">
-                    <img
-                        src={coupleImage}
-                        alt="Wedding Couple"
-                        className="w-[1000px]  h-[250px] object-cover rounded-lg shadow-lg"
-                    />
-                </div>
-            </FadeInSection>
+           
+
 
 
         </section>
