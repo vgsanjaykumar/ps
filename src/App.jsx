@@ -91,9 +91,9 @@ function App() {
       </Routes>
 
 
-      <WhatsAppButton />
-      <ScrollToTop />
-      <Footer1 />
+      {/* <WhatsAppButton />
+      <ScrollToTop /> */}
+      {/* <Footer1 /> */}
 
 
 

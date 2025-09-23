@@ -6,7 +6,7 @@ export default function OutdoorCoupleShoot() {
         <section className="max-w-6xl mx-auto px-6 lg:px-0 py-16 ">
             <div className="container mx-auto flex flex-col md:flex-row items-center gap-12">
 
-                {/* Left Images */}
+        
                 <FadeInSection>
                     <div className="relative flex-1 flex justify-center">
                         {/* Big Image */}
@@ -15,7 +15,7 @@ export default function OutdoorCoupleShoot() {
                             alt="Outdoor Couple"
                             className="w-[400px] rounded-lg shadow-lg"
                         />
-                        {/* Floating Small Image */}
+                        {/*  Small Image */}
                         <img
                             src="/award/img05.jpeg"
                             alt="Indoor Couple"
@@ -28,17 +28,17 @@ export default function OutdoorCoupleShoot() {
                 <FadeInSection>
                     <div className="flex-1 text-center md:text-left">
                         <span className="text-gray-500 font-medium text-sm">Our Service</span>
-                        <div className="w-16 h-[2px] bg-yellow-500 my-2 mx-auto md:mx-0"></div>
+                        <div className="w-16 h-[2px] bg-[#48B3AF] my-2 mx-auto md:mx-0"></div>
 
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            Couple Shoot
+                             Outdoor Shoot
                         </h2>
 
                         <p className="text-gray-600 leading-relaxed mb-6 max-w-lg mx-auto md:mx-0">
                             Capture the essence of your love story with our beautifully curated couple shoots . Whether it’s a quiet moment or a grand celebration, we craft timeless images that reflect your unique bond.
                         </p>
 
-                        <button className="bg-black text-white px-6 py-2 rounded-md shadow hover:bg-gray-800 transition">
+                        <button className="bg-[#48B3AF] text-white px-6 py-2 rounded-md shadow hover:bg-[#097874] transition duration-100 delay-100">
                             View More
                         </button>
                     </div>

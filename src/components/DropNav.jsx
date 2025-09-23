@@ -30,7 +30,7 @@ export const DropDown = () => {
   return (
     <nav
       className={`fixed w-full z-50 p-4 flex justify-between items-center transition-all duration-300 
-        ${isScrolled ? "bg-[#4ac6bfd5]" : "bg-transparent"} px-6 md:pr-28 pl-10`}
+        ${isScrolled ? "bg-[#009e8e]" : "bg-transparent"} px-6 md:pr-28 pl-10`}
     >
       {/* Logo */}
       <Link to="/" className="flex items-center">
@@ -138,11 +138,7 @@ const Tabs = ({ selectedTab, setSelectedTab, scrollToId }) => (
     className="relative flex gap-6 text-white"
     onMouseLeave={() => setSelectedTab(null)}
   >
-    <div className="text-center items-center py-4">
-      <Link to="/">
-        <BiHome className="text-center items-center" />
-      </Link>
-    </div>
+
 
     {TABS.map(({ id, title }) => (
       <div key={id} className="relative" onMouseEnter={() => setSelectedTab(id)}>
@@ -165,12 +161,14 @@ const NonDropdownLinks = ({ scrollToId }) => (
         <button
           key={title}
           onClick={() => scrollToId(scrollId)}
-          className="text-white hover:text-gray-300 transition"
+          className="text-white relative group  hover:text-gray-900 transition"
         >
+          <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gradient-to-r from-gray-900 to-blue-900 transition-all duration-500 group-hover:w-full"></span>
           {title}
         </button>
       ) : (
-        <Link key={title} to={link} className="text-white hover:text-gray-300 transition">
+          <Link key={title} to={link} className="text-whitetext-white relative group  hover:text-gray-900 transition">
+            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-gradient-to-r from-gray-900 to-blue-900 transition-all duration-500 group-hover:w-full"></span>
           {title}
         </Link>
       )

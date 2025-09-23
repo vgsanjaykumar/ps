@@ -11,7 +11,7 @@ const Weddingmagzine = () => {
             <FadeInSection>
                 <div className="flex-1">
                     <p className="text-sm text-gray-500 mb-2">Our Service</p>
-                    <div className="w-16 h-0.5 bg-orange-400 mb-4"></div>
+                    <div className="w-16 h-0.5 bg-[#48B3AF]mb-4"></div>
                     <h2 className="text-3xl lg:text-4xl font-semibold mb-4">
                         Wedding Magzine
                     </h2>
@@ -20,7 +20,7 @@ const Weddingmagzine = () => {
                         Whether it’s a quiet moment or a grand celebration, we craft timeless images that
                         reflect your unique bond.
                     </p>
-                    <button className="bg-black text-white px-6 py-2 border border-gray-300 hover:bg-orange-400 transition duration-300">
+                    <button className="bg-[#48B3AF] text-white px-6 py-2 rounded-md shadow hover:bg-[#097874] transition duration-100 delay-100">
                         View More
                     </button>
                 </div>

@@ -11,12 +11,13 @@ import BookNowNew from './BookNowNew'
 import WhyChooseUs from './WhyChooseus'
 import ContactForm from './Enquriy'
 
-import WeddingCoupleSection from './WeddingCoupleSection'
+import WeddingCoupleSection from './WeddingPreSection'
 import NumCount from './Numcount'
-import OutdoorCoupleShoot from './CoupleSection'
+import OutdoorCoupleShoot from './OudoorCoupleSection'
 import Weddingmagzine from './Weddingmagzine'
 import Modelshoot from './ModelShoot'
 import Babysection from './BabySection'
+import Footer1 from './Footer'
 
 
 const Home = () => {
@@ -37,7 +38,8 @@ const Home = () => {
             <Events />
             <Testimonials/>
             <ContactForm/>
-            <BookNowNew />
+            <Footer1/>
+            {/* <BookNowNew /> */}
             
             
 
