@@ -1,0 +1,24 @@
+{"RecptionDataset": [
+    {
+      "id": 1,
+      "name": "Shoot-1",
+      "image": "/Reciption/Mahesh hemprethi/cover/009.webp",
+      "images": [
+    { "src": "/Reciption/Mahesh hemprethi/000.webp", "height": "h-[250px]" },
+    { "src": "/Reciption/Mahesh hemprethi/001.webp", "height": "h-[300px]" },
+    { "src": "/Reciption/Mahesh hemprethi/002.webp", "height": "h-[350px]" },
+    { "src": "/Reciption/Mahesh hemprethi/003.webp", "height": "h-[250px]" },
+    { "src": "/Reciption/Mahesh hemprethi/004.webp", "height": "h-[300px]" }, 
+    { "src": "/Reciption/Mahesh hemprethi/005.webp", "height": "h-[350px]" },
+    { "src": "/Reciption/Mahesh hemprethi/006.webp", "height": "h-[250px]" },
+    { "src": "/Reciption/Mahesh hemprethi/007.webp", "height": "h-[300px]" },
+    { "src": "/Reciption/Mahesh hemprethi/008.webp", "height": "h-[350px]" },
+    { "src": "/Reciption/Mahesh hemprethi/010.webp", "height": "h-[250px]" },
+    { "src": "/Reciption/Mahesh hemprethi/011.webp", "height": "h-[300px]" },
+    { "src": "/Reciption/Mahesh hemprethi/012.webp", "height": "h-[350px]" },
+    { "src": "/Reciption/Mahesh hemprethi/013.webp", "height": "h-[250px]" },
+    { "src": "/Reciption/Mahesh hemprethi/016.webp", "height": "h-[300px]" }
+      ]
+    }
+  ]
+}

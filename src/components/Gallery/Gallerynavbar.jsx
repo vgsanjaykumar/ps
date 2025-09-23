@@ -6,7 +6,7 @@ const GalleryNavbar = () => {
     const navigate = useNavigate();
 
     const categories = [
-        "All", "Wedding", "Portraits", "Events", "Couple Portraits", "Family Portraits"
+        "All", "Wedding", "Reception","Portraits", "Events", "Couple Portraits", "Family Portraits"
     ];
 
     const formatCategoryForURL = (category) => {

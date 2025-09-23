@@ -247,6 +247,7 @@ const Gallery = ({ closeMobileMenu }) => (
   <Submenu
     items={[
       { title: "Wedding", link: "/gallery/wedding" },
+      { title: "Reception", link: "/gallery/reception" },
       { title: "Portraits", link: "/gallery/portraits" },
       { title: "Events", link: "/gallery/events" },
       { title: "Couple Portraits", link: "/gallery/couple-portraits" },

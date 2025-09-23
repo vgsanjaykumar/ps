@@ -9,6 +9,7 @@ import PortraitsGallery from './Portraits/Portgallery'
 import EventGallery from './Events/EventGallery'
 import CoupleGallery from './Couple Portraits/Couplegallery'
 import FamilyPortaitsGallery from './Family portratits/FamilyPortaitsGallery'
+import ReceptionGallery from './Reception/ReceptionGallery'
 
 
 
@@ -21,6 +22,7 @@ const Galleryhome = () => {
       <OutdoorGallery />
       <PreweddingGallery />
       <PostweddingGallery />
+      <ReceptionGallery/>
       <PortraitsGallery/>
       <EventGallery/>
       <CoupleGallery/>

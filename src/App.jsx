@@ -34,6 +34,7 @@ import ScrollToTop from "./components/ScroltoTop"
 import ContactForm from "./components/Enquriy"
 import Sephome from "./components/Seperate/Sephome"
 import FamilyPortaitsHome from "./components/Gallery/Family portratits/FamilyPortaitsHome"
+import Receptionhome from "./components/Gallery/Reception/ReceptionHome"
 
 
 
@@ -71,13 +72,14 @@ function App() {
         <Route path="/gallery/family-portraits" element={<FamilyPortaitsHome />} />
         <Route path="/gallery/couple-portraits" element={<Couplehome />} />
         <Route path="/gallery/events" element={<Eventhome />} />
+        <Route path="/gallery/reception" element={<Receptionhome />} />
         <Route path="/gallery/portraits" element={<Portraitshome />} />
         <Route path="/gallery/all" element={<Galleryhome />} />
         <Route path="/gallery/:category" element={<Galleryhome />} />
         <Route path="/gallery" element={<Galleryhome />} />
         <Route path="/other/baby-photography" element={<Babyhome />} />
         <Route path="/other/birthday-celebration" element={<Birthhome />} />
-        <Route path="/other/drone-photography" element={<Dronehome />} />
+        <Route path="/other/reception" element={<Dronehome />} />
         <Route path="/other/video-shoot" element={<Videohome />} />
         <Route path="/other/photo-edit" element={<Photohome />} />
         <Route path="/other/all" element={<Otherhome />} />
